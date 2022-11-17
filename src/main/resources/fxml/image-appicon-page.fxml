@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXToggleButton?>
+<?import com.leewyatt.rxcontrols.pane.RXCarouselPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import org.controlsfx.control.MaskerPane?>
+
+<RXCarouselPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" styleClass="image-page" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.AppIconController">
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="centerPane" prefHeight="521.0" prefWidth="262.0">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" layoutX="3.0" layoutY="2.0" prefHeight="29.0" prefWidth="256.0" spacing="4.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onClickBackBtn" prefHeight="28.0" prefWidth="43.0">
+                           <graphic>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="back-btn" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="addImagesBtn" mnemonicParsing="false" onAction="#addImageFilesAction" prefHeight="28.0" prefWidth="42.0">
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="add-image-btn" />
+                           </styleClass>
+                           <graphic>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </graphic>
+                        </Button>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <HBox alignment="CENTER" prefHeight="24.0" prefWidth="128.0" spacing="2.0" styleClass="bg-box">
+                           <children>
+                              <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-white" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../images/bg-selected.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="iconBgGroup" />
+                                 </toggleGroup>
+                              </RXToggleButton>
+                              <RXToggleButton fx:id="iconBgTransparentBtn" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-transport" text=" " toggleGroup="$iconBgGroup">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../images/bg-selected.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RXToggleButton>
+                              <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-translucent" text=" " toggleGroup="$iconBgGroup">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../images/bg-selected.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RXToggleButton>
+                              <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-gray" text=" " toggleGroup="$iconBgGroup">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../images/bg-selected.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RXToggleButton>
+                              <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-black" text=" " toggleGroup="$iconBgGroup">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../images/bg-selected.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RXToggleButton>
+                           </children>
+                        </HBox>
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#clearImageListAction" prefHeight="26.0" prefWidth="26.0">
+                           <children>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="clear-btn" />
+                           </styleClass>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <Pane fx:id="imageViewWrapper" layoutX="4.0" layoutY="34.0" maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#onClickImageOutPane" prefHeight="252.0" prefWidth="252.0" styleClass="gif-out-pane">
+                     <children>
+                        <ImageView fx:id="imagView" fitHeight="252.0" fitWidth="252.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Line endX="256.0" layoutX="3.0" layoutY="533.0" styleClass="separate-line" />
+                  <Button graphicTextGap="15.0" layoutX="7.0" layoutY="538.0" mnemonicParsing="false" onAction="#onGenerateAppIconAction" prefHeight="29.0" prefWidth="249.0" text="生成应用图标">
+                     <styleClass>
+                        <String fx:value="region-btn" />
+                        <String fx:value="handler-btn" />
+                     </styleClass>
+                     <graphic>
+                        <Region prefHeight="30.0" prefWidth="30.0" />
+                     </graphic>
+                  </Button>
+                  <Line endY="572.0" layoutX="1.0" layoutY="1.0" styleClass="separate-line" />
+                  <BorderPane layoutX="4.0" layoutY="295.0" prefWidth="253.0">
+                     <left>
+                        <VBox maxWidth="-Infinity" spacing="8.0" styleClass="border-right" BorderPane.alignment="CENTER">
+                           <children>
+                              <RXToggleButton fx:id="winBtn" alignment="CENTER_LEFT" graphicTextGap="2.0" layoutX="10.0" layoutY="49.0" prefWidth="100.0" styleClass="os-rbtn" text="Win">
+                                 <graphic>
+                                    <CheckBox fx:id="windowsCheckBox" mnemonicParsing="false" selected="true" />
+                                 </graphic>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="osGroup" />
+                                 </toggleGroup>
+                              </RXToggleButton>
+                              <RXToggleButton fx:id="appleBtn" alignment="CENTER_LEFT" graphicTextGap="2.0" layoutX="10.0" layoutY="127.0" prefWidth="100.0" styleClass="os-rbtn" text="Apple" toggleGroup="$osGroup">
+                                 <graphic>
+                                    <CheckBox fx:id="appleCheckBox" mnemonicParsing="false" />
+                                 </graphic>
+                              </RXToggleButton>
+                              <RXToggleButton fx:id="androidBtn" alignment="CENTER_LEFT" graphicTextGap="2.0" prefWidth="100.0" styleClass="os-rbtn" text="Android" toggleGroup="$osGroup">
+                                 <graphic>
+                                    <CheckBox fx:id="androidCheckBox" mnemonicParsing="false" />
+                                 </graphic>
+                              </RXToggleButton>
+                              <RXToggleButton fx:id="linuxBtn" alignment="CENTER_LEFT" graphicTextGap="2.0" layoutX="10.0" layoutY="87.0" prefWidth="100.0" styleClass="os-rbtn" text="Linux" toggleGroup="$osGroup">
+                                 <graphic>
+                                    <CheckBox fx:id="linuxCheckBox" mnemonicParsing="false" />
+                                 </graphic>
+                              </RXToggleButton>
+                           </children>
+                           <padding>
+                              <Insets right="2.0" />
+                           </padding>
+                        </VBox>
+                     </left>
+                     <top>
+                        <VBox spacing="2.0" BorderPane.alignment="CENTER_LEFT">
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                           <children>
+                              <Label styleClass="tips-label" text="%appIcon.svgTips">
+                                 <graphic>
+                                    <Region prefHeight="16.0" prefWidth="16.0" styleClass="tips-region" />
+                                 </graphic>
+                              </Label>
+                              <Label styleClass="tips-label" text="%appIcon.sizeTips">
+                                 <graphic>
+                                    <Region prefHeight="16.0" prefWidth="16.0" styleClass="tips-region" />
+                                 </graphic>
+                              </Label>
+                              <Separator prefWidth="200.0">
+                                 <padding>
+                                    <Insets bottom="8.0" top="8.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Separator>
+                           </children>
+                        </VBox>
+                     </top>
+                     <center>
+                        <StackPane fx:id="rxBox" BorderPane.alignment="CENTER">
+                           <children>
+                              <VBox fx:id="winPane" maxWidth="-Infinity" prefHeight="168.0" prefWidth="142.0" spacing="6.0" styleClass="bg-color" visible="false">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="15.0" prefWidth="163.0" text="Windows">
+                                       <graphic>
+                                          <Region prefHeight="16.0" prefWidth="14.0" />
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="os-title" />
+                                          <String fx:value="window-box" />
+                                       </styleClass>
+                                    </Label>
+                                    <CheckBox fx:id="winIcoCheckBox" mnemonicParsing="false" selected="true" text="ico" />
+                                    <CheckBox fx:id="winPngsCheckBox" mnemonicParsing="false" text="pngs" />
+                                    <Separator prefWidth="200.0">
+                                       <padding>
+                                          <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                       </padding>
+                                    </Separator>
+                                    <HBox alignment="CENTER_LEFT" />
+                                    <ComboBox fx:id="winosComboBox" prefWidth="150.0" styleClass="custom-combobox" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="6.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox fx:id="iosPane" maxWidth="-Infinity" prefHeight="168.0" prefWidth="142.0" spacing="6.0" styleClass="bg-color" visible="false">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="15.0" prefWidth="163.0" text="Apple">
+                                       <graphic>
+                                          <Region prefHeight="16.0" prefWidth="14.0" />
+                                       </graphic>
+                                       <styleClass>
+                                          <String fx:value="os-title" />
+                                          <String fx:value="ios-box" />
+                                       </styleClass>
+                                    </Label>
+                                    <CheckBox fx:id="macosIcnsCheckBox" graphicTextGap="0.0" layoutX="10.0" layoutY="55.0" mnemonicParsing="false" selected="true" text="macOS (icns)" />
+                                    <CheckBox fx:id="macOSCheckBox" mnemonicParsing="false" text="macOS (pngs)" />
+                                    <CheckBox fx:id="iphoneCheckBox" graphicTextGap="0.0" layoutX="10.0" layoutY="55.0" mnemonicParsing="false" text="iPhone" />
+                                    <CheckBox fx:id="ipadCheckBox" graphicTextGap="0.0" layoutX="10.0" layoutY="83.0" mnemonicParsing="false" text="iPad" />
+                                    <CheckBox fx:id="watchOSCheckBox" graphicTextGap="0.0" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" text="watchOS" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="6.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox fx:id="androidPane" maxWidth="-Infinity" prefHeight="168.0" prefWidth="142.0" spacing="6.0" styleClass="bg-color" visible="false">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="15.0" prefWidth="163.0" text="Android">
+                                       <graphic>
+                                          <Region prefHeight="16.0" prefWidth="14.0" />
+                                       </graphic>
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="os-title" />
+                                          <String fx:value="android-box" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label text="Icon File Name:" />
+                                    <TextField fx:id="androidIconNameField" maxWidth="-Infinity" prefHeight="31.0" prefWidth="130.0" promptText="ic_launcher" text="ic_launcher" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="6.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox fx:id="linuxPane" maxWidth="-Infinity" prefHeight="168.0" prefWidth="142.0" spacing="6.0" styleClass="bg-color" visible="false">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="15.0" prefWidth="163.0" styleClass="os-title" text="Linux">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                       <graphic>
+                                          <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/linux.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Label>
+                                    <RadioButton fx:id="linuxAllRbtn" mnemonicParsing="false" selected="true" text="%icon.allSize">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="linuxGroup" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="linux512Rbtn" mnemonicParsing="false" text="%icon.only512" toggleGroup="$linuxGroup" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="6.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </StackPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </Pane>
+            <MaskerPane fx:id="maskerPane" visible="false" />
+         </children>
+      </StackPane>
+   </center>
+</RXCarouselPane>

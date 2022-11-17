@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.pane.RXCarouselPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import org.controlsfx.control.MaskerPane?>
+
+<RXCarouselPane fx:id="formatPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" styleClass="image-page" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.ImageFormatPageController">
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="centerPane" prefHeight="521.0" prefWidth="262.0">
+               <children>
+                  <ListView fx:id="imageListView" layoutX="3.0" layoutY="34.0" prefHeight="375.0" prefWidth="256.0" styleClass="image-list" />
+                  <HBox alignment="CENTER" layoutX="3.0" layoutY="2.0" prefHeight="29.0" prefWidth="256.0" spacing="8.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onClickBackBtn" prefHeight="28.0" prefWidth="43.0">
+                           <graphic>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="back-btn" />
+                           </styleClass>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#addImageFilesAction" prefHeight="28.0" prefWidth="42.0">
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="add-image-btn" />
+                           </styleClass>
+                           <graphic>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </graphic>
+                        </Button>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <StackPane fx:id="deleteImagBtn" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#deleteImageAction" prefHeight="28.0" prefWidth="28.0">
+                           <children>
+                              <Region maxHeight="12.0" maxWidth="12.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="delete-btn" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </StackPane>
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#clearImageListAction" prefHeight="28.0" prefWidth="28.0">
+                           <children>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="clear-btn" />
+                           </styleClass>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <Label layoutX="2.0" layoutY="420.0" text="%imagePage.format.convert1" />
+                  <ComboBox fx:id="convertComboBox" layoutX="100.0" layoutY="417.0" prefHeight="31.0" prefWidth="158.0" styleClass="custom-combobox" />
+                  <Label layoutX="2.0" layoutY="460.0" text="%imagePage.format.quality" />
+                  <ComboBox fx:id="qualityComboBox" disable="true" layoutX="100.0" layoutY="454.0" prefHeight="31.0" prefWidth="158.0" styleClass="custom-combobox" />
+                  <Label layoutX="2.0" layoutY="500.0" text="%imagePage.format.scale" />
+                  <Line endX="256.0" layoutX="3.0" layoutY="533.0" styleClass="separate-line" />
+                  <Button graphicTextGap="15.0" layoutX="4.0" layoutY="538.0" mnemonicParsing="false" onAction="#onConvertImageFormatAction" prefHeight="28.0" prefWidth="252.0" text="%imagePage.format.execute">
+                     <styleClass>
+                        <String fx:value="region-btn" />
+                        <String fx:value="handler-btn" />
+                     </styleClass>
+                     <graphic>
+                        <Region prefHeight="30.0" prefWidth="30.0" />
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <MaskerPane fx:id="maskerPane" visible="false" />
+         </children>
+      </StackPane>
+   </center>
+</RXCarouselPane>

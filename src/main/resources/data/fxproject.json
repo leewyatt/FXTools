@@ -1,0 +1,1198 @@
+[
+  {
+    "name": "AnimateFX",
+    "url": "https://github.com/Typhon0/AnimateFX",
+    "descEn": "A library of +70 ready-to-use animations for JavaFX",
+    "descZh": "用于 JavaFX 的 +70 种即用型动画库",
+    "type": "github",
+    "keywords": [
+      "animation",
+      "动画"
+    ]
+  },
+  {
+    "name": "AtlantaFX",
+    "url": "https://github.com/mkpaz/atlantafx",
+    "descEn": "Modern JavaFX CSS theme collection with additional controls.",
+    "descZh": "带有附加控件的现代 JavaFX CSS 主题集合。",
+    "type": "github",
+    "keywords": [
+      "CSS",
+      "SASS",
+      "Control",
+      "theme",
+      "组件",
+      "主题"
+    ]
+  },
+  {
+    "name": "BootstrapFX",
+    "url": "https://github.com/kordamp/bootstrapfx",
+    "descEn": "BootstrapFX is a partial port of Twitter Bootstrap for JavaFX.",
+    "descZh": "BootstrapFX 是 Twitter Bootstrap for JavaFX 的部分移植。",
+    "type": "github",
+    "keywords": [
+      "CSS",
+      "SASS",
+      "Control",
+      "组件"
+    ]
+  },
+  {
+    "name": "CalendarFX",
+    "url": "https://github.com/dlsc-software-consulting-gmbh/CalendarFX",
+    "descEn": "A Java framework for creating sophisticated calendar views (JavaFX 8, 9, 10, and 11)",
+    "descZh": "用于创建复杂日历视图的 Java 框架（JavaFX 8、9、10 和 11）",
+    "type": "github",
+    "keywords": [
+      "Calendar",
+      "Control",
+      "日历",
+      "组件"
+    ]
+  },
+  {
+    "name": "cssFX",
+    "url": "https://github.com/McFoggy/cssfx",
+    "descEn": "Allow runtime modification of JavaFX CSS",
+    "descZh": "允许在运行时修改 JavaFX CSS",
+    "type": "github",
+    "keywords": [
+      "CSS",
+      "tools",
+      "工具"
+    ]
+  },
+  {
+    "name": "Charts",
+    "url": "https://github.com/HanSolo/charts",
+    "descEn": "A JavaFX library that contains different kind of charts",
+    "descZh": "包含不同类型图表的 JavaFX 库",
+    "type": "github",
+    "keywords": [
+      "Chart",
+      "Control",
+      "图表",
+      "组件"
+    ]
+  },
+  {
+    "name": "ControlsFX",
+    "url": "https://github.com/controlsfx/controlsfx",
+    "descEn": "High quality UI controls to complement the core JavaFX distribution",
+    "descZh": "高质量的 UI 控件以补充核心 JavaFX 发行版",
+    "type": "github",
+    "keywords": [
+      "Control",
+      "组件"
+    ]
+  },
+  {
+    "name": "DashboardFx",
+    "url": "https://github.com/gleidsonmt/DashboardFx",
+    "descEn": "JavaFx Dashboard",
+    "descZh": "JavaFx 仪表板",
+    "type": "github",
+    "keywords": [
+      "Control",
+      "Dashboard",
+      "gauge",
+      "组件",
+      "仪表"
+    ]
+  },
+  {
+    "name": "DesktopPaneFX",
+    "url": "https://github.com/kordamp/desktoppanefx",
+    "descEn": "DesktopPaneFX is a JavaFX version of Swing’s JDesktopPane.",
+    "descZh": "DesktopPaneFX 是 Swing 的 JDesktopPane 的 JavaFX 版本。",
+    "type": "github",
+    "keywords": [
+      "Control",
+      "Layout",
+      "组件",
+      "布局"
+    ]
+  },
+  {
+    "name": "FormsFX",
+    "url": "https://github.com/dlsc-software-consulting-gmbh/FormsFX",
+    "descEn": "A framework for easily creating forms for a JavaFX UI.",
+    "descZh": "用于轻松创建 JavaFX UI 表单的框架。",
+    "type": "github",
+    "keywords": [
+      "Forms",
+      "Control",
+      "表单",
+      "组件"
+    ]
+  },
+  {
+    "name": "FXGL",
+    "url": "https://github.com/AlmasB/FXGL",
+    "descEn": "Java / JavaFX / Kotlin Game Library (Engine)",
+    "descZh": "Java JavaFX Kotlin 游戏库（引擎）",
+    "type": "github",
+    "keywords": [
+      "Game",
+      "Engine",
+      "游戏",
+      "引擎"
+    ]
+  },
+  {
+    "name": "FXGraphics2D",
+    "url": "https://github.com/jfree/fxgraphics2d",
+    "descEn": "A JavaFX library that allows Java2D code (Graphics2D) to be used to draw to a Canvas node.",
+    "descZh": "允许使用 Java2D 代码 (Graphics2D) 绘制到 Canvas 节点的 JavaFX 库。",
+    "type": "github",
+    "keywords": [
+      "Canva",
+      "Java2D",
+      "画布",
+      "Java2D"
+    ]
+  },
+  {
+    "name": "FXRibbon",
+    "url": "https://github.com/dukke/FXRibbon",
+    "descEn": "Ribbon control for Java, created in JavaFX",
+    "descZh": "Java的功能区控件，在JavaFX中创建",
+    "type": "github",
+    "keywords": [
+      "Microsoft",
+      "Control",
+      "Ribbon",
+      "微软",
+      "组件",
+      "功能区"
+    ]
+  },
+  {
+    "name": "FXTrayIcon",
+    "url": "https://github.com/dustinkredmond/FXTrayIcon",
+    "descEn": "Tray Icon implementation for JavaFX applications. Say goodbye to using AWT's SystemTray icon, instead use a JavaFX Tray Icon.",
+    "descZh": "JavaFX 应用程序的托盘图标实现。告别使用 AWT 的 SystemTray 图标，改用 JavaFX 托盘图标。",
+    "type": "github",
+    "keywords": [
+      "Tray",
+      "任务栏",
+      "托盘"
+    ]
+  },
+  {
+    "name": "GemsFX",
+    "url": "https://github.com/dlsc-software-consulting-gmbh/GemsFX",
+    "descEn": "A collection of JavaFX controls and utilities.",
+    "descZh": "JavaFX 控件和实用程序的集合。",
+    "type": "github",
+    "keywords": [
+      "Control",
+      "Field",
+      "Dialog",
+      "Text",
+      "Time",
+      "Duration",
+      "Picker",
+      "Photo",
+      "Payment",
+      "Drawer",
+      "Filter",
+      "Rich",
+      "组件",
+      "文本",
+      "弹窗",
+      "时间",
+      "期间",
+      "选择器",
+      "照片",
+      "支付",
+      "抽屉",
+      "滑出",
+      "过滤",
+      "富文本"
+    ]
+  },
+  {
+    "name": "GMapsFX",
+    "url": "https://github.com/dlsc-software-consulting-gmbh/GMapsFX",
+    "descEn": "Java API for using Google Maps within a JavaFX application.",
+    "descZh": "用于在 JavaFX 应用程序中使用 Google 地图的 Java API。",
+    "type": "github",
+    "keywords": [
+      "Map",
+      "Google",
+      "地图",
+      "谷歌"
+    ]
+  },
+  {
+    "name": "HarmonicFX",
+    "url": "https://github.com/kordamp/harmonicfx",
+    "descEn": "A collection of FridayFun JavaFx components authored by @hansolo_",
+    "descZh": "由@hansolo_ 创作的 FridayFun JavaFx 组件集合",
+    "type": "github",
+    "keywords": [
+      "Control",
+      "Chart",
+      "Card",
+      "Gradient",
+      "Picker",
+      "组件",
+      "图表",
+      "卡片",
+      "颜色",
+      "选择器"
+    ]
+  },
+  {
+    "name": "JMetro",
+    "url": "https://github.com/JFXtras/jfxtras-styles",
+    "descEn": "Java, JavaFX themes or look and feels. Currently contains JMetro theme.",
+    "descZh": "Java、JavaFX 主题或外观。当前包含 JMetro 主题。",
+    "type": "github",
+    "keywords": [
+      "CSS",
+      "Metro",
+      "theme",
+      "jfxtras",
+      "主题"
+    ]
+  },
+  {
+    "name": "jfxtras",
+    "url": "https://github.com/JFXtras/jfxtras",
+    "descEn": "A supporting library for JavaFX, containing helper classes, extended layouts, controls and other interesting widgets.",
+    "descZh": "JavaFX 的支持库，包含帮助类、扩展布局、控件和其他有趣的小部件。",
+    "type": "github",
+    "keywords": [
+      "CSS",
+      "control",
+      "layout",
+      "widget",
+      "组件",
+      "布局",
+      "小部件"
+    ]
+  },
+  {
+    "name": "MaterialFX",
+    "url": "https://github.com/palexdev/MaterialFX",
+    "descEn": "A library of material components for JavaFX",
+    "descZh": "JavaFX 的材质组件库",
+    "type": "github",
+    "keywords": [
+      "CSS",
+      "button",
+      "combo",
+      "Dialog",
+      "Field",
+      "List",
+      "Picker",
+      "Notification",
+      "Progress",
+      "Scroll",
+      "组件",
+      "布局",
+      "小部件"
+    ]
+  },
+  {
+    "name": "Medusa",
+    "url": "https://github.com/HanSolo/medusa",
+    "descEn": "A JavaFX library for Gauges",
+    "descZh": "仪表的 JavaFX 库",
+    "type": "github",
+    "keywords": [
+      "Gauge",
+      "Dashboard",
+      "仪表"
+    ]
+  },
+  {
+    "name": "PDFViewFX",
+    "url": "https://github.com/dlsc-software-consulting-gmbh/PDFViewFX",
+    "descEn": "A PDF view for JavaFX applications.",
+    "descZh": "JavaFX 应用程序的 PDF 视图。",
+    "type": "github",
+    "keywords": [
+      "PDF",
+      "电子书"
+    ]
+  },
+  {
+    "name": "PreferencesFX",
+    "url": "https://github.com/dlsc-software-consulting-gmbh/PreferencesFX",
+    "descEn": "A framework for easily creating a UI for application settings / preferences.",
+    "descZh": "用于轻松为应用程序设置首选项创建 UI 的框架。",
+    "type": "github",
+    "keywords": [
+      "Preference",
+      "设置",
+      "首选项"
+    ]
+  },
+  {
+    "name": "RichTextFX",
+    "url": "https://github.com/FXMisc/RichTextFX",
+    "descEn": "Rich-text area for JavaFX",
+    "descZh": "JavaFX 的富文本区域",
+    "type": "github",
+    "keywords": [
+      "Rich",
+      "Text",
+      "富文本",
+      "文本"
+    ]
+  },
+  {
+    "name": "Rich Text Area",
+    "url": "https://github.com/gluonhq/rich-text-area",
+    "descEn": "Gluon presents a new JavaFX control, called the RichTextArea control.",
+    "descZh": "Gluon 提供了一个新的富文本控件，称为 RichTextArea 控件。",
+    "type": "github",
+    "keywords": [
+      "Rich",
+      "Text",
+      "富文本",
+      "文本"
+    ]
+  },
+  {
+    "name": "TiwulFX Dock",
+    "url": "https://github.com/panemu/tiwulfx-dock",
+    "descEn": "TiwulFX-Dock provides enhanced JavaFX TabPane that supports tab reordering, detaching and docking.",
+    "descZh": "TiwulFX-Dock 提供增强的 JavaFX TabPane，支持选项卡重新排序、分离和停靠。",
+    "type": "github",
+    "keywords": [
+      "Dock",
+      "停靠"
+    ]
+  },
+  {
+    "name": "TilesFX",
+    "url": "https://github.com/HanSolo/tilesfx",
+    "descEn": "A JavaFX library containing tiles that can be used for dashboards.",
+    "descZh": "一个包含可用于仪表板的磁贴的 JavaFX 库。",
+    "type": "github",
+    "keywords": [
+      "Dashboard",
+      "gauge",
+      "仪表"
+    ]
+  },
+  {
+    "name": "ValidatorFX",
+    "url": "https://github.com/effad/ValidatorFX",
+    "descEn": "A form validation library for JavaFX",
+    "descZh": "JavaFX 的表单验证库",
+    "type": "github",
+    "keywords": [
+      "Validate",
+      "验证"
+    ]
+  },
+  {
+    "name": "WorkbenchFX",
+    "url": "https://github.com/dlsc-software-consulting-gmbh/WorkbenchFX",
+    "descEn": "A lightweight RCP framework for JavaFX applications.",
+    "descZh": "用于 JavaFX 应用程序的轻量级 RCP 框架。",
+    "type": "github",
+    "keywords": [
+      "framework",
+      "rcp",
+      "框架"
+    ]
+  },
+  {
+    "name": "JFoenix",
+    "url": "https://github.com/sshahine/JFoenix",
+    "descEn": "JavaFX Material Design Library.",
+    "descZh": "JavaFX 材料设计库。",
+    "type": "github",
+    "keywords": [
+      "Material",
+      "Controls",
+      "Check",
+      "Toggle",
+      "button",
+      "list",
+      "highlighter",
+      "chip",
+      "Masonry",
+      "layout",
+      "slider",
+      "spinner",
+      "snackbar",
+      "date",
+      "picker",
+      "time",
+      "tree",
+      "table",
+      "grouping"
+    ]
+  },
+  {
+    "name": "TornadoFX",
+    "url": "https://github.com/edvin/tornadofx",
+    "descEn": "Lightweight JavaFX Framework for Kotlin.",
+    "descZh": "Kotlin 的轻量级 JavaFX 框架。",
+    "type": "github",
+    "keywords": [
+      "Kotlin",
+      "Framework",
+      "框架"
+    ]
+  },
+  {
+    "name": "mvvmFX",
+    "url": "https://github.com/sialcasa/mvvmFX",
+    "descEn": "an Application Framework for implementing the MVVM Pattern with JavaFX",
+    "descZh": "使用 JavaFX 实现 MVVM 模式的应用程序框架",
+    "type": "github",
+    "keywords": [
+      "MVVM",
+      "Framework",
+      "框架"
+    ]
+  },
+  {
+    "name": "ChartFx",
+    "url": "https://github.com/fair-acc/chart-fx",
+    "descEn": "A scientific charting library focused on performance optimised real-time data visualisation.",
+    "descZh": "一个科学图表库，专注于性能优化的实时数据可视化。",
+    "type": "github",
+    "keywords": [
+      "chart",
+      "performance",
+      "性能",
+      "图表"
+    ]
+  },
+  {
+    "name": "Component-Inspector",
+    "url": "https://github.com/TangoraBox/ComponentInspector",
+    "descEn": "Java Desktop (JavaFX and Swing) Component Inspector on mouse over",
+    "descZh": "鼠标悬停时的 Java 桌面（JavaFX 和 Swing）组件检查器",
+    "type": "github",
+    "keywords": [
+      "swing",
+      "Component",
+      "Inspector",
+      "Tools",
+      "工具"
+    ]
+  },
+  {
+    "name": "CustomStage",
+    "url": "https://github.com/Oshan96/CustomStage",
+    "descEn": "A JavaFX UI framework to create fully customized undecorated windows",
+    "descZh": "一个 JavaFX UI 框架，用于创建完全自定义的未装饰窗口",
+    "type": "github",
+    "keywords": [
+      "stage",
+      "window",
+      "undecorated",
+      "窗口",
+      "边框",
+      "未装饰"
+    ]
+  },
+  {
+    "name": "Flowless",
+    "url": "https://github.com/FXMisc/Flowless",
+    "descEn": "Efficient VirtualFlow for JavaFX",
+    "descZh": "JavaFX 的高效 VirtualFlow",
+    "type": "github",
+    "keywords": [
+      "Virtual",
+      "Flow",
+      "虚拟流"
+    ]
+  },
+  {
+    "name": "FX-BorderlessScene",
+    "url": "https://github.com/goxr3plus/FX-BorderlessScene",
+    "descEn": "Undecorated JavaFX Scene with implemented move, resize, minimise, maximise, close and Windows Aero Snap controls.",
+    "descZh": "未装饰的 JavaFX 场景，已实现移动、调整大小、最小化、最大化、关闭和 Windows Aero Snap 控件。",
+    "type": "github",
+    "keywords": [
+      "stage",
+      "window",
+      "undecorated",
+      "resize",
+      "minimise",
+      "maximise",
+      "窗口",
+      "边框",
+      "未装饰",
+      "最大化",
+      "最小化"
+    ]
+  },
+  {
+    "name": "FXForm2",
+    "url": "https://github.com/dooApp/FXForm2",
+    "descEn": "Dynamic JavaFX form generation",
+    "descZh": "动态 JavaFX 表单生成",
+    "type": "github",
+    "keywords": [
+      "Form",
+      "表单"
+    ]
+  },
+  {
+    "name": "FXTaskbarProgressBar",
+    "url": "https://github.com/Dansoftowner/FXTaskbarProgressBar",
+    "descEn": "A library for JavaFX that gives you the ability to show progress on the Windows taskbar.",
+    "descZh": "一个 JavaFX 库，使您能够在 Windows 任务栏上显示进度。",
+    "type": "github",
+    "keywords": [
+      "taskbar",
+      "progress",
+      "任务栏",
+      "进度条"
+    ]
+  },
+  {
+    "name": "Graph Editor",
+    "url": "https://github.com/eckig/graph-editor",
+    "descEn": "A library for creating and editing graph-like diagrams in JavaFX.",
+    "descZh": "用于在 JavaFX 中创建和编辑类图的库。",
+    "type": "github",
+    "keywords": [
+      "graph",
+      "editor",
+      "图"
+    ]
+  },
+  {
+    "name": "LiveDirsFX",
+    "url": "https://github.com/TomasMikula/LiveDirsFX",
+    "descEn": "Directory tree model for JavaFX that watches the filesystem for changes.",
+    "descZh": "JavaFX 的目录树模型，用于监视文件系统的更改。",
+    "type": "github",
+    "keywords": [
+      "File",
+      "directory",
+      "Live",
+      "目录"
+    ]
+  },
+  {
+    "name": "maven-jpackage-template",
+    "url": "https://github.com/wiverson/maven-jpackage-template",
+    "descEn": "Building cross-platform JavaFX or Swing desktop apps with native installers.",
+    "descZh": "使用本机安装程序构建漂亮的小型跨平台桌面应用程序。",
+    "type": "github",
+    "keywords": [
+      "native",
+      "installer",
+      "package",
+      "打包",
+      "发布",
+      "程序"
+    ]
+  },
+  {
+    "name": "MigLayout",
+    "url": "https://github.com/mikaelgrev/miglayout",
+    "descEn": "Official MiG Layout for Swing, SWT and JavaFX",
+    "descZh": "Swing、SWT 和 JavaFX 的官方 MiG 布局.",
+    "type": "github",
+    "keywords": [
+      "Mig",
+      "layout",
+      "布局",
+      "swing",
+      "swt"
+    ]
+  },
+  {
+    "name": "FXLauncher",
+    "url": "https://github.com/edvin/fxlauncher",
+    "descEn": "Auto updating launcher for JavaFX Applications",
+    "descZh": "JavaFX 应用程序的自动更新启动器",
+    "type": "github",
+    "keywords": [
+      "native",
+      "installer",
+      "update",
+      "package",
+      "更新",
+      "升级",
+      "打包",
+      "安装",
+      "发布",
+      "程序"
+    ]
+  },
+  {
+    "name": "GraalVM",
+    "url": "https://github.com/oracle/graal",
+    "descEn": "GraalVM: Run Programs Faster Anywhere",
+    "descZh": "GraalVM：在任何地方更快地运行程序",
+    "type": "github",
+    "keywords": [
+      "Tools",
+      "native",
+      "install",
+      "package",
+      "打包",
+      "安装",
+      "程序",
+      "工具"
+    ]
+  },
+  {
+    "name": "Getdown",
+    "url": "https://github.com/threerings/getdown",
+    "descEn": "Download, Install, Update",
+    "descZh": "下载、安装、更新",
+    "type": "github",
+    "keywords": [
+      "Download",
+      "installer",
+      "update",
+      "更新",
+      "下载",
+      "安装",
+      "发布",
+      "程序"
+    ]
+  },
+  {
+    "name": "Gluon Scene Builder",
+    "url": "https://github.com/gluonhq/scenebuilder",
+    "descEn": "A visual, drag 'n' drop, layout tool for designing JavaFX application.",
+    "descZh": "是一个可视化的拖放式布局工具，用于设计 JavaFX 应用程序用户界面。",
+    "type": "github",
+    "keywords": [
+      "Tools",
+      "scene",
+      "场景",
+      "工具"
+    ]
+  },
+  {
+    "name": "GluonFX plugin for Maven",
+    "url": "https://github.com/gluonhq/scenebuilder",
+    "descEn": "Plugin that simplifies creating native images for Java/JavaFX maven projects",
+    "descZh": "简化为 JavaJavaFX maven 项目创建本机图像的插件",
+    "type": "github",
+    "keywords": [
+      "Tools",
+      "native",
+      "install",
+      "package",
+      "打包",
+      "安装",
+      "程序",
+      "工具"
+    ]
+  },
+  {
+    "name": "JFXAnimation",
+    "url": "https://github.com/schlegel11/JFXAnimation",
+    "descEn": "CSS keyframe animation for JavaFX. Create animations like you would do with CSS.",
+    "descZh": "JavaFX 的 CSS 关键帧动画。像使用 CSS 一样创建动画。",
+    "type": "github",
+    "keywords": [
+      "CSS",
+      "JFoenix",
+      "animation",
+      "动画"
+    ]
+  },
+  {
+    "name": "JFreeChart-FX",
+    "url": "https://github.com/jfree/jfreechart-fx",
+    "descEn": "Extensions for JFreeChart to support JavaFX client applications.",
+    "descZh": "JFreeChart 扩展以支持 JavaFX 客户端应用程序。",
+    "type": "github",
+    "keywords": [
+      "Chart",
+      "图表"
+    ]
+  },
+  {
+    "name": "JCSG",
+    "url": "https://github.com/miho/JCSG",
+    "descEn": "Java implementation of BSP based CSG (Constructive Solid Geometry).",
+    "descZh": "基于 BSP 的 CSG（Constructive Solid Geometry）的 Java 实现。",
+    "type": "github",
+    "keywords": [
+      "bsp",
+      "csg",
+      "3d"
+    ]
+  },
+  {
+    "name": "RXControls",
+    "url": "https://github.com/leewyatt/rxcontrols",
+    "descEn": "RXControls is a JavaFX custom component library.",
+    "descZh": "RXControls 是一个 JavaFX 自定义组件库。",
+    "type": "github",
+    "keywords": [
+      "Control",
+      "Button",
+      "toggle",
+      "carousel",
+      "spectrum",
+      "轮播",
+      "频谱"
+    ]
+  },
+  {
+    "name": "RxJavaFX",
+    "url": "https://github.com/ReactiveX/RxJavaFX",
+    "descEn": "RxJava bindings for JavaFX.",
+    "descZh": "JavaFX 的 RxJava 绑定。",
+    "type": "github",
+    "keywords": [
+      "binding",
+      "event",
+      "绑定",
+      "事件"
+    ]
+  },
+  {
+    "name": "Scenic View",
+    "url": "https://github.com/JonathanGiles/scenic-view",
+    "descEn": "Scenic View designed to make it simple to understand the current state of your application scenegraph.",
+    "descZh": "旨在让您轻松了解应用程序场景图的当前状态。",
+    "type": "github",
+    "keywords": [
+      "Tools",
+      "scene",
+      "场景",
+      "工具"
+    ]
+  },
+  {
+    "name": "TestFX",
+    "url": "https://github.com/TestFX/TestFX",
+    "descEn": "Simple and clean testing for JavaFX.",
+    "descZh": "JavaFX 的简单而干净的测试。",
+    "type": "github",
+    "keywords": [
+      "Test",
+      "tools",
+      "测试",
+      "工具"
+    ]
+  },
+  {
+    "name": "Undecorator",
+    "url": "https://github.com/in-sideFX/Undecorator",
+    "descEn": "Decorate \"Undecorated\" JavaFX windows.",
+    "descZh": "装饰“未装饰”JavaFX 窗口。",
+    "type": "github",
+    "keywords": [
+      "Undecorated",
+      "stage",
+      "window",
+      "未装饰",
+      "窗口"
+    ]
+  },
+  {
+    "name": "VWorkflows",
+    "url": "https://github.com/miho/VWorkflows",
+    "descEn": "Flow Visualization Library for JavaFX and VRL-Studio",
+    "descZh": "JavaFX 和 VRL-Studio 的流可视化库",
+    "type": "github",
+    "keywords": [
+      "graph",
+      "flow",
+      "图"
+    ]
+  },
+  {
+    "name": "JacpFX",
+    "url": "https://github.com/JacpFX/JacpFX",
+    "descEn": "The JacpFX Project is an API to create Rich Clients in MVC style with JavaFX, Spring (or other DI frameworks) and an Actor like component approach.",
+    "descZh": "JacpFX 项目是一个 API，用于使用 JavaFX、Spring（或其他 DI 框架）和类似 Actor 的组件方法创建 MVC 风格的富客户端。",
+    "type": "github",
+    "keywords": [
+      "frameworks",
+      "框架",
+      "Event",
+      "事件"
+    ]
+  },
+  {
+    "name": "JRebirth",
+    "url": "https://github.com/JRebirth/JRebirth",
+    "descEn": "JRebirth is a JavaFX Application Framework",
+    "descZh": "JRebirth 是一个 JavaFX 应用程序框架",
+    "type": "github",
+    "keywords": [
+      "framework",
+      "框架"
+    ]
+  },
+  {
+    "name": "ReactiveDeskFX",
+    "url": "https://github.com/TangoraBox/ReactiveDeskFX",
+    "descEn": "JavaFX micro-framework that follows MVVM Pattern with Google Guice dependency Injection",
+    "descZh": "遵循 MVVM 模式和 Google Guice 依赖注入的 JavaFX 微框架",
+    "type": "github",
+    "keywords": [
+      "framework",
+      "mvvm",
+      "框架"
+    ]
+  },
+  {
+    "name": "ScalaFX",
+    "url": "https://github.com/scalafx/scalafx",
+    "descEn": "ScalaFX simplifies creation of JavaFX-based user interfaces in Scala",
+    "descZh": "ScalaFX 简化了在 Scala 中创建基于 JavaFX 的用户界面",
+    "type": "github",
+    "keywords": [
+      "Scala"
+    ]
+  },
+  {
+    "name": "update4j",
+    "url": "https://github.com/update4j/update4j",
+    "descEn": "Create your own auto-update framework",
+    "descZh": "创建您自己的自动更新框架",
+    "type": "github",
+    "keywords": [
+      "update",
+      "更新",
+      "升级"
+    ]
+  },
+  {
+    "name": "JavaFX Maven Plugin",
+    "url": "https://github.com/javafx-maven-plugin/javafx-maven-plugin",
+    "descEn": "Maven plugin for JavaFX",
+    "descZh": "JavaFX 的 Maven 插件",
+    "type": "github",
+    "keywords": [
+      "native",
+      "installer",
+      "package",
+      "打包",
+      "发布",
+      "程序"
+    ]
+  },
+  {
+    "name": "UndoFX",
+    "url": "https://github.com/FXMisc/UndoFX",
+    "descEn": "Undo manager for JavaFX",
+    "descZh": "JavaFX 的撤消管理器",
+    "type": "github",
+    "keywords": [
+      "Undo",
+      "撤销"
+    ]
+  },
+  {
+    "name": "ElementFX",
+    "url": "https://github.com/Anivie/ElementFX",
+    "descEn": "ElementUi in javafx,that you can get a beautiful applications with only one line code.",
+    "descZh": "javafx中的ElementUi，只需一行代码即可获得漂亮的应用程序。",
+    "type": "github",
+    "keywords": [
+      "Element",
+      "CSS"
+    ]
+  },
+  {
+    "name": "FXyz3D",
+    "url": "https://github.com/FXyz/FXyz",
+    "descEn": "A JavaFX 3D Visualization and Component Library",
+    "descZh": "JavaFX 3D 可视化和组件库",
+    "type": "github",
+    "keywords": [
+      "3D"
+    ]
+  },
+  {
+    "name": "JavaFX8 Default CSS",
+    "url": "https://note.youdao.com/s/FqLVm4vu",
+    "descEn": "JavaFX 8 Default css style",
+    "descZh": "JavaFX 8 默认的 CSS样式",
+    "type": "webpage",
+    "keywords": [
+      "CSS",
+      "样式"
+    ]
+  },
+  {
+    "name": "JavaFX11 Default CSS",
+    "url": "https://note.youdao.com/s/WTZUhWo3",
+    "descEn": "JavaFX 11 Default css style",
+    "descZh": "JavaFX 11 默认的 CSS样式",
+    "type": "webpage",
+    "keywords": [
+      "CSS",
+      "样式"
+    ]
+  },
+  {
+    "name": "AwesomeJavaFX",
+    "url": "https://github.com/mhrimaz/AwesomeJavaFX",
+    "descEn": "A curated list of awesome JavaFX libraries, books, frameworks, etc...",
+    "descZh": "很棒的 JavaFX 库、书籍、框架等的精选列表...",
+    "type": "webpage",
+    "keywords": [
+      "library",
+      "图书",
+      "资料"
+    ]
+  },
+  {
+    "name": "Install4j",
+    "url": "https://www.ej-technologies.com/products/install4j/overview.html",
+    "descEn": "install4j is a powerful multi-platform Java installer builder that generates native installers and application launchers for Java applications.",
+    "descZh": "install4j是Java安装程序构建器，能生成安装程序和启动器。",
+    "type": "webpage",
+    "keywords": [
+      "native",
+      "installer",
+      "platform",
+      "package",
+      "打包",
+      "发布",
+      "安装",
+      "程序",
+      "平台"
+    ]
+  },
+  {
+    "name": "JPro",
+    "url": "https://www.jpro.one/",
+    "descEn": "JAVA FOR ALL PLATFORMS! Java in the Browser",
+    "descZh": "适用于所有平台的 JAVA！浏览器中的 Java",
+    "type": "webpage",
+    "keywords": [
+      "platform",
+      "browser",
+      "发布",
+      "平台",
+      "浏览器"
+    ]
+  },
+  {
+    "name": "Griffon",
+    "url": "http://griffon-framework.org/index.html",
+    "descEn": "Next generation desktop application development platform for the JVM. ",
+    "descZh": "用于 JVM 的下一代桌面应用程序开发平台。",
+    "type": "webpage",
+    "keywords": [
+      "platform",
+      "framework",
+      "swing",
+      "平台",
+      "框架"
+    ]
+  },
+  {
+    "name": "Gluon Mobile",
+    "url": "https://gluonhq.com/products/mobile/",
+    "descEn": "Create iOS & Android Apps in Java",
+    "descZh": "用 Java 创建 iOS 和 Android 应用程序.",
+    "type": "webpage",
+    "keywords": [
+      "platform",
+      "framework",
+      "mobile",
+      "ios",
+      "android",
+      "平台",
+      "框架",
+      "手机",
+      "移动端",
+      "苹果",
+      "安卓"
+    ]
+  },
+  {
+    "name": "Gluon CloudLink",
+    "url": "https://gluonhq.com/products/cloudlink/",
+    "descEn": "Gluon Cloudlink connects your enterprise to your application users.",
+    "descZh": "Gluon Cloudlink 将您的企业连接到您的应用程序用户。",
+    "type": "webpage",
+    "keywords": [
+      "Cloud",
+      "connect",
+      "云",
+      "连接"
+    ]
+  },
+  {
+    "name": "Scene Builder",
+    "url": "https://gluonhq.com/products/scene-builder/",
+    "descEn": "Download Scene Builder.Drag & Drop,Rapid Application Development.",
+    "descZh": "下载 Scene Builder. 使用拖放快速创建应用程序界面。",
+    "type": "webpage",
+    "keywords": [
+      "Cloud",
+      "connect",
+      "云",
+      "连接"
+    ]
+  },
+  {
+    "name": "OpenJFX",
+    "url": "https://openjfx.io/",
+    "descEn": "JavaFX is an open source, next generation client application platform for desktop, mobile and embedded systems built on Java. ",
+    "descZh": "JavaFX 是一个开源的下一代客户端应用平台，适用于基于 Java 构建的桌面、移动和嵌入式系统。",
+    "type": "webpage",
+    "keywords": [
+      "javafx",
+      "Document"
+    ]
+  },
+  {
+    "name": "KeepToo",
+    "url": "https://www.youtube.com/c/KeepToo/videos/",
+    "descEn": "Youtube Video tutorial.Javafx UI design.",
+    "descZh": "Youtube 视频教程。JavaFX UI 设计。",
+    "type": "webpage",
+    "keywords": [
+      "ui",
+      "tutorial",
+      "界面",
+      "教程"
+    ]
+  },
+  {
+    "name": "FXGL Tutorial",
+    "url": "https://www.youtube.com/playlist?list=PL4h6ypqTi3RTiTuAQFKE6xwflnPKyFuPp",
+    "descEn": "Youtube Video tutorial.FXGL Tutorials.Game Development Tutorial from FXGL Author.",
+    "descZh": "Youtube 视频教程。来自 FXGL 作者的游戏开发教程。",
+    "type": "webpage",
+    "keywords": [
+      "fxgl",
+      "game",
+      "tutorial",
+      "游戏",
+      "教程"
+    ]
+  },
+  {
+    "name": "Jenkov JavaFX Tutorials",
+    "url": "https://jenkov.com/tutorials/javafx/index.html",
+    "descEn": "Jenkov JavaFX Tutorials .Graphics and text tutorial.",
+    "descZh": "Jenkov JavaFX 教程。图文教程。",
+    "type": "webpage",
+    "keywords": [
+      "tutorial",
+      "教程"
+    ]
+  },
+  {
+    "name": "AlmasB FXTutorials",
+    "url": "https://github.com/AlmasB/FXTutorials",
+    "descEn": "YouTube video tutorials focusing on Java/JavaFX.",
+    "descZh": "非常棒的JavaFX YouTube 视频教程。",
+    "type": "webpage",
+    "keywords": [
+      "tutorial",
+      "教程"
+    ]
+  },
+  {
+    "name": "JavaFX books",
+    "url": "https://github.com/mhrimaz/AwesomeJavaFX#books",
+    "descEn": "Some books about javafx on AwesomeJavaFX.",
+    "descZh": "AwesomeJavaFX 上记录了一些关于 javafx 开发的书籍。",
+    "type": "webpage",
+    "keywords": [
+      "tutorial",
+      "教程",
+      "book"
+    ]
+  },
+  {
+    "name": "People",
+    "url": "https://github.com/mhrimaz/AwesomeJavaFX#people",
+    "descEn": "Some javafx developers.",
+    "descZh": "AwesomeJavaFX 上记录了一些javafx的开发者。",
+    "type": "webpage",
+    "keywords": [
+      "people"
+    ]
+  },
+  {
+    "name": "OpenJFX",
+    "url": "https://openjfx.cn/",
+    "descEn": "JavaFX 中文社区.",
+    "descZh": "JavaFX 中文社区.",
+    "type": "zh-cn-webpage",
+    "keywords": [
+      "javafx",
+      "Document"
+    ]
+  },
+  {
+    "name": "Oracle Client Technologies",
+    "url": "https://docs.oracle.com/javase/8/javase-clienttechnologies.htm",
+    "descEn": "Oracle's official java ui tutorial. (SceneBuilder recommends downloading the Gluon version).",
+    "descZh": "Oracle 的官方 java ui 教程。（SceneBuilder推荐下载Gluon版本）",
+    "type": "webpage",
+    "keywords": [
+      "javafx",
+      "Document",
+      "tutorial",
+      "教程"
+    ]
+  },
+  {
+    "name": "AimlsJavaFX教程",
+    "url": "https://space.bilibili.com/5096022/channel/collectiondetail?sid=210809",
+    "descEn": "Aimls Chinese javafx tutorial.",
+    "descZh": "Aimls 的javafx 教程。讲得非常的仔细,数百期视频可以作为一个完善的FX基础知识库。",
+    "type": "zh-cn-webpage",
+    "keywords": [
+      "tutorial",
+      "教程"
+    ]
+  },
+  {
+    "name": "JavaFX 实战教程",
+    "url": "https://space.bilibili.com/397562730/channel/collectiondetail?sid=282565",
+    "descEn": "LeeWyatt practical tutorial of javafx.",
+    "descZh": "我录制的一套javafx的实战教程。侧重于实际开发。",
+    "type": "zh-cn-webpage",
+    "keywords": [
+      "tutorial",
+      "教程"
+    ]
+  },
+  {
+    "name": "FXGL游戏引擎教程",
+    "url": "https://space.bilibili.com/397562730/channel/collectiondetail?sid=271682",
+    "descEn": "A beginner's tutorial on FXGL I made.",
+    "descZh": "我录制的一套FXGL游戏的初级教程。保姆级教程。",
+    "type": "zh-cn-webpage",
+    "keywords": [
+      "tutorial",
+      "FXGL",
+      "game",
+      "教程",
+      "游戏"
+    ]
+  },
+  {
+    "name": "FXGL道具版坦克大战教程",
+    "url": "https://space.bilibili.com/397562730/channel/collectiondetail?sid=422996",
+    "descEn": "A tutorial for a tank game I made, using the FXGL game engine.",
+    "descZh": "我录制的一套FXGL的坦克游戏教程。包含全部游戏道具。",
+    "type": "zh-cn-webpage",
+    "keywords": [
+      "tutorial",
+      "FXGL",
+      "game",
+      "教程",
+      "游戏"
+    ]
+  }
+]

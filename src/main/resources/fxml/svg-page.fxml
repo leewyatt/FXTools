@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXToggleButton?>
+<?import com.leewyatt.rxcontrols.pane.RXCarouselPane?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+
+<RXCarouselPane id="svg-page" onOpening="#onOpeningSvgPage" prefHeight="574.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.SvgPageController">
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="2.0" prefWidth="128.0" text="%svgPage.browserPreview" />
+            <Label alignment="CENTER" layoutX="132.0" layoutY="2.0" prefWidth="128.0" text="%svgPage.fxPreview" />
+            <Label fx:id="svgFileNameLabel" layoutX="2.0" layoutY="184.0" maxWidth="200.0" prefHeight="15.0" prefWidth="189.0">
+               <graphic>
+                  <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="litter-label" />
+                  <String fx:value="file-label" />
+               </styleClass>
+            </Label>
+            <Label fx:id="webWidthLabel" layoutX="2.0" layoutY="204.0" maxWidth="64.0" text="0">
+               <graphic>
+                  <Region prefHeight="12.0" prefWidth="12.0" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="litter-label" />
+                  <String fx:value="size-label" />
+               </styleClass></Label>
+            <Label fx:id="webHeightLabel" layoutX="66.0" layoutY="204.0" maxWidth="64.0" text="0">
+               <graphic>
+                  <Region prefHeight="12.0" prefWidth="12.0" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="litter-label" />
+                  <String fx:value="size-label" />
+                  <String fx:value="height-label" />
+               </styleClass>
+            </Label>
+            <Label fx:id="fxPathLabel" layoutX="196.0" layoutY="184.0" maxWidth="64.0" text="0">
+               <graphic>
+                  <Region prefHeight="12.0" prefWidth="12.0" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="litter-label" />
+                  <String fx:value="band-label" />
+               </styleClass>
+            </Label>
+            <Label fx:id="fxWidthLabel" layoutX="132.0" layoutY="204.0" maxWidth="64.0" text="0">
+               <graphic>
+                  <Region prefHeight="12.0" prefWidth="12.0" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="litter-label" />
+                  <String fx:value="size-label" />
+               </styleClass>
+            </Label>
+            <Label fx:id="fxHeightLabel" layoutX="196.0" layoutY="204.0" maxWidth="64.0" text="0">
+               <graphic>
+                  <Region prefHeight="12.0" prefWidth="12.0" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="litter-label" />
+                  <String fx:value="size-label" />
+                  <String fx:value="height-label" />
+               </styleClass>
+            </Label>
+            <HBox layoutY="226.0" maxWidth="-Infinity" prefHeight="30.0" prefWidth="260.0">
+               <children>
+                  <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#pasteSvgPathAction" prefHeight="30.0" prefWidth="126.0" text="%svgPage.pastePath">
+                     <graphic>
+                        <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="16.0" prefWidth="18.0" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="region-btn" />
+                        <String fx:value="paste-svg-btn" />
+                     </styleClass>
+                  </Button>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#openSvgFileAction" prefHeight="30.0" prefWidth="126.0" text="%svgPage.openSvgFile">
+                     <styleClass>
+                        <String fx:value="region-btn" />
+                        <String fx:value="open-svg-btn" />
+                     </styleClass>
+                     <graphic>
+                        <Region prefHeight="18.0" prefWidth="18.0" />
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Pane fx:id="svgControlsPane" layoutX="3.0" layoutY="262.0">
+               <children>
+                  <Button fx:id="editSvgColorBtn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#onEditSvgColorAction" prefHeight="29.0" text="%svgPage.editPaint">
+                     <graphic>
+                        <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="15.0" prefWidth="18.0" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="region-btn" />
+                        <String fx:value="edit-btn" />
+                        <String fx:value="svg-edit-color-btn" />
+                     </styleClass>
+                  </Button>
+                  <CheckBox fx:id="svgWithColorCheckBox" layoutY="35.0" mnemonicParsing="false" prefHeight="28.0" selected="true" text="%svgPage.withPaint" />
+                  <HBox fx:id="widthBox" alignment="CENTER_RIGHT" layoutX="99.0" prefWidth="121.0" spacing="2.0">
+                     <children>
+                        <Label text="%svgPage.width" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="heightBox" alignment="CENTER_RIGHT" layoutX="99.0" layoutY="35.0" prefWidth="121.0" spacing="2.0">
+                     <children>
+                        <Label text="%svgPage.height" />
+                     </children>
+                  </HBox>
+                  <StackPane layoutX="222.0" layoutY="20.0" prefHeight="30.0" prefWidth="30.0" styleClass="bind-btn">
+                     <children>
+                        <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="13.0" prefWidth="13.0" />
+                     </children>
+                  </StackPane>
+                  <Label layoutY="79.0" text="%svgPage.image" />
+                  <ComboBox fx:id="imageComboBox" layoutX="54.0" layoutY="72.0" prefHeight="32.0" prefWidth="160.0" styleClass="custom-combobox" />
+                  <StackPane layoutX="224.0" layoutY="74.0" onMouseReleased="#copyImageAction" prefHeight="28.0" prefWidth="28.0">
+                     <styleClass>
+                        <String fx:value="region-btn" />
+                        <String fx:value="copy-btn" />
+                     </styleClass>
+                     <children>
+                        <Region maxHeight="13.0" maxWidth="13.0" prefHeight="13.0" prefWidth="13.0" />
+                     </children>
+                  </StackPane>
+                  <Line endX="240.0" layoutX="6.0" layoutY="133.0" styleClass="separate-line" />
+                  <CheckBox fx:id="doubleCheckBox" layoutX="54.0" layoutY="107.0" mnemonicParsing="false" text="2x" />
+                  <CheckBox fx:id="tripleCheckBox" layoutX="106.0" layoutY="107.0" mnemonicParsing="false" text="3x" />
+                  <CheckBox fx:id="graySelected" layoutX="159.0" layoutY="107.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="95.0" text="%svgPage.gray" />
+                  <Label layoutX="1.0" layoutY="147.0" text="%svgPage.code" />
+                  <ComboBox fx:id="codeComboBox" layoutX="55.0" layoutY="140.0" prefHeight="32.0" prefWidth="160.0" styleClass="custom-combobox" />
+                  <StackPane layoutX="225.0" layoutY="142.0" onMouseReleased="#copyCodeAction" prefHeight="28.0" prefWidth="28.0">
+                     <styleClass>
+                        <String fx:value="region-btn" />
+                        <String fx:value="copy-btn" />
+                     </styleClass>
+                     <children>
+                        <Region maxHeight="13.0" maxWidth="13.0" prefHeight="13.0" prefWidth="13.0" />
+                     </children>
+                  </StackPane>
+                  <TextArea fx:id="textArea" editable="false" layoutX="1.0" layoutY="175.0" prefHeight="104.0" prefWidth="254.0" wrapText="true" />
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" layoutX="2.0" layoutY="153.0" prefHeight="24.0" prefWidth="128.0" spacing="2.0" styleClass="bg-box">
+               <children>
+                  <RXToggleButton fx:id="imgBgWhiteBtn" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-white" text=" ">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="imageBgGroup" />
+                     </toggleGroup>
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../images/bg-selected.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </RXToggleButton>
+                  <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-transport" text=" " toggleGroup="$imageBgGroup">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../images/bg-selected.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></RXToggleButton>
+                  <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-translucent" text=" " toggleGroup="$imageBgGroup">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../images/bg-selected.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></RXToggleButton>
+                  <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-gray" text=" " toggleGroup="$imageBgGroup">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../images/bg-selected.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></RXToggleButton>
+                  <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-black" text=" " toggleGroup="$imageBgGroup">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../images/bg-selected.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></RXToggleButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="132.0" layoutY="153.0" prefHeight="24.0" prefWidth="128.0" spacing="2.0" styleClass="bg-box">
+               <children>
+                  <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-white" text=" ">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="svgBgGroup" />
+                     </toggleGroup>
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../images/bg-selected.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </RXToggleButton>
+                  <RXToggleButton fx:id="svgBgTransparentBtn" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-transport" text=" " toggleGroup="$svgBgGroup">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../images/bg-selected.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></RXToggleButton>
+                  <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-translucent" text=" " toggleGroup="$svgBgGroup">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../images/bg-selected.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></RXToggleButton>
+                  <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-gray" text=" " toggleGroup="$svgBgGroup">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../images/bg-selected.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></RXToggleButton>
+                  <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-black" text=" " toggleGroup="$svgBgGroup">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../images/bg-selected.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></RXToggleButton>
+               </children>
+            </HBox>
+            <Button layoutX="89.0" layoutY="546.0" mnemonicParsing="false" onAction="#openIconfontWebsite" styleClass="website-link-btn" text="IconFont" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="5.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/iconfont.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="99.0" layoutY="556.0" mnemonicParsing="false" onAction="#openIcoMoonWebsite" text="IcoMoon" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="5.0">
+               <graphic>
+                  <Region prefHeight="20.0" prefWidth="20.0" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="website-link-btn" />
+                  <String fx:value="icomoon-link" />
+               </styleClass>
+            </Button>
+            <StackPane fx:id="imagePreviewPane" layoutX="2.0" layoutY="24.0" prefHeight="128.0" prefWidth="128.0" styleClass="border-pane" />
+            <StackPane fx:id="svgPreviewPane" layoutX="132.0" layoutY="24.0" prefHeight="128.0" prefWidth="128.0" styleClass="border-pane" />
+         </children>
+      </AnchorPane>
+   </center>
+</RXCarouselPane>

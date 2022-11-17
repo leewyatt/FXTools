@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.pane.RXCarouselPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import org.controlsfx.control.MaskerPane?>
+
+<RXCarouselPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" styleClass="image-page" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.ImageCutterPageController">
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="centerPane" prefHeight="521.0" prefWidth="262.0">
+               <children>
+                  <ListView fx:id="imageListView" layoutX="3.0" layoutY="34.0" prefHeight="370.0" prefWidth="256.0" styleClass="image-list" />
+                  <HBox alignment="CENTER" layoutX="3.0" layoutY="2.0" prefHeight="29.0" prefWidth="256.0" spacing="8.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onClickBackBtn" prefHeight="28.0" prefWidth="43.0">
+                           <graphic>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="back-btn" />
+                           </styleClass>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#addImageFilesAction" prefHeight="28.0" prefWidth="42.0">
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="add-image-btn" />
+                           </styleClass>
+                           <graphic>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </graphic>
+                        </Button>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <StackPane fx:id="deleteImagBtn" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#deleteImageAction" prefHeight="28.0" prefWidth="28.0">
+                           <children>
+                              <Region maxHeight="12.0" maxWidth="12.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="delete-btn" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </StackPane>
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#clearImageListAction" prefHeight="28.0" prefWidth="28.0">
+                           <children>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="clear-btn" />
+                           </styleClass>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <Line endX="256.0" layoutX="3.0" layoutY="533.0" styleClass="separate-line" />
+                  <Button graphicTextGap="15.0" layoutX="4.0" layoutY="538.0" mnemonicParsing="false" onAction="#onCutImageAction" prefHeight="28.0" prefWidth="252.0" text="%cutterPage.generate">
+                     <styleClass>
+                        <String fx:value="region-btn" />
+                        <String fx:value="handler-btn" />
+                     </styleClass>
+                     <graphic>
+                        <Region prefHeight="30.0" prefWidth="30.0" />
+                     </graphic>
+                  </Button>
+                  <VBox alignment="CENTER_LEFT" layoutX="3.0" layoutY="404.0" prefHeight="127.0" prefWidth="423.0" spacing="10.0">
+                     <children>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label text="%imagePage.sourceMagnification" />
+                              <RadioButton fx:id="source4XBox" mnemonicParsing="false" text="4x">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="sourceImageGroup" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="source3XBox" mnemonicParsing="false" selected="true" text="3x" toggleGroup="$sourceImageGroup" />
+                              <RadioButton fx:id="source2xBox" mnemonicParsing="false" text="2x" toggleGroup="$sourceImageGroup" />
+                              <RadioButton fx:id="source1xBox" mnemonicParsing="false" text="1x" toggleGroup="$sourceImageGroup" />
+                           </children>
+                        </HBox>
+                        <CheckBox fx:id="javafxExportBox" mnemonicParsing="false" selected="true" styleClass="javafx-box" text="JavaFX - 1x, 2x">
+                           <graphic>
+                              <Region prefHeight="14.0" prefWidth="14.0" />
+                           </graphic></CheckBox>
+                        <CheckBox fx:id="iosExportBox" mnemonicParsing="false" styleClass="ios-box" text="IOS - 1x, 2x, 3x">
+                           <graphic>
+                              <Region prefHeight="16.0" prefWidth="14.0" />
+                           </graphic></CheckBox>
+                        <CheckBox fx:id="androidExportBox" mnemonicParsing="false" styleClass="android-box" text="Android - (l,m, h, xh, xxh, xxxh)dpi">
+                           <graphic>
+                              <Region prefHeight="16.0" prefWidth="14.0" />
+                           </graphic></CheckBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <MaskerPane fx:id="maskerPane" visible="false" />
+         </children>
+      </StackPane>
+   </center>
+</RXCarouselPane>

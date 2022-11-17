@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXCarousel?>
+<?import com.leewyatt.rxcontrols.pane.RXCarouselPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<RXCarouselPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.ImageMenuController">
+   <center>
+      <VBox alignment="CENTER" spacing="2.0" styleClass="image-tools-box">
+         <children>
+            <VBox alignment="CENTER_RIGHT" spacing="2.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <RXCarousel fx:id="carousel" animationTime="680.0ms" prefHeight="160.0" prefWidth="260.0" showTime="2200.0ms" />
+                  <GridPane>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="52.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label styleClass="litter-label" text="%website" />
+                        <Label fx:id="urlLabel" styleClass="url-label" GridPane.columnIndex="1" />
+                        <Label styleClass="litter-label" text="%desc" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                        <Label fx:id="descLabel" alignment="TOP_LEFT" prefHeight="69.0" prefWidth="190.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="TOP" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <BorderPane onMouseReleased="#onClickAppIconBtn" prefHeight="66.0" prefWidth="263.0" styleClass="image-tools-btn">
+               <left>
+                  <Region maxHeight="32.0" maxWidth="32.0" prefHeight="200.0" prefWidth="200.0" styleClass="appicon-region" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="6.0" right="6.0" />
+                     </BorderPane.margin>
+                  </Region>
+               </left>
+               <center>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" spacing="4.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label styleClass="title-label" text="%menu.appIcon">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <Label style="-fx-font-size: 13;" styleClass="desc-label" text="%desc.appIcon" wrapText="true">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </center>
+               <right>
+                  <Region maxHeight="16.0" maxWidth="10.0" prefHeight="66.0" prefWidth="33.0" styleClass="enter-region" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="6.0" right="10.0" />
+                     </BorderPane.margin>
+                  </Region>
+               </right>
+            </BorderPane>
+            <BorderPane onMouseReleased="#onClickCutterBtn" prefHeight="66.0" prefWidth="263.0" styleClass="image-tools-btn">
+               <left>
+                  <Region maxHeight="26.0" maxWidth="32.0" prefHeight="200.0" prefWidth="200.0" styleClass="cutter-region" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="6.0" right="6.0" />
+                     </BorderPane.margin>
+                  </Region>
+               </left>
+               <center>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" spacing="4.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label styleClass="title-label" text="%menu.cutter">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <Label style="-fx-font-size: 13;" styleClass="desc-label" text="%desc.cutter">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </center>
+               <right>
+                  <Region maxHeight="16.0" maxWidth="10.0" prefHeight="66.0" prefWidth="33.0" styleClass="enter-region" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="6.0" right="10.0" />
+                     </BorderPane.margin>
+                  </Region>
+               </right>
+            </BorderPane>
+            <BorderPane onMouseReleased="#onClickFormatConverterBtn" prefHeight="66.0" prefWidth="263.0" styleClass="image-tools-btn">
+               <left>
+                  <Region maxHeight="32.0" maxWidth="32.0" prefHeight="200.0" prefWidth="200.0" styleClass="format-region" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="6.0" right="6.0" />
+                     </BorderPane.margin>
+                  </Region>
+               </left>
+               <center>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" spacing="4.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label styleClass="title-label" text="%menu.formatConverter">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <Label style="-fx-font-size: 13;" styleClass="desc-label" text="%desc.formatConverter" wrapText="true">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </center>
+               <right>
+                  <Region maxHeight="16.0" maxWidth="10.0" prefHeight="66.0" prefWidth="33.0" styleClass="enter-region" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="6.0" right="10.0" />
+                     </BorderPane.margin>
+                  </Region>
+               </right>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </BorderPane>
+            <BorderPane layoutX="10.0" layoutY="393.0" onMouseReleased="#onClickGifEncoderBtn" prefHeight="66.0" prefWidth="263.0" styleClass="image-tools-btn">
+               <left>
+                  <Region maxHeight="32.0" maxWidth="26.0" prefHeight="200.0" prefWidth="200.0" styleClass="gif-encoder-region" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="10.0" right="12.0" />
+                     </BorderPane.margin>
+                  </Region>
+               </left>
+               <center>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" spacing="4.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label styleClass="title-label" text="%menu.gifDecoder">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <Label style="-fx-font-size: 13;" styleClass="desc-label" text="%desc.gifDecoder" wrapText="true">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </center>
+               <right>
+                  <Region maxHeight="16.0" maxWidth="10.0" prefHeight="66.0" prefWidth="33.0" styleClass="enter-region" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="6.0" right="10.0" />
+                     </BorderPane.margin>
+                  </Region>
+               </right>
+            </BorderPane>
+            <BorderPane onMouseReleased="#onClickImageStitchingBtn" prefHeight="66.0" prefWidth="263.0" styleClass="image-tools-btn">
+               <left>
+                  <Region maxHeight="32.0" maxWidth="32.0" prefHeight="200.0" prefWidth="200.0" styleClass="stitch-region" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="6.0" right="6.0" />
+                     </BorderPane.margin>
+                  </Region>
+               </left>
+               <center>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" spacing="4.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label styleClass="title-label" text="%menu.stitching">
+                           <font>
+                              <Font size="59.0" />
+                           </font>
+                        </Label>
+                        <Label style="-fx-font-size: 13;" styleClass="desc-label" text="%desc.stitching" wrapText="true">
+                           <font>
+                              <Font size="37.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </center>
+               <right>
+                  <Region maxHeight="16.0" maxWidth="10.0" prefHeight="66.0" prefWidth="33.0" styleClass="enter-region" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="6.0" right="10.0" />
+                     </BorderPane.margin>
+                  </Region>
+               </right>
+            </BorderPane>
+         </children>
+         <padding>
+            <Insets left="3.0" right="3.0" />
+         </padding>
+      </VBox>
+   </center>
+</RXCarouselPane>

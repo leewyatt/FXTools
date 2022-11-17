@@ -1,0 +1,55 @@
+.root {
+    bgc: #3c3f41;
+    fgc: #afb1b3;
+    hgc: #4B6EAF;
+    -fx-background-color: bgc;
+    -fx-padding: 20px 16px 16px 16px;
+    -fx-background-insets: 12px;
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.5), 12, 0, 0, 0);
+    -fx-font-family: "Source Han Sans CN";
+    -fx-font-size: 14px;
+}
+
+.button,
+.button:focused {
+    -fx-background-insets: 0;
+}
+
+.button:default {
+    -fx-text-fill: white;
+    -fx-background-color: #365880;
+    -fx-background-radius: 3px;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(#365880, 15%);
+}
+
+.button:default:pressed {
+    -fx-background-color: derive(#365880, 25%);
+}
+
+.button:cancel {
+    -fx-text-fill: white;
+    -fx-background-color: #4c5052;
+}
+
+.button:cancel:hover {
+    -fx-background-color: derive(#4c5052, 15%);
+}
+
+.button:cancel:pressed {
+    -fx-background-color: derive(#4c5052, 25%);
+}
+
+
+.button-bar {
+    -fx-border-width: 1px 0 0 0;
+    -fx-border-color: linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #ffffff 0.0%, #adadad 20.9444%, #aeaeae 80.0%, #ffffff 100.0%);
+}
+
+.content-label {
+    -fx-padding: 12px 2px 12px 2px;
+    -fx-font-family: "Source Han Sans CN";
+    -fx-font-size: 16px;
+}

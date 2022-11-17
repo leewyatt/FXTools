@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXCarousel?>
+<?import com.leewyatt.rxcontrols.controls.RXTextField?>
+<?import com.leewyatt.rxcontrols.pane.RXCarouselPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import org.controlsfx.control.MaskerPane?>
+
+<RXCarouselPane id="font-page" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onOpening="#onOpeningFontPage" prefHeight="574.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.FontPageController">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="previewTextField" prefHeight="126.0" prefWidth="252.0" text="%fontPage.previewText">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <Pane>
+               <children>
+                  <Slider fx:id="fontSizeSlider" layoutX="3.0" layoutY="2.0" majorTickUnit="10.0" max="50.0" prefWidth="246.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="16.0" />
+                  <HBox alignment="CENTER" layoutX="3.0" layoutY="48.0" prefHeight="40.0" prefWidth="242.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#addFontAction" prefHeight="27.0" text="%fontPage.addFont">
+                           <graphic>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="add-font-btn" />
+                           </styleClass>
+                        </Button>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button fx:id="editFontColorBtn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#onEditColorAction" prefHeight="27.0" prefWidth="35.0">
+                           <graphic>
+                              <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="15.0" prefWidth="18.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="edit-btn" />
+                           </styleClass>
+                        </Button>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <CheckBox fx:id="withColorCheckBox" mnemonicParsing="false" selected="true" text="%fontPage.withPaint" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="3.0" layoutY="92.0" prefWidth="242.0">
+                     <children>
+                        <ComboBox fx:id="copyTypeCombobox" prefWidth="200.0" styleClass="custom-combobox" HBox.hgrow="ALWAYS" />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#onCopyFontAction" prefWidth="35.0">
+                           <styleClass>
+                              <String fx:value="copy-btn" />
+                              <String fx:value="region-btn" />
+                           </styleClass>
+                           <graphic>
+                              <Region prefHeight="19.0" prefWidth="16.0" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Line endX="250.0" layoutX="3.1666667461395264" layoutY="128.5" styleClass="separate-line" />
+                  <RXTextField fx:id="searchFontField" layoutX="3.0" layoutY="136.0" onClickButton="#clearKeyWordsAction" prefHeight="31.0" prefWidth="250.0" styleClass="search-font-field">
+                     <padding>
+                        <Insets left="17.0" />
+                     </padding>
+                  </RXTextField>
+                  <Region layoutX="4.0" layoutY="143.0" prefHeight="17.0" prefWidth="17.0" styleClass="search-region" />
+                  <RXCarousel fx:id="fontCarousel" animationTime="220.0ms" arrowDisplayMode="HIDE" autoSwitch="false" layoutX="3.0" layoutY="171.0" navDisplayMode="HIDE" prefHeight="238.0" prefWidth="250.0" />
+               </children>
+            </Pane>
+            <MaskerPane fx:id="maskPane" visible="false" />
+         </children>
+      </StackPane>
+   </center>
+   <padding>
+      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+   </padding>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#openFonteskWebsite" styleClass="website-link-btn" text="Fontesk">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/fntsksm.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#openGoogleFontsWebsite" styleClass="website-link-btn" text="Google Fonts">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/gFonts.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="2.0" right="2.0" top="1.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</RXCarouselPane>

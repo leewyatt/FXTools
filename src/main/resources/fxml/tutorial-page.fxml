@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXTextField?>
+<?import com.leewyatt.rxcontrols.pane.RXCarouselPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import org.controlsfx.control.MaskerPane?>
+
+<RXCarouselPane id="font-page" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onOpening="#onOpeningAction" prefHeight="574.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.TutorialPageController">
+   <padding>
+      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+   </padding>
+   <center>
+      <StackPane>
+         <children>
+            <BorderPane>
+               <center>
+                  <ListView fx:id="projectListView" prefHeight="486.0" prefWidth="257.0" />
+               </center>
+               <top>
+                  <Pane BorderPane.alignment="CENTER">
+                     <children>
+                        <RXTextField fx:id="searchFontField" onClickButton="#onClickClearTextBtn" prefHeight="31.0" prefWidth="257.0" styleClass="search-font-field">
+                           <padding>
+                              <Insets left="17.0" />
+                           </padding>
+                        </RXTextField>
+                        <Region layoutY="7.0" prefHeight="17.0" prefWidth="17.0" styleClass="search-region" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="6.0" />
+                     </BorderPane.margin>
+                  </Pane>
+               </top>
+               <StackPane.margin>
+                  <Insets bottom="6.0" />
+               </StackPane.margin>
+            </BorderPane>
+            <MaskerPane fx:id="maskerPane" visible="false" />
+         </children>
+      </StackPane>
+   </center>
+</RXCarouselPane>

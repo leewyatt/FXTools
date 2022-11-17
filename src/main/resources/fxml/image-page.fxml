@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXCarousel?>
+<?import com.leewyatt.rxcontrols.pane.RXCarouselPane?>
+
+<RXCarouselPane id="imagePage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.ImagePageController">
+   <center>
+      <RXCarousel fx:id="imageToolsCarousel" prefHeight="574.0" prefWidth="263.0" styleClass="imageToolsCarousel" />
+   </center>
+</RXCarouselPane>

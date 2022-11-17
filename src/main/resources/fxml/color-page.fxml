@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.pane.RXCarouselPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<RXCarouselPane fx:id="carouselPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" styleClass="tool-pane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.ColorPageController">
+   <top>
+      <VBox prefHeight="80.0" prefWidth="261.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="40.0" spacing="3.0">
+               <children>
+                  <ComboBox id="colorCombobox" fx:id="colorCombobox" prefWidth="198.0" styleClass="custom-combobox" HBox.hgrow="ALWAYS" />
+                  <StackPane id="left-btn" onMouseReleased="#onClickLeftBtn" prefHeight="150.0" prefWidth="200.0" styleClass="svg-btn">
+                     <children>
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </StackPane>
+                  <StackPane id="right-btn" onMouseReleased="#onClickRightBtn" prefHeight="150.0" prefWidth="200.0" styleClass="svg-btn">
+                     <children>
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" />
+               </padding>
+            </HBox>
+            <HBox id="control-btn-box" alignment="CENTER" prefHeight="38.0" prefWidth="261.0" spacing="1.0" styleClass="copy-box">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#pickerColorAction">
+                     <graphic>
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="picker-btn" />
+                        <String fx:value="region-btn" />
+                     </styleClass>
+                  </Button>
+                  <Rectangle fx:id="previewRect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="36.0" />
+                  <Button mnemonicParsing="false" onAction="#copyPaintCodeAction" text="%color.copyCode">
+                     <graphic>
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="copy-btn" />
+                        <String fx:value="region-btn" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#copyPaintCssAction" text="%color.copyCss">
+                     <graphic>
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="copy-btn" />
+                        <String fx:value="region-btn" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#editPaintAction" text="%color.edit">
+                     <graphic>
+                        <Region prefHeight="200.0" prefWidth="200.0" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="edit-btn" />
+                        <String fx:value="region-btn" />
+                     </styleClass>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="2.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</RXCarouselPane>

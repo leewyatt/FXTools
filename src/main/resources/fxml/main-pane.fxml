@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXCarousel?>
+<?import com.leewyatt.rxcontrols.controls.RXToggleButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="666.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.MainPaneController">
+   <children>
+      <ImageView fx:id="skinImageView" fitHeight="660.0" fitWidth="300.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
+      <BorderPane id="content-pane" fx:id="contentPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="650.0" prefWidth="300.0">
+         <center>
+            <AnchorPane>
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="2.0" prefHeight="577.0" prefWidth="34.0" spacing="6.0" styleClass="menu-box" AnchorPane.leftAnchor="0.0">
+                     <children>
+                        <RXToggleButton id="menu-item-image" prefHeight="32.0" prefWidth="32.0" selected="true" styleClass="tools-menu-btn">
+                           <graphic>
+                              <Region prefHeight="13.0" prefWidth="16.0" />
+                           </graphic>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="menuGroup" />
+                           </toggleGroup>
+                        </RXToggleButton>
+                        <RXToggleButton id="menu-item-color" prefHeight="32.0" prefWidth="32.0" styleClass="tools-menu-btn" toggleGroup="$menuGroup">
+                           <graphic>
+                              <Region prefHeight="16.0" prefWidth="16.0" />
+                           </graphic>
+                        </RXToggleButton>
+                        <RXToggleButton id="menu-item-svg" prefHeight="32.0" prefWidth="32.0" styleClass="tools-menu-btn" toggleGroup="$menuGroup">
+                           <graphic>
+                              <Region prefHeight="16.0" prefWidth="16.0" />
+                           </graphic>
+                        </RXToggleButton>
+                        <RXToggleButton id="menu-item-font" prefHeight="32.0" prefWidth="32.0" styleClass="tools-menu-btn" toggleGroup="$menuGroup">
+                           <graphic>
+                              <Region prefHeight="16.0" prefWidth="16.0" />
+                           </graphic>
+                        </RXToggleButton>
+                        <RXToggleButton id="menu-item-tutorial" prefHeight="32.0" prefWidth="32.0" styleClass="tools-menu-btn" toggleGroup="$menuGroup">
+                           <graphic>
+                              <Region prefHeight="16.0" prefWidth="16.0" />
+                           </graphic>
+                        </RXToggleButton>
+                        <RXToggleButton id="menu-item-settings" layoutX="11.0" layoutY="162.0" prefHeight="32.0" prefWidth="32.0" styleClass="tools-menu-btn" toggleGroup="$menuGroup">
+                           <graphic>
+                              <Region prefHeight="16.0" prefWidth="16.0" />
+                           </graphic>
+                        </RXToggleButton>
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="20.0" right="2.0" top="20.0" />
+                           </VBox.margin>
+                        </Separator>
+                        <Button fx:id="snapshotBtn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#onClickSnapshotBtn" prefHeight="32.0" prefWidth="32.0">
+                           <graphic>
+                              <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="16.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="screenshot-btn" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="colorPickerBtn" layoutX="10.0" layoutY="205.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#onClickScreenColorPickerBtn" prefHeight="32.0" prefWidth="32.0">
+                           <graphic>
+                              <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="16.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="picker-btn" />
+                           </styleClass>
+                        </Button>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#onClickShowFXColorPickerBtn" prefHeight="32.0" prefWidth="32.0">
+                           <graphic>
+                              <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="16.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="edit-btn" />
+                           </styleClass>
+                        </Button>
+                        <Region VBox.vgrow="ALWAYS" />
+                        <ToggleButton id="skin-btn" fx:id="toggleBtn" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickIvBtn" prefHeight="32.0" prefWidth="32.0">
+                           <graphic>
+                              <Region maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="20.0" />
+                           </graphic>
+                        </ToggleButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="6.0" />
+                     </padding>
+                  </VBox>
+                  <RXCarousel fx:id="carousel" prefHeight="577.0" prefWidth="266.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <VBox alignment="TOP_CENTER" prefHeight="80.0">
+               <children>
+                  <HBox prefHeight="40.0" styleClass="title-bar">
+                     <children>
+                        <Label styleClass="title-label" text="FXTools">
+                           <graphic>
+                              <Region prefHeight="22.0" prefWidth="22.0" />
+                           </graphic>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <HBox HBox.hgrow="ALWAYS" />
+                        <HBox alignment="CENTER_LEFT" spacing="4.0">
+                           <children>
+                              <Button fx:id="donateBtn" mnemonicParsing="false" onAction="#onClickDonateBtn" styleClass="donate-btn" text="%donate">
+                                 <graphic>
+                                    <Region prefHeight="18.0" prefWidth="18.0" />
+                                 </graphic>
+                              </Button>
+                              <StackPane id="about-btn" layoutX="10.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseReleased="#onClickAboutBtn" prefHeight="32.0" prefWidth="32.0" styleClass="svg-btn">
+                                 <children>
+                                    <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" />
+                                 </children>
+                              </StackPane>
+                              <ToggleButton id="top-btn" fx:id="alwaysTopBtn" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0">
+                                 <graphic>
+                                    <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="18.0" />
+                                 </graphic>
+                              </ToggleButton>
+                              <StackPane id="mini-btn" maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#onClickMiniBtn" prefHeight="32.0" prefWidth="32.0" styleClass="svg-btn">
+                                 <children>
+                                    <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" />
+                                 </children>
+                              </StackPane>
+                              <StackPane id="close-btn" maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#onClickCloseBtn" prefHeight="32.0" prefWidth="32.0" styleClass="svg-btn">
+                                 <children>
+                                    <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <padding>
+                              <Insets right="4.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="300.0" spacing="8.0" styleClass="link-bar">
+                     <children>
+                        <ComboBox id="version-combobox" fx:id="versionCombobox" prefWidth="85.0" styleClass="custom-combobox" />
+                        <Button mnemonicParsing="false" onAction="#showApiAction" prefWidth="60.0" styleClass="link-btn" text="API" />
+                        <Button mnemonicParsing="false" onAction="#showCssAction" prefWidth="60.0" styleClass="link-btn" text="CSS" />
+                        <Button mnemonicParsing="false" onAction="#showFXMLAction" prefWidth="60.0" styleClass="link-btn" text="FXML" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>

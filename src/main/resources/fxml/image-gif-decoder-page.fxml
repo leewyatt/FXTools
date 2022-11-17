@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.controls.RXToggleButton?>
+<?import com.leewyatt.rxcontrols.pane.RXCarouselPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import org.controlsfx.control.MaskerPane?>
+
+<RXCarouselPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" styleClass="image-page" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.ImageGifDecoderPageController">
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="centerPane" prefHeight="521.0" prefWidth="262.0">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" layoutX="3.0" layoutY="2.0" prefHeight="29.0" prefWidth="256.0" spacing="4.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onClickBackBtn" prefHeight="28.0" prefWidth="43.0">
+                           <graphic>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="back-btn" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="addImagesBtn" mnemonicParsing="false" onAction="#addImageFilesAction" prefHeight="28.0" prefWidth="42.0">
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="add-image-btn" />
+                           </styleClass>
+                           <graphic>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </graphic>
+                        </Button>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <HBox alignment="CENTER" prefHeight="24.0" prefWidth="128.0" spacing="2.0" styleClass="bg-box">
+                           <children>
+                              <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-white" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../images/bg-selected.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="gifBgGroup" />
+                                 </toggleGroup>
+                              </RXToggleButton>
+                              <RXToggleButton fx:id="gifBgTransparentBtn" contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-transport" text=" " toggleGroup="$gifBgGroup">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../images/bg-selected.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RXToggleButton>
+                              <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-translucent" text=" " toggleGroup="$gifBgGroup">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../images/bg-selected.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RXToggleButton>
+                              <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-gray" text=" " toggleGroup="$gifBgGroup">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../images/bg-selected.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RXToggleButton>
+                              <RXToggleButton contentDisplay="GRAPHIC_ONLY" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0" styleClass="svg-bg-black" text=" " toggleGroup="$gifBgGroup">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@../images/bg-selected.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RXToggleButton>
+                           </children>
+                        </HBox>
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#clearImageListAction" prefHeight="26.0" prefWidth="26.0">
+                           <children>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="clear-btn" />
+                           </styleClass>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER_LEFT" layoutX="6.0" layoutY="435.0" prefHeight="95.0" prefWidth="252.0" spacing="6.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="252.0" spacing="5.0">
+                           <children>
+                              <Region HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <HBox prefWidth="252.0" />
+                     </children>
+                  </VBox>
+                  <StackPane fx:id="doublePane" layoutX="85.0" layoutY="478.0" />
+                  <Line endX="256.0" layoutX="3.0" layoutY="533.0" styleClass="separate-line" />
+                  <Pane fx:id="gifViewWrapper" layoutX="4.0" layoutY="34.0" maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#onClickGifOutPane" prefHeight="252.0" prefWidth="252.0" styleClass="gif-out-pane">
+                     <children>
+                        <ImageView fx:id="gifImagView" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <GridPane fx:id="gridPane" hgap="6.0" layoutX="6.0" layoutY="298.0" prefHeight="230.0" prefWidth="248.0" vgap="5.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="68.0" />
+                      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="%frame" GridPane.rowIndex="1">
+                           <styleClass>
+                              <String fx:value="width-label" />
+                              <String fx:value="amount-label" />
+                              <String fx:value="fgc-label" />
+                           </styleClass>
+                           <graphic>
+                              <Region prefHeight="12.0" prefWidth="12.0" />
+                           </graphic>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" spacing="2.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Label fx:id="frameCountLabel" maxWidth="45.0" prefWidth="45.0" />
+                              <Label text="%length">
+                                 <graphic>
+                                    <Region prefHeight="12.0" prefWidth="12.0" />
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="gif-len-label" />
+                                    <String fx:value="fgc-label" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="lengthLabel" alignment="CENTER_RIGHT" maxWidth="50.0" prefHeight="19.0" prefWidth="50.0" />
+                           </children>
+                        </HBox>
+                        <Label text="%size">
+                           <graphic>
+                              <Region prefHeight="12.0" prefWidth="12.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="result-size-label" />
+                              <String fx:value="fgc-label" />
+                           </styleClass>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="19.0" prefWidth="80.0" spacing="4.0" GridPane.columnIndex="1">
+                           <children>
+                              <Label fx:id="sizeLabel" />
+                           </children>
+                        </HBox>
+                        <Label prefHeight="19.0" text="%prefix" textAlignment="CENTER" GridPane.rowIndex="2">
+                           <graphic>
+                              <Region prefHeight="12.0" prefWidth="12.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="gif-pre-label" />
+                              <String fx:value="fgc-label" />
+                           </styleClass></Label>
+                        <TextField fx:id="prefixField" prefHeight="31.0" prefWidth="52.0" promptText="%promptBlank" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label prefHeight="19.0" text="%suffix" textAlignment="CENTER" GridPane.rowIndex="3">
+                           <graphic>
+                              <Region prefHeight="12.0" prefWidth="12.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="gif-suf-label" />
+                              <String fx:value="fgc-label" />
+                           </styleClass></Label>
+                        <TextField fx:id="suffixField" prefHeight="31.0" prefWidth="52.0" promptText="%promptBlank" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="%scale" GridPane.rowIndex="4">
+                           <graphic>
+                              <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="scale-label" />
+                              <String fx:value="fgc-label" />
+                           </styleClass>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                           <children>
+                              <RadioButton graphicTextGap="0.0" mnemonicParsing="false" prefHeight="22.0" text="%gifToMultiple">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="toggleGroup" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <Region HBox.hgrow="ALWAYS" />
+                              <RadioButton fx:id="singleImageRbtn" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="22.0" selected="true" text="%gifToSingle" toggleGroup="$toggleGroup" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <Button graphicTextGap="15.0" layoutX="7.0" layoutY="538.0" mnemonicParsing="false" onAction="#onGifDecoderAction" prefHeight="29.0" prefWidth="249.0" text="%gifDecoder">
+                     <styleClass>
+                        <String fx:value="region-btn" />
+                        <String fx:value="handler-btn" />
+                     </styleClass>
+                     <graphic>
+                        <Region prefHeight="30.0" prefWidth="30.0" />
+                     </graphic>
+                  </Button>
+                  <Line endY="572.0" layoutX="1.0" layoutY="1.0" styleClass="separate-line" />
+               </children>
+            </Pane>
+            <MaskerPane fx:id="maskerPane" visible="false" />
+         </children>
+      </StackPane>
+   </center>
+</RXCarouselPane>

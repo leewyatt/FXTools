@@ -1,0 +1,268 @@
+/*----------custom css--------------*/
+.root {
+    -fx-font-family: "Source Han Sans CN";
+    bgc: #2b2b2b;
+    fgc: #afb1b3;
+    hgc: #4B6EAF;
+    -fx-background-color: bgc;
+}
+.slider .track {
+    -fx-background-color: fgc;
+}
+
+.slider .thumb {
+    -fx-background-color: hgc;
+}
+
+.text-input {
+    -fx-text-fill: fgc;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #3C3F41;
+    -fx-border-color: #b2b2b2;
+}
+
+.text-input:focused {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: #3C3F41;
+    -fx-border-color: #cbcbcb;
+}
+
+.custom-combobox {
+    -fx-background-color: #3C3F41;
+    -fx-border-width: 1px;
+    -fx-border-color: #616161;
+    -fx-text-fill: fgc;
+}
+
+.custom-combobox .list-cell {
+    -fx-background-color: #3C3F41;
+    -fx-text-fill: fgc;
+    -fx-border-color: null;
+}
+
+.custom-combobox .list-cell:hover {
+    -fx-background-color: hgc;
+}
+
+.custom-combobox .arrow {
+    -fx-background-color: fgc;
+}
+
+.label,
+.button,
+.check-box,
+.toggle-button {
+    -fx-text-fill: fgc;
+}
+
+.check-box .box,
+.check-box:focused .box {
+    -fx-background-color: #535353;
+    -fx-background-insets: 0;
+}
+.toggle-button {
+    -fx-background-color: bgc;
+    -fx-border-width: 1px 1px 3px 1px;
+    -fx-border-color: #323232;
+}
+.toggle-button:selected {
+    -fx-background-color: #4e5254;
+    -fx-border-width: 1px 1px 3px 1px;
+    -fx-border-color: #323232 #323232 #365880 #323232;
+}
+
+.check-box:hover .box {
+    -fx-border-color: #cbcbcb;
+}
+
+.icon-btn SVGPath {
+    -fx-fill: fgc;
+}
+
+.icon-btn-blue SVGPath {
+    -fx-fill: #3c72d2;
+}
+.icon-btn {
+    -fx-background-color:#3c3f41 ;
+    -fx-background-insets: 0;
+}
+.icon-btn:hover {
+    -fx-background-color: #4c5052;
+}
+.icon-btn:focused {
+    -fx-background-insets: 0;
+}
+
+.icon-btn:pressed SVGPath, .icon-btn-blue:pressed SVGPath {
+    -fx-fill: hgc;
+    -fx-background-color: #858585;
+}
+
+.paint-root-pane {
+    -fx-font-family: "Source Han Sans CN";
+}
+.text-field {
+    -fx-font-size: 10px;
+}
+.choice-box {
+    -fx-background-color: #3C3F41;
+}
+.region-btn {
+    -fx-background-color: #3c3f41;
+}
+
+.region-btn Region {
+    -fx-pref-width: 13px;
+    -fx-pref-height: 13px;
+    -fx-background-color: fgc;
+}
+
+.region-btn:hover {
+    -fx-background-color: #4c5052;
+}
+
+.region-btn:pressed {
+    -fx-background-color: #858585;
+    -fx-text-fill: fgc;
+}
+
+.picker-btn Region {
+    -fx-pref-width: 15px;
+    -fx-pref-height: 15px;
+    -fx-min-width: 15px;
+    -fx-min-height: 15px;
+    -fx-shape: "M10.1,27.7l11.8-11.8l-2.8-2.8L7.3,24.9L10.1,27.7z M30.2,8.2c0.7,0.7,0.7,1.4,0,2.1l-4.6,4.6l2.8,2.8l-2.1,2.1l-2.1-2.1  l-13.1,13H4.4v-6.9l13-13.1l-2.1-2.1l2.1-2.1l2.8,2.8l4.6-4.6c0.3-0.3,0.6-0.4,1-0.4c0.4,0,0.8,0.1,1,0.4L30.2,8.2z";
+}
+    /*
+     * Copyright (c) 2012, 2014, Oracle and/or its affiliates.
+     * All rights reserved. Use is subject to license terms.
+     *
+     * This file is available and licensed under the following license:
+     *
+     * Redistribution and use in source and binary forms, with or without
+     * modification, are permitted provided that the following conditions
+     * are met:
+     *
+     *  - Redistributions of source code must retain the above copyright
+     *    notice, this list of conditions and the following disclaimer.
+     *  - Redistributions in binary form must reproduce the above copyright
+     *    notice, this list of conditions and the following disclaimer in
+     *    the documentation and/or other materials provided with the distribution.
+     *  - Neither the name of Oracle Corporation nor the names of its
+     *    contributors may be used to endorse or promote products derived
+     *    from this software without specific prior written permission.
+     *
+     * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+     * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+     * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+     * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+     * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+     * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+     * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+     * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+     * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+     * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+     * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     */
+.small-label {
+    -fx-font-size: 0.750em;
+    -fx-padding: 0;
+}
+.chip-background {
+    -fx-border-color: -fx-box-border, white;
+    -fx-border-insets: 0, 1;
+    -fx-background-color: white;
+    -fx-background-image: url("../images/chequers.png");
+    -fx-background-position: center;
+}
+.hue-slider {
+    -fx-background-insets: 0 4 0 4;
+    -fx-background-radius: 0;
+}
+.theme-presets .property-sheet .slider > .track {
+    -fx-background-color: transparent;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100% , #FFF720 10%, #3CD500 100%);
+}
+/* opacity slider background is applied to a region behind the slider itself */
+.opacity-slider-background {
+    -fx-background-image: url("../images/chequers.png");
+    -fx-background-position: left center;
+    -fx-background-radius: 0;
+}
+.brightnessRect {
+    -fx-background-color: linear-gradient(to bottom, transparent, black);
+}
+.saturationRect {
+    -fx-background-color: linear-gradient(to bottom right, white, transparent);
+}
+.opacity-slider .track,
+.hue-slider .track {
+    -fx-background-color: #00000000;
+}
+/*.slider .track{*/
+/*    -fx-background-color: #00000000;*/
+/*}*/
+
+.small-label {
+    -fx-font-size: 0.750em;
+    -fx-text-fill: derive(rgb(147, 147, 147), 25%);
+    -fx-padding: 0;
+}
+
+.gradient-background {
+    -fx-border-color: -fx-box-border, white;
+    -fx-border-insets: 0, 1;
+    -fx-background-color: white;
+    -fx-background-image: url("../images/chequers.png");
+    -fx-background-position: center;
+}
+
+.track-background {
+    -fx-background-color: derive( derive(rgb(147, 147, 147), -32%), -3%),  derive(rgb(147, 147, 147), -32%);
+    -fx-background-insets: 0, 1;
+}
+
+/*.slider .track {*/
+/*    -fx-background-color: null;*/
+/*}*/
+
+
+.gradient-stop-thumb {
+    /*-fx-padding: 0.25em 0.25em 0.25em 0.25em;*/
+    -fx-padding: 0;
+    -fx-background-radius: 0;
+    -fx-min-width:  18px;
+    -fx-max-width:  18px;
+    -fx-max-height: 18px;
+    -fx-min-height: 18px;
+}
+
+.gradient-stop-chip {
+    -fx-stroke: -fx-outer-border;
+}
+/*.slider .track {*/
+/*    -fx-background-color: #00000000;*/
+/*}*/
+
+.info-root-pane .button {
+    -fx-min-width: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -fx-min-height: 30px;
+}
+.rotation-dial {
+    -fx-background-radius: 10px;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-min-width: 20px;
+    -fx-min-height: 20px;
+}
+.rotation-handle {
+    -fx-background-color: null;
+    -fx-background-image: url("../images/rotate-handle.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right;
+}
+

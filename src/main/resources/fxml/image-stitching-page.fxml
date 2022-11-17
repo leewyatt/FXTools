@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.pane.RXCarouselPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import org.controlsfx.control.MaskerPane?>
+
+<RXCarouselPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" styleClass="image-page" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.ImageStitchingPageController">
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="centerPane" prefHeight="521.0" prefWidth="262.0">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" layoutX="3.0" layoutY="2.0" prefHeight="29.0" prefWidth="256.0" spacing="8.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onClickBackBtn" prefHeight="28.0" prefWidth="43.0">
+                           <graphic>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="back-btn" />
+                           </styleClass>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#addImageFilesAction" prefHeight="28.0" prefWidth="42.0">
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="add-image-btn" />
+                           </styleClass>
+                           <graphic>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </graphic>
+                        </Button>
+                        <StackPane fx:id="sortByNameBtn" maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#sortByNameAction" prefHeight="26.0" prefWidth="26.0">
+                           <children>
+                              <Region maxHeight="12.0" maxWidth="12.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="sort-btn" />
+                           </styleClass>
+                        </StackPane>
+                        <StackPane fx:id="moveUpBtn" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#moveUpAction" prefHeight="26.0" prefWidth="26.0">
+                           <children>
+                              <Region maxHeight="9.0" maxWidth="16.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="move-up-btn" />
+                           </styleClass>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </StackPane>
+                        <StackPane fx:id="moveDownBtn" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#moveDownAction" prefHeight="26.0" prefWidth="26.0">
+                           <children>
+                              <Region maxHeight="9.0" maxWidth="16.0" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="move-down-btn" />
+                           </styleClass>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </StackPane>
+                        <StackPane fx:id="deleteImagBtn" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#deleteImageAction" prefHeight="26.0" prefWidth="26.0">
+                           <children>
+                              <Region maxHeight="12.0" maxWidth="12.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="delete-btn" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </StackPane>
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" onMouseReleased="#clearImageListAction" prefHeight="26.0" prefWidth="26.0">
+                           <children>
+                              <Region prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="region-btn" />
+                              <String fx:value="clear-btn" />
+                           </styleClass>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <ListView fx:id="imageListView" layoutX="3.0" layoutY="34.0" prefHeight="356.0" prefWidth="256.0" styleClass="image-list" />
+                  <HBox alignment="CENTER_LEFT" layoutX="9.0" layoutY="392.0" prefHeight="19.0" prefWidth="248.0" spacing="4.0">
+                     <children>
+                        <Label graphicTextGap="2.0" text="%amount">
+                           <styleClass>
+                              <String fx:value="width-label" />
+                              <String fx:value="amount-label" />
+                              <String fx:value="fgc-label" />
+                           </styleClass>
+                           <graphic>
+                              <Region prefHeight="12.0" prefWidth="12.0" />
+                           </graphic>
+                        </Label>
+                        <Label fx:id="amountLabel" prefHeight="19.0" text="0" />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Label fx:id="fxHeightLabel" text="%size">
+                           <graphic>
+                              <Region prefHeight="12.0" prefWidth="12.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="result-size-label" />
+                              <String fx:value="fgc-label" />
+                           </styleClass>
+                        </Label>
+                        <Label fx:id="widthLabel" text="0" />
+                        <Label fx:id="sizeLabel1" text="x" />
+                        <Label fx:id="heightLabel" text="0" />
+                     </children>
+                  </HBox>
+                  <GridPane fx:id="gridPane" hgap="2.0" layoutX="5.0" layoutY="421.0" prefHeight="103.0" prefWidth="252.0" vgap="10.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label graphicTextGap="2.0" text="%row">
+                           <graphic>
+                              <Region prefHeight="12.0" prefWidth="12.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="row-label" />
+                              <String fx:value="fgc-label" />
+                           </styleClass>
+                        </Label>
+                        <Label graphicTextGap="2.0" prefHeight="19.0" text="%col" textAlignment="CENTER" GridPane.columnIndex="2">
+                           <graphic>
+                              <Region prefHeight="12.0" prefWidth="12.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="col-label" />
+                              <String fx:value="fgc-label" />
+                           </styleClass>
+                        </Label>
+                        <Label graphicTextGap="2.0" text="%margin" GridPane.rowIndex="1">
+                           <graphic>
+                              <Region prefHeight="12.0" prefWidth="12.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="margins-label" />
+                              <String fx:value="fgc-label" />
+                           </styleClass>
+                        </Label>
+                        <Label graphicTextGap="2.0" text="%gap" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <graphic>
+                              <Region prefHeight="12.0" prefWidth="12.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="gap-label" />
+                              <String fx:value="fgc-label" />
+                           </styleClass>
+                        </Label>
+                        <Label graphicTextGap="2.0" text="%scale" GridPane.rowIndex="2">
+                           <graphic>
+                              <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="scale-label" />
+                              <String fx:value="fgc-label" />
+                           </styleClass>
+                        </Label>
+                        <StackPane fx:id="doublePane" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <Line endX="256.0" layoutX="3.0" layoutY="533.0" styleClass="separate-line" />
+                  <Button graphicTextGap="15.0" layoutX="4.0" layoutY="538.0" mnemonicParsing="false" onAction="#onStitchingImageAction" prefHeight="28.0" prefWidth="252.0" text="%imagesStitching">
+                     <styleClass>
+                        <String fx:value="region-btn" />
+                        <String fx:value="handler-btn" />
+                     </styleClass>
+                     <graphic>
+                        <Region prefHeight="30.0" prefWidth="30.0" />
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <MaskerPane fx:id="maskerPane" visible="false" />
+         </children>
+      </StackPane>
+   </center>
+</RXCarouselPane>
