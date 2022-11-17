@@ -6,6 +6,8 @@ Library and so on....<br />
 
 一款使用JavaFX开发的工具软件,具有图片处理工具,颜色工具,字体预览工具,Svg工具,等...<br />
 
+Youtube Video Introduction: https://youtu.be/lDj1Wa_2IfM
+
 - [FXTools](#fxtools)
     * [FXTools_Doc](#tools-doc)
         + [Screenshots](#screenshots)
