@@ -1,8 +1,6 @@
 ## FXTools
 
-A practical tool developed using JavaFX; Software development for PC or mobile; Image tools,Color tools,Svg Tools, Font
-tools,
-Library and so on....<br />
+A practical tool developed using JavaFX; Software development for PC or mobile; Image tools,Color tools,Svg Tools, Font tools, Library and so on....<br />
 
 一款使用JavaFX开发的工具软件,具有图片处理工具,颜色工具,字体预览工具,Svg工具,等...<br />
 
