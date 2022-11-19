@@ -126,7 +126,7 @@
                      </cursor>
                   </Pane>
                   <Line endX="256.0" layoutX="3.0" layoutY="533.0" styleClass="separate-line" />
-                  <Button graphicTextGap="15.0" layoutX="7.0" layoutY="538.0" mnemonicParsing="false" onAction="#onGenerateAppIconAction" prefHeight="29.0" prefWidth="249.0" text="生成应用图标">
+                  <Button graphicTextGap="15.0" layoutX="7.0" layoutY="538.0" mnemonicParsing="false" onAction="#onGenerateAppIconAction" prefHeight="29.0" prefWidth="249.0" text="%appIcon.exec">
                      <styleClass>
                         <String fx:value="region-btn" />
                         <String fx:value="handler-btn" />
