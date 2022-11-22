@@ -74,7 +74,7 @@ public class AboutAlertController {
 
     @FXML
     void onClickCheckUpdateButton(MouseEvent event) {
-        OSUtil.showDoc("https://github.com/leewyatt");
+        OSUtil.showDoc("https://github.com/leewyatt/FXTools");
     }
 
 }

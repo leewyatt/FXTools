@@ -56,7 +56,7 @@ public class SettingsPageController {
 
     @FXML
     void onClickCheckUpdateButton(ActionEvent event) {
-        OSUtil.showDoc("https://github.com/leewyatt");
+        OSUtil.showDoc("https://github.com/leewyatt/FXTools");
     }
 
     @FXML

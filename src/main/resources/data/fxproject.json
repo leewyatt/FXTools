@@ -958,11 +958,13 @@
       "installer",
       "platform",
       "package",
+      "update",
       "打包",
       "发布",
       "安装",
       "程序",
-      "平台"
+      "平台",
+      "更新"
     ]
   },
   {
@@ -977,6 +979,19 @@
       "发布",
       "平台",
       "浏览器"
+    ]
+  },
+  {
+    "name": "JFX-Central",
+    "url": "https://www.jfx-central.com/home",
+    "descEn": "A javafx information site, including latest news, people , libraries, books, presentations, blogs.",
+    "descZh": "一个 javafx 信息站点，包括最新消息、人物、图书馆、书籍、演示文稿、博客。",
+    "type": "webpage",
+    "keywords": [
+      "information",
+      "reference",
+      "信息",
+      "资料"
     ]
   },
   {
@@ -1056,11 +1071,27 @@
     "descEn": "Youtube Video tutorial.Javafx UI design.",
     "descZh": "Youtube 视频教程。JavaFX UI 设计。",
     "type": "webpage",
-    "keywords": [
+    "key-words": [
       "ui",
       "tutorial",
       "界面",
       "教程"
+    ]
+  },
+  {
+    "name": "Exe4j",
+    "url": "https://www.ej-technologies.com/download/exe4j/files",
+    "descEn": "exe4j is a Windows launcher generator, exe4j is useful if you want to create a Java launcher without an installer.",
+    "descZh": "exe4j 是一个 Windows 启动器生成器，如果您想创建一个没有安装程序的 Java 启动器，exe4j 很有用。",
+    "type": "webpage",
+    "keywords": [
+      "platform",
+      "launcher",
+      "package",
+      "打包",
+      "发布",
+      "启动器",
+      "程序"
     ]
   },
   {
