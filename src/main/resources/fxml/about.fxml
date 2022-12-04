@@ -38,7 +38,7 @@
             <Insets left="20.0" />
          </VBox.margin>
          <children>
-            <Label text="0.9" />
+            <Label text="%toolsVersion" />
             <StackPane maxHeight="-Infinity" maxWidth="-Infinity" onMousePressed="#onClickCheckUpdateButton" prefHeight="26.0" prefWidth="26.0" styleClass="download-btn">
                <children>
                   <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="18.0" prefWidth="18.0" />
@@ -61,6 +61,12 @@
             <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseReleased="#onClickGithubBtn" prefHeight="28.0" prefWidth="28.0" styleClass="github-btn">
                <children>
                   <Region maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="18.0" />
+               </children>
+            </StackPane>
+            <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseReleased="#onClickGiteeBtn" prefHeight="28.0" prefWidth="28.0" styleClass="gitee-btn">
+               <children>
+                  <Region maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="18.0" styleClass="bg-region" />
+                  <Region maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="12.0" styleClass="fg-region" />
                </children>
             </StackPane>
             <StackPane layoutX="72.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseReleased="#onClickTwitterBtn" prefHeight="28.0" prefWidth="28.0" styleClass="twitter-btn">

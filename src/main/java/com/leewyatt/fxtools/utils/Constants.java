@@ -7,6 +7,9 @@ import javafx.scene.image.Image;
  */
 public interface Constants {
 
+    String LAST_VERSION_GITHUB = "https://github.com/leewyatt/FXTools/releases";
+    String LAST_VERSION_GITEE = "https://gitee.com/leewyatt/FXTools/releases";
+
     String NotFount = "null";
     String CopySVG = "M11,3 L4,3 L4,11 L2,11 L2,1 L11,1 L11,3 Z M5,4 L14,4 L14,14 L5,14 L5,4 Z M7,6 L7,7 L12,7 L12,6 L7,6 Z M7,10 L7,11 L12,11 L12,10 L7,10 Z M7,8 L7,9 L12,9 L12,8 L7,8 Z";
 

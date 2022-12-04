@@ -3,6 +3,7 @@ package com.leewyatt.fxtools;
 import com.google.common.eventbus.Subscribe;
 import com.leewyatt.fxtools.event.AnimFinishedEvent;
 import com.leewyatt.fxtools.event.EventBusUtil;
+import com.leewyatt.fxtools.services.CheckUpdateService;
 import com.leewyatt.fxtools.ui.DragScene;
 import com.leewyatt.fxtools.ui.InitialLoadingPane;
 import com.leewyatt.fxtools.uicontroller.MainPaneController;
@@ -57,6 +58,9 @@ public class FXToolsApp extends Application {
         primaryStage.setTitle("FXTools");
         primaryStage.getIcons().addAll(ResourcesUtil.getIconImages());
         primaryStage.show();
+        CheckUpdateService checkUpdateService = new CheckUpdateService();
+        checkUpdateService.start();
+
     }
 
     private void loadMainPane() {

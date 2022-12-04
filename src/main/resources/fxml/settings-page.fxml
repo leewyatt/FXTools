@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
-<RXCarouselPane id="setting-page" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.SettingsPageController">
+<RXCarouselPane id="setting-page" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.SettingsPageController">
    <padding>
       <Insets left="3.0" right="3.0" />
    </padding>
@@ -27,7 +27,7 @@
             </HBox>
             <VBox spacing="2.0">
                <children>
-                  <Label text="0.9" />
+                  <Label text="%toolsVersion" />
                   <Button mnemonicParsing="false" onAction="#onClickCheckUpdateButton" text="%checkForUpdate">
                      <graphic>
                         <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="18.0" prefWidth="18.0" />

@@ -134,7 +134,7 @@ public class ScreenshotStage extends Stage {
             }
         });
         Scene scene = new Scene(rootPane, screenW, screenH);
-        scene.getStylesheets().add(getClass().getResource("/css/screenshot-stage-light.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("/css/screenshot-stage.css").toExternalForm());
         this.setScene(scene);
         scene.setFill(Color.TRANSPARENT);
         //scene.setCursor(new ImageCursor(new javafx.scene.image.Image(getClass().getResource("/images/color-cursor.png").toExternalForm())));

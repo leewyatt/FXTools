@@ -1,5 +1,6 @@
 package com.leewyatt.fxtools.ui.alert;
 
+import com.leewyatt.fxtools.utils.Constants;
 import com.leewyatt.fxtools.utils.OSUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -61,6 +62,10 @@ public class AboutAlertController {
     void onClickGithubBtn(MouseEvent event) {
         OSUtil.showDoc("https://github.com/leewyatt");
     }
+    @FXML
+    void onClickGiteeBtn(MouseEvent event) {
+        OSUtil.showDoc("https://gitee.com/leewyatt");
+    }
 
     @FXML
     void onClickTwitterBtn(MouseEvent event) {
@@ -74,7 +79,11 @@ public class AboutAlertController {
 
     @FXML
     void onClickCheckUpdateButton(MouseEvent event) {
-        OSUtil.showDoc("https://github.com/leewyatt/FXTools");
+        if (OSUtil.isEnglish()) {
+            OSUtil.showDoc(Constants.LAST_VERSION_GITHUB);
+        } else {
+            OSUtil.showDoc(Constants.LAST_VERSION_GITEE);
+        }
     }
 
 }

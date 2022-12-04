@@ -4,6 +4,7 @@ import com.leewyatt.fxtools.event.AutoSwitchChangedEvent;
 import com.leewyatt.fxtools.event.EventBusUtil;
 import com.leewyatt.fxtools.event.ShowImgTipsEvent;
 import com.leewyatt.fxtools.ui.paintpicker.IntegerTextField;
+import com.leewyatt.fxtools.utils.Constants;
 import com.leewyatt.fxtools.utils.ToolSettingsUtil;
 import com.leewyatt.fxtools.utils.OSUtil;
 import javafx.event.ActionEvent;
@@ -56,7 +57,11 @@ public class SettingsPageController {
 
     @FXML
     void onClickCheckUpdateButton(ActionEvent event) {
-        OSUtil.showDoc("https://github.com/leewyatt/FXTools");
+        if (OSUtil.isEnglish()) {
+            OSUtil.showDoc(Constants.LAST_VERSION_GITHUB);
+        } else {
+            OSUtil.showDoc(Constants.LAST_VERSION_GITEE);
+        }
     }
 
     @FXML

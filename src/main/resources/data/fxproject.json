@@ -1042,6 +1042,19 @@
     ]
   },
   {
+    "name": "Inno Setup",
+    "url": "https://jrsoftware.org/isinfo.php",
+    "descEn": "Inno Setup is a free installer for Windows programs by Jordan Russell and Martijn Laan.",
+    "descZh": "Inno Setup是免费的 Windows 程序安装程序。在功能集和稳定性方面可以与许多商业安装程序相媲美甚至超越。",
+    "type": "webpage",
+    "keywords": [
+      "package",
+      "installer",
+      "打包",
+      "安装"
+    ]
+  },
+  {
     "name": "Scene Builder",
     "url": "https://gluonhq.com/products/scene-builder/",
     "descEn": "Download Scene Builder.Drag & Drop,Rapid Application Development.",

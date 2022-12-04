@@ -3,20 +3,27 @@ package com.leewyatt.fxtools.ui.stages;
 import com.leewyatt.fxtools.FXToolsApp;
 import com.leewyatt.fxtools.event.EventBusUtil;
 import com.leewyatt.fxtools.event.ScreenTaskEndEvent;
-import com.leewyatt.fxtools.utils.PaintConvertUtil;
 import com.leewyatt.fxtools.utils.OSUtil;
+import com.leewyatt.fxtools.utils.PaintConvertUtil;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
+import javafx.scene.input.KeyCode;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.robot.Robot;
 import javafx.scene.shape.Line;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Font;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+
+import static com.leewyatt.fxtools.utils.ResourcesUtil.message;
 
 /**
  * @author LeeWyatt
@@ -35,6 +42,8 @@ public class ScreenColorPickerStage extends Stage {
 
     private final int previewSize = 60;
     private final double previewScale = 2;
+    private Rectangle previewRect;
+    private Label colorLabel;
 
     public ScreenColorPickerStage() {
         this.initOwner(FXToolsApp.mainStage);
@@ -75,7 +84,7 @@ public class ScreenColorPickerStage extends Stage {
         });
 
         Scene scene = new Scene(rootPane, screenW, screenH);
-        scene.getStylesheets().add(getClass().getResource("/css/screenshot-stage-light.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("/css/screenshot-stage.css").toExternalForm());
         this.setScene(scene);
         scene.setFill(Color.TRANSPARENT);
         //scene.setCursor(new ImageCursor(new javafx.scene.image.Image(getClass().getResource("/images/color-cursor.png").toExternalForm())));
@@ -89,12 +98,20 @@ public class ScreenColorPickerStage extends Stage {
         //    }
         //});
 
+        scene.setOnKeyPressed(event -> {
+            if (event.getCode() == KeyCode.ESCAPE) {
+                endPickColor();
+            }
+        });
+
         //失去焦点,结束截屏
         this.focusedProperty().addListener((ob, ov, nv) -> {
             if (!nv) {
                 endPickColor();
             }
         });
+
+
 
     }
 
@@ -107,10 +124,34 @@ public class ScreenColorPickerStage extends Stage {
         Line vr = new Line(previewSize / 2.0, 0, previewSize / 2.0, previewSize);
         StackPane stackPane = new StackPane(previewImg, hr, vr);
         stackPane.getStyleClass().add("preview-pane");
-        stackPane.setScaleX(previewScale);
-        stackPane.setScaleY(previewScale);
-        stackPane.setVisible(false);
-        return stackPane;
+        BorderPane bp = new BorderPane();
+
+        colorLabel = new Label("#000000");
+        colorLabel.setTextFill(Color.WHITE);
+        colorLabel.setGraphicTextGap(6);
+        previewRect = new Rectangle(8,8);
+        previewRect.setStroke(Color.BLACK);
+        previewRect.setStrokeWidth(0.5);
+        colorLabel.setGraphic(previewRect);
+        colorLabel.setFont(Font.font(FXToolsApp.BASIC_FONT.getFamily(), 6));
+        colorLabel.setPrefSize(previewSize+4,10);
+        colorLabel.setAlignment(Pos.CENTER_LEFT);
+        colorLabel.setPadding(new Insets(0 , 0, 0, 8));
+        Label tipLabel = new Label(message("colorPickerTips"));
+        tipLabel.setTextFill(colorLabel.getTextFill());
+        tipLabel.setFont(colorLabel.getFont());
+        tipLabel.setAlignment(Pos.CENTER);
+        tipLabel.setPrefSize(previewSize+4,10);
+        VBox box = new VBox(colorLabel, tipLabel);
+        box.setAlignment(Pos.CENTER);
+        box.setBackground(new Background(new BackgroundFill(Color.web("#333333"), null, null)));
+        BorderPane.setAlignment(box, Pos.CENTER);
+        bp.setCenter(stackPane);
+        bp.setBottom(box);
+        bp.setScaleX(previewScale);
+        bp.setScaleY(previewScale);
+        bp.setVisible(false);
+        return bp;
     }
 
     private void endPickColor() {
@@ -127,16 +168,19 @@ public class ScreenColorPickerStage extends Stage {
     }
 
     private void showPreviewPane(double x, double y) {
+        Color color = fxScreenImage.getPixelReader().getColor((int) (x * screenScaleX), (int) (y * screenScaleY));
+        colorLabel.setText(PaintConvertUtil.convertPaintToCss(color).toUpperCase());
+        previewRect.setFill(color);
         previewImg.setViewport(new Rectangle2D(x * screenScaleX - previewSize / 2.0, y * screenScaleY - previewSize / 2.0, previewSize, previewSize));
         double boxW = controlsBox.getWidth() * previewScale;
         double layoutX = x + 50;
         double boxH = controlsBox.getHeight() * previewScale;
-        double layoutY = y + 50;
+        double layoutY = y + 70;
         if (layoutX > fxScreenWidth - boxW) {
             layoutX = x - 100;
         }
         if (layoutY > fxScreenHeight - boxH) {
-            layoutY = y - 100;
+            layoutY = y - 130;
         }
         controlsBox.setLayoutX(layoutX);
         controlsBox.setLayoutY(layoutY);
