@@ -60,7 +60,6 @@ public class FXToolsApp extends Application {
         primaryStage.show();
         CheckUpdateService checkUpdateService = new CheckUpdateService();
         checkUpdateService.start();
-
     }
 
     private void loadMainPane() {

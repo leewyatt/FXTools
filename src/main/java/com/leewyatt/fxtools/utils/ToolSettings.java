@@ -95,6 +95,10 @@ public class ToolSettings {
 
     }
 
+    /**
+     *
+     * @return dark /light
+     */
     public String getSkin() {
         return skin;
     }

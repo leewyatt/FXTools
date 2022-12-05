@@ -1,0 +1,16 @@
+.update-btn {
+    -fx-font-family: "Source Han Sans CN";
+    -fx-padding: 2px 12px 2px 12px;
+    -fx-background-color: #e3e3e3;
+    -fx-background-radius: 6px;
+    -fx-border-color: gray;
+    -fx-border-radius: 6px;
+    -fx-text-fill: black;
+}
+.update-btn:hover {
+    -fx-background-color: #9d9d9d;
+    -fx-text-fill: white;
+}
+.update-btn:pressed {
+    -fx-background-color: #706f6f;
+}
