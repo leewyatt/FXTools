@@ -16,6 +16,7 @@ Youtube Video Introduction: https://youtu.be/lDj1Wa_2IfM
         + [Library](#library)
         + [Tips](#tips)
         + [Thanks](#thanks)
+        + [Donate](#donate)
     * [FXTools_Doc_中文](#tools-doc-cn)
         + [截图](#screenshots)
         + [图片工具](#image-tools-cn)
@@ -25,6 +26,7 @@ Youtube Video Introduction: https://youtu.be/lDj1Wa_2IfM
         + [图书馆](#library-cn)
         + [Tips](#tips-cn)
         + [感谢](#thanks)
+        + [打赏](#donate)
 
 I wrote an IDEA plug-in named Java FXTools before, but the API of IDEA will change, and I don’t have the time and energy to maintain it all the time, so I made this stand-alone version;Rewrite the code, re-layout, and add new functions;<br />
 The project uses java17 for development, but is trying to be compatible with java8 (except for screenshot-related APIs).
@@ -190,5 +192,10 @@ Thanks 感谢
 | Thanks to [ICNS](https://github.com/gino0631/icns) for image processing.                                                                                                                                                                                                                          |
 | Thanks to [web_color](https://gitee.com/song-xiansen/web_color)for color matching.                                                                                                                                                                                                                |
 | Thanks to various references on the internet.                                                                                                                                                                                                                                                     |
+<br />
 
-
+Buy Me a Coffee
+赠送一杯咖啡
+<span id="donate" ></span>
+- ![](src/main/resources/images/donate/wx.png)
+- ![](src/main/resources/images/donate/zfb.png)
