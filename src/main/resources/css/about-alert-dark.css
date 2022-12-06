@@ -40,12 +40,10 @@
 }
 
 .copy-btn:pressed {
-    -fx-background-color: #4c5052;
-    -fx-text-fill: fgc;
+    -fx-background-color: #a2a5a8;
 }
-
 .copy-btn:pressed Region {
-    -fx-background-color: fgc;
+    -fx-background-color: black;
 }
 
 .download-btn {

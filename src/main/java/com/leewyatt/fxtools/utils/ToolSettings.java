@@ -5,6 +5,9 @@ package com.leewyatt.fxtools.utils;
  */
 public class ToolSettings {
 
+    /**
+     * SKIN: dark/light
+     */
     public static final String DEFAULT_SKIN = "dark";
 
     public static final String DEFAULT_DOC_VERSION = "17";
@@ -26,6 +29,8 @@ public class ToolSettings {
     public static final boolean DEFAULT_ALWAYS_TOP = false;
 
     public static final int DEFAULT_THREAD_NUM = 2;
+
+    public static final boolean DEFAULT_UPDATE_NOTIFY = true;
 
     /**
      * 默认皮肤
@@ -90,6 +95,8 @@ public class ToolSettings {
     private int threadNum;
 
     private boolean alwaysTop;
+
+    private boolean updateNotify;
 
     public ToolSettings() {
 
@@ -193,5 +200,13 @@ public class ToolSettings {
 
     public void setAlwaysTop(boolean alwaysTop) {
         this.alwaysTop = alwaysTop;
+    }
+
+    public boolean isUpdateNotify() {
+        return updateNotify;
+    }
+
+    public void setUpdateNotify(boolean updateNotify) {
+        this.updateNotify = updateNotify;
     }
 }

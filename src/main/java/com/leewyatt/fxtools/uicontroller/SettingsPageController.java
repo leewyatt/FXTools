@@ -51,6 +51,9 @@ public class SettingsPageController {
     @FXML
     private CheckBox hideStageCheckBox;
 
+    @FXML
+    private CheckBox updateNotifyCheckBox;
+
     public SettingsPageController() {
         EventBusUtil.getDefault().register(this);
     }
@@ -72,6 +75,7 @@ public class SettingsPageController {
 
         showSettingsOnUI();
         ToolSettingsUtil util = ToolSettingsUtil.getInstance();
+        updateNotifyCheckBox.selectedProperty().addListener((ob, ov, nv) -> util.saveUpdateNotify(nv));
         hideStageCheckBox.selectedProperty().addListener((ob, ov, nv) -> util.saveScreenshotHideWindow(nv));
         autoSwitchCheckBox.selectedProperty().addListener((ob, ov, nv) -> {
             util.saveAutoSwitch(nv);
@@ -96,6 +100,7 @@ public class SettingsPageController {
 
     private void showSettingsOnUI() {
         ToolSettingsUtil util = ToolSettingsUtil.getInstance();
+        updateNotifyCheckBox.setSelected(util.getUpdateNotify());
         autoSwitchCheckBox.setSelected(util.getAutoSwitch());
         hideStageCheckBox.setSelected(util.getScreenshotHideWindow());
         screenshotOpenImgCheckbox.setSelected(util.getScreenshotOpenImg());

@@ -45,6 +45,7 @@ public class ToolSettingsUtil {
                 settings.setTaskCompleteOpenFile(Boolean.parseBoolean(props.getProperty("taskCompleteOpenFile", defaultSettings.isTaskCompleteOpenFile() + "")));
                 settings.setAutoSwitch(Boolean.parseBoolean(props.getProperty("autoSwitch", defaultSettings.isAutoSwitch() + "")));
                 settings.setAlwaysTop(Boolean.parseBoolean(props.getProperty("alwaysTop", defaultSettings.isAlwaysTop() + "")));
+                settings.setUpdateNotify(Boolean.parseBoolean(props.getProperty("updateNotify", defaultSettings.isUpdateNotify() + "")));
                 reader.close();
             }
         } catch (IOException e) {
@@ -68,6 +69,7 @@ public class ToolSettingsUtil {
         defaultSettings.setTaskCompleteOpenFile(ToolSettings.DEFAULT_TASK_COMPLETE_OPEN_FILE);
         defaultSettings.setAutoSwitch(ToolSettings.DEFAULT_AUTO_SWITCH);
         defaultSettings.setAlwaysTop(ToolSettings.DEFAULT_ALWAYS_TOP);
+        defaultSettings.setUpdateNotify(ToolSettings.DEFAULT_UPDATE_NOTIFY);
     }
 
     public static ToolSettingsUtil getInstance() {
@@ -91,6 +93,7 @@ public class ToolSettingsUtil {
         settings.setTaskCompleteOpenFile(newSettings.isTaskCompleteOpenFile());
         settings.setAutoSwitch(newSettings.isAutoSwitch());
         settings.setAlwaysTop(newSettings.isAlwaysTop());
+        settings.setUpdateNotify(newSettings.isUpdateNotify());
         saveSettings();
     }
 
@@ -108,7 +111,7 @@ public class ToolSettingsUtil {
         props.setProperty("taskCompleteOpenFile", settings.isTaskCompleteOpenFile() + "");
         props.setProperty("autoSwitch", settings.isAutoSwitch() + "");
         props.setProperty("alwaysTop", settings.isAlwaysTop() + "");
-
+        props.setProperty("updateNotify",settings.isUpdateNotify()+"");
         try {
             FileWriter writer = new FileWriter(propertiesFile);
             props.store(writer, "Change settings");
@@ -295,6 +298,20 @@ public class ToolSettingsUtil {
         settings.setThreadNum(threadNum);
         saveSettings();
         return threadNum;
+    }
+
+    /*
+     * ***************
+     * 有新版本时是否通知
+     * ***************
+     */
+    public boolean getUpdateNotify() {
+        return  settings.isUpdateNotify();
+    }
+
+    public void saveUpdateNotify(boolean notify) {
+        settings.setUpdateNotify(notify);
+        saveSettings();
     }
 
 }

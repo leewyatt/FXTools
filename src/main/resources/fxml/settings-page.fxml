@@ -17,7 +17,7 @@
       <Insets left="3.0" right="3.0" />
    </padding>
    <center>
-      <VBox prefWidth="236.0" spacing="8.0" styleClass="settings-box">
+      <VBox prefWidth="236.0" spacing="6.0" styleClass="settings-box">
          <children>
             <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="6.0">
                <children>
@@ -25,7 +25,7 @@
                   <Separator HBox.hgrow="ALWAYS" />
                </children>
             </HBox>
-            <VBox spacing="2.0">
+            <VBox spacing="6.0">
                <children>
                   <Label text="%toolsVersion" />
                   <Button mnemonicParsing="false" onAction="#onClickCheckUpdateButton" text="%checkForUpdate">
@@ -37,6 +37,7 @@
                         <String fx:value="region-btn" />
                      </styleClass>
                   </Button>
+                  <CheckBox fx:id="updateNotifyCheckBox" mnemonicParsing="false" selected="true" text="%updateNotify" />
                </children>
                <padding>
                   <Insets left="20.0" />

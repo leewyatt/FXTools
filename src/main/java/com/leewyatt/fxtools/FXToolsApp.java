@@ -43,11 +43,14 @@ public class FXToolsApp extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setAlwaysOnTop(true);
+        //Used for testing, set to English text
         //Locale.setDefault(Locale.ENGLISH);
         EventBusUtil.getDefault().register(this);
         mainStage = primaryStage;
         hostServices = getHostServices();
-        String skinStyle = ToolSettingsUtil.getInstance().getSkin();
+        ToolSettingsUtil settingsUtil = ToolSettingsUtil.getInstance();
+        String skinStyle = settingsUtil.getSkin();
+        //boot animation
         InitialLoadingPane initialLoadingPane = new InitialLoadingPane(skinStyle);
         scene = new DragScene(initialLoadingPane, primaryStage);
         scene.getStylesheets().add(ResourcesUtil.cssExternalForm("main-stage-" + skinStyle + ".css"));
@@ -58,8 +61,11 @@ public class FXToolsApp extends Application {
         primaryStage.setTitle("FXTools");
         primaryStage.getIcons().addAll(ResourcesUtil.getIconImages());
         primaryStage.show();
-        CheckUpdateService checkUpdateService = new CheckUpdateService();
-        checkUpdateService.start();
+        //Start the service to check if there is a new version
+        if (settingsUtil.getUpdateNotify()) {
+            CheckUpdateService checkUpdateService = new CheckUpdateService();
+            checkUpdateService.start();
+        }
     }
 
     private void loadMainPane() {
@@ -112,8 +118,9 @@ public class FXToolsApp extends Application {
     }
 
     public static void main(String[] args) {
+        //Create folders to save cache and logs
         FileUtil.getInstance().init();
-        //日志相关配置
+        //Load log configuration
         InputStream ins = FXToolsApp.class.getClassLoader().getResourceAsStream("logging.properties");
         LogManager logManager = LogManager.getLogManager();
         try {
@@ -134,6 +141,7 @@ public class FXToolsApp extends Application {
         }
         Logger logger = Logger.getLogger("com.leewyatt.fxtools.FXToolsApp");
         logger.info("Fxtools application startup.");
+        //starting program
         launch(args);
     }
 }
