@@ -11,9 +11,9 @@ import com.leewyatt.fxtools.ui.alert.DonateAlert;
 import com.leewyatt.fxtools.ui.stages.ScreenColorPickerStage;
 import com.leewyatt.fxtools.ui.stages.ScreenshotStage;
 import com.leewyatt.fxtools.utils.Constants;
+import com.leewyatt.fxtools.utils.OSUtil;
 import com.leewyatt.fxtools.utils.ResourcesUtil;
 import com.leewyatt.fxtools.utils.ToolSettingsUtil;
-import com.leewyatt.fxtools.utils.OSUtil;
 import com.leewyatt.rxcontrols.animation.carousel.AnimHorMove;
 import com.leewyatt.rxcontrols.controls.RXCarousel;
 import com.leewyatt.rxcontrols.controls.RXToggleButton;
@@ -35,7 +35,6 @@ import javafx.scene.input.KeyCodeCombination;
 import javafx.scene.input.KeyCombination;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
 import javafx.scene.shape.Circle;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -68,9 +67,6 @@ public class MainPaneController {
     private ToggleGroup menuGroup;
     @FXML
     private ImageView skinImageView;
-
-    @FXML
-    private HBox menuBox;
 
     @FXML
     private Button snapshotBtn;
@@ -153,7 +149,7 @@ public class MainPaneController {
             }
             carousel.setSelectedIndex(menuGroup.getToggles().indexOf(nv));
         });
-        donateBtn.setVisible(false);
+        donateBtn.setVisible(!OSUtil.isEnglish());
     }
 
     @FXML
