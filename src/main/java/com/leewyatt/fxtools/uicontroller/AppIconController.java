@@ -53,8 +53,8 @@ import static com.leewyatt.fxtools.utils.ResourcesUtil.message;
 public class AppIconController {
 
     public static final String WIN_10 = "win10+";
-    public static final String WIN_VISTA = "vista-win8";
-    public static final String WIN_XP = "winXP";
+    public static final String WIN_VISTA = "vista+";
+    public static final String WIN_XP = "winXP+";
 
     @FXML
     private ComboBox<String> winosComboBox;
@@ -185,7 +185,7 @@ public class AppIconController {
     @FXML
     void initialize() {
         winosComboBox.getItems().addAll(WIN_10, WIN_VISTA, WIN_XP);
-        winosComboBox.getSelectionModel().select(0);
+        winosComboBox.getSelectionModel().select(1);
 
         //winBtn.setOnAction(event -> osCarousel.setSelectedIndex(0));
         //appleBtn.setOnAction(event -> osCarousel.setSelectedIndex(1));

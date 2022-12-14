@@ -149,7 +149,6 @@ public class MainPaneController {
             }
             carousel.setSelectedIndex(menuGroup.getToggles().indexOf(nv));
         });
-        donateBtn.setVisible(!OSUtil.isEnglish());
     }
 
     @FXML
@@ -256,7 +255,11 @@ public class MainPaneController {
 
     @FXML
     void onClickDonateBtn(ActionEvent event) {
-        new DonateAlert().showAndWait();
+        if (OSUtil.isEnglish()) {
+            OSUtil.showDoc("https://www.buymeacoffee.com/leewyatt");
+        }else {
+            new DonateAlert().showAndWait();
+        }
     }
 
     /**
