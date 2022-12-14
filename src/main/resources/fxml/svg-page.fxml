@@ -82,16 +82,6 @@
             </Label>
             <HBox layoutY="226.0" maxWidth="-Infinity" prefHeight="30.0" prefWidth="260.0">
                <children>
-                  <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#pasteSvgPathAction" prefHeight="30.0" prefWidth="126.0" text="%svgPage.pastePath">
-                     <graphic>
-                        <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="16.0" prefWidth="18.0" />
-                     </graphic>
-                     <styleClass>
-                        <String fx:value="region-btn" />
-                        <String fx:value="paste-svg-btn" />
-                     </styleClass>
-                  </Button>
-                  <Region HBox.hgrow="ALWAYS" />
                   <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#openSvgFileAction" prefHeight="30.0" prefWidth="126.0" text="%svgPage.openSvgFile">
                      <styleClass>
                         <String fx:value="region-btn" />
@@ -100,6 +90,16 @@
                      <graphic>
                         <Region prefHeight="18.0" prefWidth="18.0" />
                      </graphic>
+                  </Button>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button graphicTextGap="2.0" mnemonicParsing="false" onAction="#pasteSvgPathAction" prefHeight="30.0" prefWidth="126.0" text="%svgPage.pastePath">
+                     <graphic>
+                        <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="16.0" prefWidth="18.0" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="region-btn" />
+                        <String fx:value="paste-svg-btn" />
+                     </styleClass>
                   </Button>
                </children>
             </HBox>
