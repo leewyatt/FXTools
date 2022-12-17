@@ -26,7 +26,7 @@ Youtube Video Introduction: https://youtu.be/lDj1Wa_2IfM
         + [图书馆](#library-cn)
         + [Tips](#tips-cn)
         + [感谢](#thanks)
-        + [打赏](#donate)
+        + [打赏](#donate-cn)
 
 I wrote an IDEA plug-in named Java FXTools before, but the API of IDEA will change, and I don’t have the time and energy to maintain it all the time, so I made this stand-alone version;Rewrite the code, re-layout, and add new functions;<br />
 The project uses java17 for development, but is trying to be compatible with java8 (except for screenshot-related APIs).
@@ -112,6 +112,23 @@ A practical tool developed using Java FX;Software development for PC or mobile; 
 - [4] After the image processing is completed, the output directory of the image will be opened by default;
 - [5] This tool support DarkMode and LightMode;
 
+#### Support and Donations
+
+<span id="donate" ></span>
+
+You can contribute and support this project by doing any of the following:
+* Star the project on GitHub
+* Give feedback
+* Commit PR
+* Contribute your ideas/suggestions
+* Share FXTools with your friends/colleagues
+* If you like FXTools, please consider donating: <br />
+  <a href="https://www.buymeacoffee.com/fxtools" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> <br />
+  ![](src/main/resources/images/donate/wx.png) <br />
+  ![](src/main/resources/images/donate/zfb.png) <br />
+
+**Thank you for your support!**
+
 ### FXTools_Doc_中文
 
 <span id="tools-doc-cn" ></span>
@@ -194,19 +211,19 @@ Thanks 感谢
 | Thanks to various references on the internet.                                                                                                                                                                                                                                                     |
 <br />
 
-<span id="donate" ></span>
-## Support and Donations
+#### 打赏或者贡献
 
-You can contribute and support this project by doing any of the following:
+<span id="donate-cn" ></span>
 
-* Star the project on GitHub
-* Give feedback
-* Commit PR
-* Contribute your ideas/suggestions
-* Share FXTools with your friends/colleagues
-* If you like FXTools, please consider donating: <br />
-<a href="https://www.buymeacoffee.com/fxtools" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> <br />
-![](src/main/resources/images/donate/wx.png) <br />
-![](src/main/resources/images/donate/zfb.png) <br />
+您可以通过下面的方法来贡献和支持该项目：
+* 在 GitHub/Gitee 上为项目加注星标
+* 给予反馈
+* 提交PR
+* 贡献您的想法建议
+* 与您的朋友同事分享 FXTools
+* 如果您喜欢 FXTools，请考虑捐赠: <br />
+  <a href="https://www.buymeacoffee.com/fxtools" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> <br />
+  ![](src/main/resources/images/donate/wx.png) <br />
+  ![](src/main/resources/images/donate/zfb.png) <br />
 
-**Thank you for your support!**
+**感谢您的支持!**
