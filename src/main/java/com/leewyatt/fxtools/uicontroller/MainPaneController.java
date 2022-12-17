@@ -256,7 +256,7 @@ public class MainPaneController {
     @FXML
     void onClickDonateBtn(ActionEvent event) {
         if (OSUtil.isEnglish()) {
-            OSUtil.showDoc("https://www.buymeacoffee.com/leewyatt");
+            OSUtil.showDoc("https://www.buymeacoffee.com/fxtools");
         }else {
             new DonateAlert().showAndWait();
         }

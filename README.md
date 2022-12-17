@@ -194,8 +194,19 @@ Thanks 感谢
 | Thanks to various references on the internet.                                                                                                                                                                                                                                                     |
 <br />
 
-Buy Me a Coffee
-赠送一杯咖啡
 <span id="donate" ></span>
-- ![](src/main/resources/images/donate/wx.png)
-- ![](src/main/resources/images/donate/zfb.png)
+## Support and Donations
+
+You can contribute and support this project by doing any of the following:
+
+* Star the project on GitHub
+* Give feedback
+* Commit PR
+* Contribute your ideas/suggestions
+* Share FXTools with your friends/colleagues
+* If you like FXTools, please consider donating: <br />
+<a href="https://www.buymeacoffee.com/fxtools" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> <br />
+![](src/main/resources/images/donate/wx.png) <br />
+![](src/main/resources/images/donate/zfb.png) <br />
+
+**Thank you for your support!**
