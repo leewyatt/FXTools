@@ -10,6 +10,8 @@ import javafx.scene.layout.VBox;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import static com.leewyatt.fxtools.utils.ResourcesUtil.message;
+
 /**
  * @author LeeWyatt
  */
@@ -62,6 +64,7 @@ public class AboutAlertController {
     void onClickGithubBtn(MouseEvent event) {
         OSUtil.showDoc("https://github.com/leewyatt");
     }
+
     @FXML
     void onClickGiteeBtn(MouseEvent event) {
         OSUtil.showDoc("https://gitee.com/leewyatt");
@@ -84,6 +87,11 @@ public class AboutAlertController {
         } else {
             OSUtil.showDoc(Constants.LAST_VERSION_GITEE);
         }
+    }
+
+    @FXML
+    void onClickHelpBtn(MouseEvent event) {
+        OSUtil.showDoc(message("about.helpUrl"));
     }
 
 }

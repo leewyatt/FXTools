@@ -46,6 +46,17 @@
             </StackPane>
          </children>
       </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="16.0" layoutY="52.0" spacing="6.0">
+         <children>
+            <Label text="%about.help" />
+            <Separator HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Label onMouseReleased="#onClickHelpBtn" styleClass="url-label" text="%about.helpUrl">
+         <VBox.margin>
+            <Insets left="18.0" />
+         </VBox.margin>
+      </Label>
       <HBox alignment="CENTER_LEFT" layoutX="16.0" layoutY="37.0" spacing="6.0">
          <children>
             <Label text="%about.author" />

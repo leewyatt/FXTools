@@ -139,3 +139,10 @@
 .gitee-btn:hover {
     -fx-background-color: rgba(250, 0, 0, 0.30);
 }
+
+.url-label {
+    -fx-cursor: hand;
+}
+.url-label:hover {
+    -fx-underline: true;
+}
