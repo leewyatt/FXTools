@@ -185,7 +185,7 @@ public class AppIconController {
     @FXML
     void initialize() {
         winosComboBox.getItems().addAll(WIN_10, WIN_VISTA, WIN_XP);
-        winosComboBox.getSelectionModel().select(1);
+        winosComboBox.getSelectionModel().select(2);
 
         //winBtn.setOnAction(event -> osCarousel.setSelectedIndex(0));
         //appleBtn.setOnAction(event -> osCarousel.setSelectedIndex(1));
