@@ -97,12 +97,12 @@ public final class ResourcesUtil {
     }
 
     public static List<Image> getIconImages() {
-        return List.of(new Image(imgExternalForm("/logo/16.png")),
+        return List.of(
+                new Image(imgExternalForm("/logo/16.png")),
                 new Image(imgExternalForm("/logo/32.png")),
                 new Image(imgExternalForm("/logo/64.png")),
                 new Image(imgExternalForm("/logo/128.png")),
-                new Image(imgExternalForm("/logo/256.png")),
-                new Image(imgExternalForm("/logo/512.png")),
-                new Image(imgExternalForm("/logo/1024.png")));
+                new Image(imgExternalForm("/logo/256.png"))
+        );
     }
 }

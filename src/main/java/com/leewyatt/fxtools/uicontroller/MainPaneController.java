@@ -154,7 +154,7 @@ public class MainPaneController {
     @FXML
     void onClickCloseBtn(MouseEvent event) {
         Platform.exit();
-        //System.exit(0);
+        System.exit(0);
     }
 
     @FXML

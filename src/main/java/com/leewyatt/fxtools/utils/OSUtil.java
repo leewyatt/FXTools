@@ -52,7 +52,7 @@ public class OSUtil {
 
     public static boolean isEnglish() {
         if (isEnglish == null) {
-            isEnglish = Locale.getDefault() != Locale.CHINA;
+            isEnglish = !Locale.CHINESE.getLanguage().equalsIgnoreCase(Locale.getDefault().getLanguage());
         }
         return isEnglish;
     }

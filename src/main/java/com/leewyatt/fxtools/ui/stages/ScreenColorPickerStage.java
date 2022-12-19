@@ -92,11 +92,11 @@ public class ScreenColorPickerStage extends Stage {
         //rootPane.setVisible(false);
 
         //退出全屏, 结束截屏
-        //this.fullScreenProperty().addListener((ob, ov, nv) -> {
-        //    if (!nv) {
-        //        endPickColor();
-        //    }
-        //});
+        this.fullScreenProperty().addListener((ob, ov, nv) -> {
+            if (!nv) {
+                endPickColor();
+            }
+        });
 
         scene.setOnKeyPressed(event -> {
             if (event.getCode() == KeyCode.ESCAPE) {

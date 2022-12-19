@@ -149,11 +149,11 @@ public class ScreenshotStage extends Stage {
         });
 
         //失去焦点,结束截屏
-        //this.focusedProperty().addListener((ob, ov, nv) -> {
-        //    if (!nv && !isSaving) {
-        //        endScreenshot();
-        //    }
-        //});
+        this.focusedProperty().addListener((ob, ov, nv) -> {
+            if (!nv && !isSaving) {
+                endScreenshot();
+            }
+        });
         //右键按下, 结束截屏
         snapshotView.setOnMousePressed(event -> {
             if (event.getButton() == MouseButton.SECONDARY) {
@@ -307,17 +307,17 @@ public class ScreenshotStage extends Stage {
      */
     private void endScreenshot() {
         rootPane.setVisible(false);
-        this.hide();
         if (hideMainStage) {
             FXToolsApp.mainStage.setIconified(false);
         }
         EventBusUtil.getDefault().post(new ScreenTaskEndEvent());
+        this.hide();
     }
 
     public void showStage() {
+        rootPane.setVisible(true);
         this.show();
         this.toFront();
-        rootPane.setVisible(true);
 
     }
 }
