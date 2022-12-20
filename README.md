@@ -21,7 +21,6 @@ Youtube Video Introduction: https://youtu.be/lDj1Wa_2IfM
 I wrote an IDEA plug-in named Java FXTools before, but the API of IDEA will change, and I don’t have the time and energy to maintain it all the time, so I made this stand-alone version;Rewrite the code, re-layout, and add new functions;<br />
 The project uses java17 for development, but is trying to be compatible with java8 (except for screenshot-related APIs).
 So it doesn't use too many advanced syntax features.  
-`The screenshots of the java 9+ version are clear; java 8 cannot capture high-definition resolution screens, so the screenshots are too small under high-resolution screens; Only need to modify a few lines of code related to the screenshot can support java8.`
 
 ### FXTools_Doc
 
@@ -98,6 +97,33 @@ A practical tool developed using Java FX, software development for PC or mobile,
 - [4] After the image processing is completed, the output directory of the image will be opened by default;
 - [5] This tool support DarkMode and LightMode;
 
+#### Thanks
+<span id="thanks" ></span>
+
+|                                                                                                                                                                                                                                                                                                   |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="https://www.ej-technologies.com/images/product_banners/install4j_large.png" width="128"> Thanks to [ej-technologies](https://www.ej-technologies.com/) for their [open source license](https://www.ej-technologies.com/buy/install4j/openSource). We use Install4j to build installers. |
+| <img src="https://gluonhq.com/wp-content/uploads/2015/01/gluon_logo@2x.png" width="5%">Thanks to [Gluon](https://gluonhq.com/) for documents.                                                                                                                                                     |
+| <img src="https://gluonhq.com/wp-content/uploads/2015/02/SceneBuilderLogo@2x.png" width="5%">Thanks to [SceneBuilder](https://github.com/gluonhq/scenebuilder) Used ColorPicker, DoubleTextField etc.                                                                                             |
+| <img src="https://controlsfx.github.io/images/ControlsFX.png" width="15%">Thanks to [controlsfx](https://github.com/controlsfx/controlsfx)                                                                                                                                                        |
+| Thanks to [openjfx](https://openjfx.io/) for documents, sample project, maven plugin, etc .                                                                                                                                                                                                       |
+| Thanks to [AwesomeJavaFX](https://github.com/mhrimaz/AwesomeJavaFX)                                                                                                                                                                                                                               |                                                                                                                                                                                                     |
+| Thanks to [guava](https://github.com/google/guava)                                                                                                                                                                                                                                                |
+| Thanks to [gson](https://github.com/google/gson)                                                                                                                                                                                                                                                  |
+| Thanks to [webp-imageio](https://github.com/sejda-pdf/webp-imageio) for image processing.                                                                                                                                                                                                         |
+| Thanks to [thumbnailator](https://github.com/coobird/thumbnailator) for image processing.                                                                                                                                                                                                         |
+| Thanks to [image4j](https://github.com/imcdonagh/image4j) for image processing.                                                                                                                                                                                                                   |
+| Thanks to [Apache Commons Imaging](https://github.com/apache/commons-imaging) for image processing.                                                                                                                                                                                               |
+| Thanks to [batik](https://github.com/apache/xmlgraphics-batik) for svg processing.                                                                                                                                                                                                                |
+| Thanks to [animated-gif-lib](https://github.com/rtyley/animated-gif-lib-for-java) for image processing.                                                                                                                                                                                           |
+| Thanks to [TwelveMonkeys](https://github.com/haraldk/TwelveMonkeys) for image processing.                                                                                                                                                                                                         |
+| Thanks to [ICNS](https://github.com/gino0631/icns) for image processing.                                                                                                                                                                                                                          |
+| Thanks to [web_color](https://gitee.com/song-xiansen/web_color)for color matching.                                                                                                                                                                                                                |
+| Thanks to [@黑羽](https://blog.thetbw.xyz/) for providing the storage.                                                                                                                                                                                                                              |
+| Thanks to [@Anivie](https://github.com/Anivie) for testing, documentation, etc.;                                                                                                                                                                                                                                          |
+| Thanks to various references on the internet.                                                                                                                                                                                                                                                     |
+<br />
+
 #### Support and Donations
 
 <span id="donate" ></span>
@@ -113,36 +139,21 @@ You can contribute and support this project by doing any of the following:
   ![](src/main/resources/images/donate/wx.png) <br />
   ![](src/main/resources/images/donate/zfb.png) <br />
 
+  **Note:** After using Alipay/WeChat to pay for your donation, please provide your name/nickname and website by leaving
+  a message or via email in the following format:
+
+  `Name/Nickname [<website>][: message]` (website and message are optional.)
+
+  Example: `LeeWyatt <github.com/leewyatt>: I like fxtools!`
+
+  If you choose to send an email, please also provide the following information:
+  ```text
+  Donation Amount: <amount>
+  Payment Platform: Alipay/WeChat Pay
+  Payment Number (last 5 digits): <number>
+  ```
+  Email address: [leewyatt7788@gmail.com][mailto] (click to send email)
+
+  The name, website and total donation amount you provide will be added to the [donor list]
 **Thank you for your support!**
 
-<span id="library-cn" ></span>
-
-- [1] Refer to:[AwesomeJavaFX](https://github.com/mhrimaz/AwesomeJavaFX)(Lists a lot of great open source libraries and books)
-
-
-Thanks to:
-<span id="thanks" ></span>
-
-|                                                                                                                                                                                                                                                                                                  |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <img src="https://www.ej-technologies.com/images/product_banners/install4j_large.png" width="128"> Thanks to [ej-technologies](https://www.ej-technologies.com/) for their [open source license](https://www.ej-technologies.com/buy/install4j/openSource). We use Install4j to build installers. |
-| <img src="https://gluonhq.com/wp-content/uploads/2015/01/gluon_logo@2x.png" width="5%">Thanks to [Gluon](https://gluonhq.com/) for documents.                                                                                                                                                    |
-| <img src="https://gluonhq.com/wp-content/uploads/2015/02/SceneBuilderLogo@2x.png" width="5%">Thanks to [SceneBuilder](https://github.com/gluonhq/scenebuilder) Used ColorPicker, DoubleTextField etc.                                                                                            |
-| <img src="https://controlsfx.github.io/images/ControlsFX.png" width="15%">Thanks to [controlsfx](https://github.com/controlsfx/controlsfx)                                                                                                                                                       |
-| Thanks to [openjfx](https://openjfx.io/) for documents, sample project, maven plugin, etc .                                                                                                                                                                                                      |
-| Thanks to [AwesomeJavaFX](https://github.com/mhrimaz/AwesomeJavaFX)                                                                                                                                                                                                                              |                                                                                                                                                                                                     |
-| Thanks to [guava](https://github.com/google/guava)                                                                                                                                                                                                                                               |
-| Thanks to [gson](https://github.com/google/gson)                                                                                                                                                                                                                                                 |
-| Thanks to [webp-imageio](https://github.com/sejda-pdf/webp-imageio) for image processing.                                                                                                                                                                                                        |
-| Thanks to [thumbnailator](https://github.com/coobird/thumbnailator) for image processing.                                                                                                                                                                                                        |
-| Thanks to [image4j](https://github.com/imcdonagh/image4j) for image processing.                                                                                                                                                                                                                  |
-| Thanks to [Apache Commons Imaging](https://github.com/apache/commons-imaging) for image processing.                                                                                                                                                                                              |
-| Thanks to [batik](https://github.com/apache/xmlgraphics-batik) for svg processing.                                                                                                                                                                                                               |
-| Thanks to [animated-gif-lib](https://github.com/rtyley/animated-gif-lib-for-java) for image processing.                                                                                                                                                                                          |
-| Thanks to [TwelveMonkeys](https://github.com/haraldk/TwelveMonkeys) for image processing.                                                                                                                                                                                                        |
-| Thanks to [ICNS](https://github.com/gino0631/icns) for image processing.                                                                                                                                                                                                                         |
-| Thanks to [web_color](https://gitee.com/song-xiansen/web_color)for color matching.                                                                                                                                                                                                               |
-| Thanks to [@黑羽](https://blog.thetbw.xyz/) for providing the storage.                                                                                                                                                                                                                                                      |
-| Thanks to  @Anivie for testing, documentation, etc.;                                                                                                                                                                                                                                             |
-| Thanks to various references on the internet.                                                                                                                                                                                                                                                    |
-<br />

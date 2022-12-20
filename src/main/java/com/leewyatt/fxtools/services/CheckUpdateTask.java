@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.util.logging.Logger;
 
 import static com.leewyatt.fxtools.utils.ResourcesUtil.message;
 
@@ -29,10 +30,18 @@ import static com.leewyatt.fxtools.utils.ResourcesUtil.message;
  *
  */
 public class CheckUpdateTask extends Task<Void> {
-
+    private String newVer="";
     @Override
     protected Void call() throws Exception {
-        if (checkUseService()) {
+        boolean isNewVerExist;
+        try {
+            isNewVerExist = checkNewVersion();
+        } catch (Exception exception) {
+            isNewVerExist = false;
+            Logger logger = Logger.getLogger("com.leewyatt.fxtools.services.CheckUpdateTask");
+            logger.severe("Exception: Check for update service failed.");
+        }
+        if (isNewVerExist) {
             Platform.runLater(() -> {
                 String skinStyle = ToolSettingsUtil.getInstance().getSkin();
                 boolean isDark = "dark".equalsIgnoreCase(skinStyle);
@@ -42,7 +51,7 @@ public class CheckUpdateTask extends Task<Void> {
                 svgPath.setScaleY(0.6);
                 svgPath.setFill(isDark ? Color.WHITE : Color.web("#333333"));
                 BorderPane contentPane = new BorderPane();
-                contentPane.setLeft(new Label(message("updateContent"), svgPath));
+                contentPane.setLeft(new Label(message("updateContent")+" "+newVer, svgPath));
                 Button updateBtn = new Button(message("update"));
                 updateBtn.getStyleClass().add("update-btn");
                 updateBtn.getStylesheets().add(ResourcesUtil.cssExternalForm("notification-" + skinStyle.toLowerCase() + ".css"));
@@ -69,7 +78,7 @@ public class CheckUpdateTask extends Task<Void> {
         return null;
     }
 
-    private boolean checkUseService() throws Exception{
+    private boolean checkNewVersion() throws Exception{
         String last = "https://thetbw-hk.cos.thetbw.xyz/fxtools/latest";
         InputStream in = null;
         InputStreamReader reader = null;
@@ -81,7 +90,7 @@ public class CheckUpdateTask extends Task<Void> {
             in.close();
             reader.close();
             if (version != null) {
-                String newVer = version.getVer();
+                newVer = version.getVer();
                 String currentVer = message("toolsVersion");
                 return needUpdate(currentVer, newVer);
             } else {

@@ -12,14 +12,13 @@ Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
         + [颜色工具](#color-tools)
         + [SVG工具](#svg-tools)
         + [字体工具](#font-tools)
-        + [依赖库](#library)
+        + [库与书籍](#library)
         + [小提示](#tips)
         + [感谢](#thanks)
         + [打赏](#donate)
 
-我之前写过[Java FXTools]的IDEA插件，但是IDEA的API会变，我没时间和精力一直维护时间，所以做了这个单机版；重写代码，重新布局，增加新功能；<br>
+我之前写过[Java FXTools]的IDEA插件，但是IDEA的API会变，我没时间和精力一直维护，也为了方便Netbeans和Eclipse的朋友使用,所以做了这个单机版;重写代码，重新布局，增加新功能；<br>
 项目使用java17进行开发,但是在试图兼容java8(除开截图相关API). 所以并没有使用太多语法上的高级特性.<br />
-`java 9+版本截图清晰； java 8无法抓取高清分辨率的屏幕，所以在高分辨率屏幕下截图太小；只需要修改几行与截图相关的代码就可以支持java8.`
 
 ### FXTools_Doc_中文
 
@@ -72,7 +71,7 @@ Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
 - [2] 支持添加外部字体.进行预览;
 - [3] 生成fx css代码或者java代码;
 
-#### 依赖
+#### 库和书籍
 
 <span id="library" ></span>
 
@@ -88,22 +87,7 @@ Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
 - [4] 图片处理完成默认会打开图片的输出目录;
 - [5] 软件支持 深色模式 与 浅色模式;
 
-#### 打赏或者贡献
-
-<span id="donate" ></span>
-
-您可以通过下面的方法来贡献和支持该项目：
-* 在 GitHub/Gitee 上为项目加注星标
-* 给予反馈
-* 提交PR
-* 贡献您的想法建议
-* 与您的朋友同事分享 FXTools
-* 如果您喜欢 FXTools，请考虑捐赠: <br />
-  <a href="https://www.buymeacoffee.com/fxtools" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> <br />
-  ![](src/main/resources/images/donate/wx.png) <br />
-  ![](src/main/resources/images/donate/zfb.png) <br />
-
-感谢
+#### 感谢
 <span id="thanks" ></span>
 
 |                                                                                                                                                                                                                                                                                                   |
@@ -126,9 +110,41 @@ Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
 | Thanks to [ICNS](https://github.com/gino0631/icns) for image processing.                                                                                                                                                                                                                          |
 | Thanks to [web_color](https://gitee.com/song-xiansen/web_color)for color matching.                                                                                                                                                                                                                |
 | Thanks to [@黑羽](https://blog.thetbw.xyz/) for providing the storage.                                                                                                                                                                                                                                                      |
-| Thanks to  @Anivie for testing, documentation, etc.;                                                                                                                                                                                                                                              |
+| Thanks to [@Anivie](https://github.com/Anivie) for testing, documentation, etc.;                                                                                                                                                                                                                                          |
 | Thanks to various references on the internet.                                                                                                                                                                                                                                                     |
 <br />
 
+#### 打赏或者贡献
 
-**感谢您的支持!**
+<span id="donate" ></span>
+
+您可以通过下面的方法来贡献和支持该项目：
+* 在 GitHub/Gitee 上为项目加注星标
+* 给予反馈
+* 提交PR
+* 贡献您的想法建议
+* 与您的朋友同事分享 FXTools
+* 如果您喜欢 FXTools，请考虑捐赠: <br />
+  <a href="https://www.buymeacoffee.com/fxtools" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> <br />
+  ![](src/main/resources/images/donate/wx.png) <br />
+  ![](src/main/resources/images/donate/zfb.png) <br />
+
+**注意:** 使用支付宝/微信打赏后，请按照以下格式通过留言或电子邮件提供您的昵称和网址：
+
+`姓名/昵称 [<网站>][: 消息]` (网站和消息是可选的。)
+
+例子: `LeeWyatt <github.com/leewyatt>: 我喜欢用FXTools!`
+
+如果您选择发送电子邮件，请同时提供以下信息:
+  ```text
+  打赏金额: <金额>
+  支付平台: 支付宝/微信支付
+  付款号码 (最后 5 位数字): <编号>
+  ```
+电子邮件: [leewyatt@foxmail.com][mailto] (点击发送邮件)
+
+您提供的姓名/昵称、网站和捐款总额将被添加到 [捐赠列表]
+
+  **感谢您的支持!**
+
+
