@@ -1,7 +1,6 @@
 package com.leewyatt.fxtools.services;
 
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.leewyatt.fxtools.model.FXToolsVersion;
 import com.leewyatt.fxtools.utils.Constants;
 import com.leewyatt.fxtools.utils.OSUtil;
@@ -22,44 +21,18 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
-import java.util.List;
 
 import static com.leewyatt.fxtools.utils.ResourcesUtil.message;
 
 /**
  * @author LeeWyatt
  *
- * language.properties => toolsVersion
- * language_zh.properties => toolsVersion
- * 用toolsVersion 和 github/gitee的 最新版本的tag_name比较, 如果不相同, 就说明存在新版本
  */
 public class CheckUpdateTask extends Task<Void> {
 
     @Override
     protected Void call() throws Exception {
-        boolean hasNewVersion;
-        if (OSUtil.isEnglish()) {
-            try {
-                hasNewVersion = checkUseGithubService();
-            } catch (Exception exception) {
-                try {
-                    hasNewVersion = checkUseGiteeService();
-                } catch (Exception e) {
-                    hasNewVersion = false;
-                }
-            }
-        } else {
-            try {
-                hasNewVersion = checkUseGiteeService();
-            } catch (Exception exception) {
-                try {
-                    hasNewVersion = checkUseGithubService();
-                } catch (Exception e) {
-                    hasNewVersion = false;
-                }
-            }
-        }
-        if (hasNewVersion) {
+        if (checkUseService()) {
             Platform.runLater(() -> {
                 String skinStyle = ToolSettingsUtil.getInstance().getSkin();
                 boolean isDark = "dark".equalsIgnoreCase(skinStyle);
@@ -96,50 +69,19 @@ public class CheckUpdateTask extends Task<Void> {
         return null;
     }
 
-    private Boolean checkUseGithubService() throws Exception {
-        //String githubWebPage = "https://github.com/leewyatt/FXTools/releases/latest";
-        String githubServiceApi = "https://api.github.com/repos/leewyatt/FXTools/releases?per_page=1";
-
+    private boolean checkUseService() throws Exception{
+        String last = "https://thetbw-hk.cos.thetbw.xyz/fxtools/latest";
         InputStream in = null;
         InputStreamReader reader = null;
         try {
-            URL url = new URL(githubServiceApi);
-            in = url.openStream();
-            reader = new InputStreamReader(in);
-            List<FXToolsVersion> versionList = new Gson().fromJson(reader, new TypeToken<List<FXToolsVersion>>() {
-            }.getType());
-            if (!versionList.isEmpty()) {
-                String newVer = versionList.get(0).getTagName();
-                String currentVer = message("toolsVersion");
-                return needUpdate(currentVer, newVer);
-            } else {
-                throw new IOException();
-            }
-        } catch (Exception exception) {
-            throw new Exception();
-        } finally {
-            if (in != null) {
-                in.close();
-            }
-            if (reader != null) {
-                reader.close();
-            }
-        }
-    }
-
-    private Boolean checkUseGiteeService() throws Exception {
-        String giteeServiceApi = "https://gitee.com/api/v5/repos/leewyatt/FXTools/releases/latest";
-        InputStream in = null;
-        InputStreamReader reader = null;
-        try {
-            URL url = new URL(giteeServiceApi);
+            URL url = new URL(last);
             in = url.openStream();
             reader = new InputStreamReader(in);
             FXToolsVersion version = new Gson().fromJson(reader, FXToolsVersion.class);
             in.close();
             reader.close();
             if (version != null) {
-                String newVer = version.getTagName();
+                String newVer = version.getVer();
                 String currentVer = message("toolsVersion");
                 return needUpdate(currentVer, newVer);
             } else {
@@ -158,7 +100,7 @@ public class CheckUpdateTask extends Task<Void> {
     }
 
     /**
-     * 只要tageName 不同,即可认为有新版本
+     * 只要版本号和最新的版本号不同,即可认为有新版本
      */
     private boolean needUpdate(String currentVer, String newVersion) {
         return !currentVer.equalsIgnoreCase(newVersion);

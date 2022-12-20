@@ -6,6 +6,16 @@ public class FXToolsVersion {
 	@SerializedName("tag_name")
 	private String tagName;
 
+	private String ver;
+
+	public String getVer() {
+		return ver;
+	}
+
+	public void setVer(String ver) {
+		this.ver = ver;
+	}
+
 	public String getTagName() {
 		return tagName;
 	}
