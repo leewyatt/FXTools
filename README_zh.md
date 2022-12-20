@@ -36,7 +36,7 @@ Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
 ![](readme_imgs/yl_cn_2.png)
 ![](readme_imgs/yl_cn_3.png)
 
-#### 图片工具:
+#### 图片工具
 
 <span id="image-tools" ></span>
 
@@ -47,7 +47,7 @@ Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
 - [5] 图片拼接: 把多张图片拼接成一张图片,提高效率,减少io次数;(主要方便FXGL等游戏引擎使用).
 - [6] 截屏;保存屏幕上指定位置的图像；(* java9以上的版本支持高清截屏;java8在高分辨率的情况下截屏偏小;如果要支持java8,那么只需要修改几行有关截图的代码)
 
-#### 颜色工具:
+#### 颜色工具
 
 <span id="color-tools" ></span>
 
@@ -56,7 +56,7 @@ Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
 - [3] 20+多页的颜色搭配参考;
 - [4] 多种颜色格式互相转换 HSB,RGB,HSL,Hex
 
-#### SVG工具:
+#### SVG工具
 
 <span id="svg-tools" ></span>
 
@@ -64,7 +64,7 @@ Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
 - [2] 方便提取SVG文件里的Path属性,方便在FX里使用;
 - [3] 生成Path代码,生成fx css代码或者java代码;
 
-#### 字体工具:
+#### 字体工具
 
 <span id="font-tools" ></span>
 
@@ -72,13 +72,13 @@ Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
 - [2] 支持添加外部字体.进行预览;
 - [3] 生成fx css代码或者java代码;
 
-#### 依赖:
+#### 依赖
 
 <span id="library" ></span>
 
 - [1] 参考[AwesomeJavaFX](https://github.com/mhrimaz/AwesomeJavaFX)列举了很多很棒的开源库,书籍等
 
-#### Tips:
+#### Tips
 
 <span id="tips" ></span>
 

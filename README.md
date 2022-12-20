@@ -38,7 +38,7 @@ A practical tool developed using Java FX, software development for PC or mobile,
 ![](readme_imgs/yl_cn_2.png)
 ![](readme_imgs/yl_cn_3.png)
 
-#### Image Tools:
+#### Image Tools
 
 <span id="image-tools" ></span>
 
@@ -55,7 +55,7 @@ A practical tool developed using Java FX, software development for PC or mobile,
   screenshots are too small under high-resolution screens; If modify the source code to support java 8, only need to
   modify a few lines of code related to the screenshot.)
 
-#### Color Tools:
+#### Color Tools
 
 <span id="color-tools" ></span>
 
@@ -64,7 +64,7 @@ A practical tool developed using Java FX, software development for PC or mobile,
 - [3] 20+ pages of color matching reference;
 - [4] Convert between multiple color formats: HSB,RGB,HSL,Hex
 
-#### SVG Tools:
+#### SVG Tools
 
 <span id="svg-tools" ></span>
 
@@ -72,7 +72,7 @@ A practical tool developed using Java FX, software development for PC or mobile,
 - [2] It is convenient to extract the Path attribute in the SVG file, which is convenient for use in FX;
 - [3] Generate fx css code or java code;
 
-#### Font Tools:
+#### Font Tools
 
 <span id="font-tools" ></span>
 
@@ -80,14 +80,14 @@ A practical tool developed using Java FX, software development for PC or mobile,
 - [2] Support adding external fonts. Preview;
 - [3] Generate fx css code or java code;
 
-#### Library:
+#### Library
 
 <span id="library" ></span>
 
 - [1] Reference[AwesomeJavaFX](https://github.com/mhrimaz/AwesomeJavaFX)Lists many great open source libraries, books,
   etc.;
 
-#### Tips:
+#### Tips
 
 <span id="tips" ></span>
 
