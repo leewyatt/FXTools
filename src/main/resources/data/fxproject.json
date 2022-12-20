@@ -1238,5 +1238,20 @@
       "教程",
       "游戏"
     ]
+  },
+  {
+    "name": "JavaFX-Dark-Theme",
+    "url": "https://github.com/antoniopelusi/JavaFX-Dark-Theme",
+    "descEn": "A complete CSS stylesheet to set a dark theme in your JavaFX UI.",
+    "descZh": "一个完整的 CSS 样式表，用于在您的 JavaFX UI 中设置深色主题。",
+    "type": "github",
+    "keywords": [
+      "CSS",
+      "dark",
+      "theme",
+      "样式",
+      "深色",
+      "主题"
+    ]
   }
 ]
