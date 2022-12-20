@@ -20,8 +20,8 @@ Youtube Video Introduction: https://youtu.be/lDj1Wa_2IfM
 
 I wrote an IDEA plug-in named Java FXTools before, but the API of IDEA will change, and I don’t have the time and energy to maintain it all the time, so I made this stand-alone version;Rewrite the code, re-layout, and add new functions;<br />
 The project uses java17 for development, but is trying to be compatible with java8 (except for screenshot-related APIs).
-So it doesn't use too many advanced syntax features.  
-
+So it doesn't use too many advanced syntax features.  <br />
+The JDK used is **Liberica 17** now. <br />
 ### FXTools_Doc
 
 <span id="tools-doc" ></span>
