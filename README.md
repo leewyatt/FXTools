@@ -4,6 +4,10 @@
 
 A practical tool developed using JavaFX; Software development for PC or mobile; Image tools,Color tools,Svg Tools, Font tools, Library and so on....<br />
 
+**Download**
+- [Download From **Github**](https://github.com/leewyatt/FXTools/releases)
+- [Download From **Gitee**](https://gitee.com/leewyatt/FXTools/releases)
+
 Youtube Video Introduction: https://youtu.be/lDj1Wa_2IfM
 
 - [FXTools](#fxtools)
