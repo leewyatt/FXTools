@@ -162,6 +162,8 @@ You can contribute and support this project by doing any of the following:
   The name, website and total donation amount you provide will be added to the [donor list] <br />
 **Thank you for your support!** 
 
-| **Name** | **Website** | **Message** | **Amount** |
-|----------|-------------|-------------|------------|
-|CierConnor|             | 真不错       | 200 CNY    |
+| **Name**   | **Website** | **Message** | **Amount** |
+|------------|-------------|-------------|------------|
+| CierConnor |             | 真不错       | 200 CNY    |
+| 守望者      |           |             | 6.66 CNY   |
+| 随风Kiki   |             | 喝杯可乐        | 3 CNY      |
