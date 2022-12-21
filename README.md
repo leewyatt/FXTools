@@ -155,6 +155,9 @@ You can contribute and support this project by doing any of the following:
   ```
   Email address: [leewyatt7788@gmail.com][mailto] (click to send email)
 
-  The name, website and total donation amount you provide will be added to the [donor list]
-**Thank you for your support!**
+  The name, website and total donation amount you provide will be added to the [donor list] <br />
+**Thank you for your support!** 
 
+| **Name** | **Website** | **Message** | **Amount** |
+|----------|-------------|-------------|------------|
+|CierConnor|             | 真不错       | 200 CNY    |
