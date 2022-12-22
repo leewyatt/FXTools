@@ -12,15 +12,15 @@
 Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
 
 - [FXTools_Doc](#tools-doc)
-    * [截图](#screenshots)
-        + [图片工具](#image-tools)
-        + [颜色工具](#color-tools)
-        + [SVG工具](#svg-tools)
-        + [字体工具](#font-tools)
-        + [库与书籍](#library)
-        + [小提示](#tips)
-        + [感谢](#thanks)
-        + [打赏](#donate)
+- [截图](#screenshots)
+- [图片工具](#image-tools)
+- [颜色工具](#color-tools)
+- [SVG工具](#svg-tools)
+- [字体工具](#font-tools)
+- [库与书籍](#library)
+- [小提示](#tips)
+- [感谢](#thanks)
+- [打赏](#donate)
 
 我之前写过[Java FXTools]的IDEA插件，但是IDEA的API会变，我没时间和精力一直维护，也为了方便Netbeans和Eclipse的朋友使用,所以做了这个单机版;重写代码，重新布局，增加新功能；<br>
 项目使用java17进行开发,但是在试图兼容java8(除开截图相关API). 所以并没有使用太多语法上的高级特性.<br />

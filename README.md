@@ -10,17 +10,16 @@ A practical tool developed using JavaFX; Software development for PC or mobile; 
 
 Youtube Video Introduction: https://youtu.be/lDj1Wa_2IfM
 
-- [FXTools](#fxtools)
-    * [FXTools_Doc](#tools-doc)
-        + [Screenshots](#screenshots)
-        + [Image Tools](#image-tools)
-        + [Color Tools](#color-tools)
-        + [SVG Tools](#svg-tools)
-        + [Font Tools](#font-tools)
-        + [Library](#library)
-        + [Tips](#tips)
-        + [Thanks](#thanks)
-        + [Donate](#donate)
+- [FXTools_Doc](#tools-doc)
+- [Screenshots](#screenshots)
+- [Image Tools](#image-tools)
+- [Color Tools](#color-tools)
+- [SVG Tools](#svg-tools)
+- [Font Tools](#font-tools)
+- [Library](#library)
+- [Tips](#tips)
+- [Thanks](#thanks)
+- [Donate](#donate)
 
 I wrote an IDEA plug-in named Java FXTools before, but the API of IDEA will change, and I don’t have the time and energy to maintain it all the time, so I made this stand-alone version;Rewrite the code, re-layout, and add new functions;<br />
 The project uses java17 for development, but is trying to be compatible with java8 (except for screenshot-related APIs).
