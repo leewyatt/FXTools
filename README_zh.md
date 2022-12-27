@@ -146,6 +146,7 @@ Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
 | **Name** | **Website** | **Message** | **Amount** |
 |----------|-------------|-------------|------------|
 |CierConnor|             | 真不错       | 200 CNY    |
+| gio        |           |             | 8 CNY      |
 | 守望者      |           |             | 6.66 CNY   |
 | 随风Kiki   |             | 喝杯可乐        | 3 CNY      |
 
