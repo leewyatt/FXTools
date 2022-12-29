@@ -163,7 +163,8 @@ You can contribute and support this project by doing any of the following:
 
 | **Name**   | **Website** | **Message** | **Amount** |
 |------------|-------------|-------------|------------|
-| CierConnor |             | 真不错       | 200 CNY    |
+| CierConnor |             | 真不错         | 200 CNY    |
 | gio        |           |             | 8 CNY      |
 | 守望者        |           |             | 6.66 CNY   |
 | 随风Kiki     |             | 喝杯可乐        | 3 CNY      |
+| (匿名)       |             | 6666        | 0.01 CNY   |
