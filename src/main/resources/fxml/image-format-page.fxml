@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.Line?>
 <?import org.controlsfx.control.MaskerPane?>
 
-<RXCarouselPane fx:id="formatPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" styleClass="image-page" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.ImageFormatPageController">
+<RXCarouselPane fx:id="carouselPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" styleClass="image-page" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.ImageFormatPageController">
    <center>
       <StackPane BorderPane.alignment="CENTER">
          <children>

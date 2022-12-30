@@ -15,6 +15,7 @@ import javafx.application.HostServices;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.PerspectiveCamera;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -56,6 +57,7 @@ public class FXToolsApp extends Application {
         scene.getStylesheets().add(ResourcesUtil.cssExternalForm("main-stage-" + skinStyle + ".css"));
         loadMainPane();
         scene.setFill(Color.TRANSPARENT);
+        scene.setCamera(new PerspectiveCamera());
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.setScene(scene);
         primaryStage.setTitle("FXTools");

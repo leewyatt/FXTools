@@ -1,7 +1,5 @@
 package com.leewyatt.fxtools.ui.cells;
 
-import com.google.common.eventbus.Subscribe;
-import com.leewyatt.fxtools.event.SkinChangedEvent;
 import com.leewyatt.fxtools.model.ImageInfo;
 import com.leewyatt.fxtools.ui.alert.ConfirmationAlert;
 import com.leewyatt.fxtools.utils.ImageUtil;
@@ -61,7 +59,7 @@ public class ImageListCell extends TextFieldListCell<ImageInfo> {
             }
             if (event.isControlDown()) {
                 OSUtil.openAndSelectedFile(getItem().getPath());
-            }else {
+            } else {
                 OSUtil.showDoc(getItem().getPath());
             }
             event.consume();
@@ -129,7 +127,7 @@ public class ImageListCell extends TextFieldListCell<ImageInfo> {
                 ImageInfo item = getItem();
                 String name = "";
                 if (item != null) {
-                    name=item.getName();
+                    name = item.getName();
                 }
                 return name;
             }
@@ -137,7 +135,7 @@ public class ImageListCell extends TextFieldListCell<ImageInfo> {
             @Override
             public ImageInfo fromString(String string) {
                 ImageInfo item = getItem();
-                Optional<ImageInfo> first = getListView().getItems().stream().filter(temp -> temp!=item && temp.getName().equals(string)).findFirst();
+                Optional<ImageInfo> first = getListView().getItems().stream().filter(temp -> temp != item && temp.getName().equals(string)).findFirst();
                 if (first.isPresent()) {
                     boolean b = new ConfirmationAlert("已存在同名图片.确定要修改吗").showAndGetResult();
                     if (b) {
@@ -145,7 +143,7 @@ public class ImageListCell extends TextFieldListCell<ImageInfo> {
                             item.setName(string);
                         }
                     }
-                }else {
+                } else {
                     if (item != null) {
                         item.setName(string);
                     }
@@ -153,15 +151,15 @@ public class ImageListCell extends TextFieldListCell<ImageInfo> {
                 return item;
             }
         });
-        MenuItem deleteBtn = new MenuItem(message("listCell.menu.delete"),getRegion("delete-region"));
+        MenuItem deleteBtn = new MenuItem(message("listCell.menu.delete"), getRegion("delete-region"));
         deleteBtn.setOnAction(event -> {
             getListView().getItems().remove(getItem());
         });
-        MenuItem editBtn = new MenuItem(message("listCell.menu.edit"),getRegion("edit-region"));
+        MenuItem editBtn = new MenuItem(message("listCell.menu.edit"), getRegion("edit-region"));
         editBtn.setOnAction(event -> {
             startEdit();
         });
-        setContextMenu(new ContextMenu(editBtn,deleteBtn));
+        setContextMenu(new ContextMenu(editBtn, deleteBtn));
     }
 
     private Region getRegion(String styleClass) {
@@ -210,8 +208,4 @@ public class ImageListCell extends TextFieldListCell<ImageInfo> {
         }
     }
 
-    @Subscribe
-    public void skinChangedHandler(SkinChangedEvent event) {
-       updateItem(getItem(), isEmpty());
-    }
 }

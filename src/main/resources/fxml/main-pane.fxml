@@ -19,7 +19,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="666.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.MainPaneController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="666.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.MainPaneController">
    <children>
       <ImageView fx:id="skinImageView" fitHeight="660.0" fitWidth="300.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" />
       <BorderPane id="content-pane" fx:id="contentPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="650.0" prefWidth="300.0">
@@ -56,7 +56,7 @@
                               <Region prefHeight="16.0" prefWidth="16.0" />
                            </graphic>
                         </RXToggleButton>
-                        <RXToggleButton id="menu-item-settings" layoutX="11.0" layoutY="162.0" prefHeight="32.0" prefWidth="32.0" styleClass="tools-menu-btn" toggleGroup="$menuGroup">
+                        <RXToggleButton id="menu-item-settings" prefHeight="32.0" prefWidth="32.0" styleClass="tools-menu-btn" toggleGroup="$menuGroup">
                            <graphic>
                               <Region prefHeight="16.0" prefWidth="16.0" />
                            </graphic>

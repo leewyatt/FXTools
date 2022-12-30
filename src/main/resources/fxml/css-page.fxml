@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.leewyatt.rxcontrols.pane.RXCarouselPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<RXCarouselPane id="setting-page" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.SettingsPageController">
+   <padding>
+      <Insets left="3.0" right="3.0" />
+   </padding>
+   <center>
+      <VBox prefWidth="236.0" spacing="6.0" styleClass="settings-box">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="6.0">
+               <children>
+                  <Label text=" BSS" />
+                  <Separator HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#onClickCheckUpdateButton" text="Css convert to Bss">
+               <graphic>
+                  <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="18.0" prefWidth="18.0" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="download-btn" />
+                  <String fx:value="region-btn" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Button>
+            <Label text="转成bss后,速度加快,代码路径不变;但是原始CSS需要保存到别的地方;" wrapText="true">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="96.0" spacing="6.0">
+               <children>
+                  <Label text="%carousel" />
+                  <Separator HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <CheckBox fx:id="autoSwitchCheckBox" layoutX="30.0" layoutY="121.0" mnemonicParsing="false" selected="true" text="%carousel.autoSwitch">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </CheckBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="236.0" spacing="6.0">
+               <children>
+                  <Label text="%screenshot" />
+                  <Separator HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <CheckBox fx:id="hideStageCheckBox" layoutX="30.0" layoutY="261.0" mnemonicParsing="false" text="%hideWindow">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </CheckBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="63.0" spacing="6.0">
+               <children>
+                  <Label text="%screenshotSaved" />
+                  <Separator HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <VBox spacing="6.0">
+               <children>
+                  <CheckBox fx:id="screenshotOpenImgCheckbox" mnemonicParsing="false" selected="true" text="%showImage" />
+                  <CheckBox fx:id="screenshotOpenFileCheckbox" mnemonicParsing="false" text="%showImageFile" />
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="311.0" spacing="6.0">
+               <children>
+                  <Label text="%listViewIsEmpty" />
+                  <Separator HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <CheckBox fx:id="showImageTipsCheckbox" layoutX="10.0" layoutY="334.0" mnemonicParsing="false" selected="true" text="%showImageTips">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </CheckBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="115.0" spacing="6.0">
+               <children>
+                  <Label text="%imageTaskCompleted" />
+                  <Separator HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <CheckBox fx:id="taskCompleteOpenFileCheckBox" mnemonicParsing="false" selected="true" text="%showFileOrDir">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </CheckBox>
+            <HBox layoutX="10.0" layoutY="193.0" spacing="8.0">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="442.0" spacing="6.0">
+               <children>
+                  <Label text="%imagesTask" />
+                  <Separator HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <VBox spacing="6.0">
+               <children>
+                  <HBox fx:id="threadBox" alignment="CENTER_LEFT" spacing="2.0">
+                     <children>
+                        <Label text="%threadNum" />
+                     </children>
+                  </HBox>
+                  <CheckBox fx:id="parseImageSizeCheckbox" mnemonicParsing="false" selected="true" text="%parseImageSize" />
+                  <CheckBox fx:id="showPreviewImageCheckbox" mnemonicParsing="false" selected="true" text="%generateThumbnails" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+            <Region VBox.vgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets top="4.0" />
+         </padding>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</RXCarouselPane>

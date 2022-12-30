@@ -142,3 +142,18 @@
 .url-label:hover {
     -fx-underline: true;
 }
+
+.donor-list-btn {
+    -fx-border-color:#75A4EB;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+    -fx-background-color: null;
+    -fx-font-size: 16px;
+}
+.donor-list-btn:hover {
+    -fx-background-color: rgba(232, 232, 232, 0.8);;
+}
+
+.donor-list-btn:pressed {
+    -fx-background-color: rgb(225, 225, 225);;
+}

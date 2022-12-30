@@ -8,6 +8,7 @@ import com.leewyatt.fxtools.ui.ImageListViewTips;
 import com.leewyatt.fxtools.ui.alert.InformationAlert;
 import com.leewyatt.fxtools.ui.cells.ImageListCell;
 import com.leewyatt.fxtools.utils.ToolSettingsUtil;
+import com.leewyatt.rxcontrols.pane.RXCarouselPane;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,7 +16,6 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.ToggleGroup;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 
@@ -63,6 +63,8 @@ public class ImageCutterPageController extends ImageTaskController {
 
     @FXML
     private ToggleGroup sourceImageGroup;
+
+
 
     public ImageCutterPageController() {
         importEventType = ImageEventType.CUTTER_IMPORT;

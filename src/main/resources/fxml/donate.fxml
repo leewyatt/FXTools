@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -8,7 +9,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="TOP_CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="274.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="274.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.ui.alert.DonateAlertController">
    <children>
       <StackPane>
          <VBox.margin>
@@ -31,9 +32,10 @@
             <Image url="@../images/donate/zfb.png" />
          </image>
          <VBox.margin>
-            <Insets top="50.0" />
+            <Insets top="15.0" />
          </VBox.margin>
       </ImageView>
+      <Button mnemonicParsing="false" onAction="#onClickDonorListBtn" prefHeight="36.0" prefWidth="183.0" styleClass="donor-list-btn" text="%donate.list" />
    </children>
    <padding>
       <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />

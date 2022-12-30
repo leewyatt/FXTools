@@ -10,7 +10,6 @@ import com.leewyatt.fxtools.ui.cells.ImageListCell;
 import com.leewyatt.fxtools.ui.paintpicker.DoubleTextField;
 import com.leewyatt.fxtools.utils.ImageUtil;
 import com.leewyatt.fxtools.utils.ToolSettingsUtil;
-import com.leewyatt.rxcontrols.pane.RXCarouselPane;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -31,7 +30,7 @@ import static com.leewyatt.fxtools.utils.ResourcesUtil.message;
 /**
  * @author LeeWyatt
  */
-public class ImageFormatPageController extends ImageTaskController{
+public class ImageFormatPageController extends ImageTaskController {
 
     @FXML
     private ResourceBundle resources;
@@ -51,12 +50,7 @@ public class ImageFormatPageController extends ImageTaskController{
     @FXML
     private Pane centerPane;
 
-    @FXML
-    private RXCarouselPane formatPage;
-
     private DoubleTextField scaleField;
-
-
 
     public ImageFormatPageController() {
         EventBusUtil.getDefault().register(this);
@@ -87,7 +81,7 @@ public class ImageFormatPageController extends ImageTaskController{
         imageListView.setOnDragOver(this::onDragOverImage);
         imageListView.setEditable(true);
 
-        convertComboBox.getItems().addAll(ImageUtil.FORMAT_PNG, ImageUtil.FORMAT_JPG, ImageUtil.FORMAT_GIF,ImageUtil.FORMAT_BMP, ImageUtil.FORMAT_ICO);
+        convertComboBox.getItems().addAll(ImageUtil.FORMAT_PNG, ImageUtil.FORMAT_JPG, ImageUtil.FORMAT_GIF, ImageUtil.FORMAT_BMP, ImageUtil.FORMAT_ICO);
         convertComboBox.getSelectionModel().select(0);
         convertComboBox.getSelectionModel().selectedItemProperty().addListener((ob, ov, nv) ->
                 qualityComboBox.setDisable(!ImageUtil.FORMAT_JPG.equals(nv))
@@ -95,7 +89,6 @@ public class ImageFormatPageController extends ImageTaskController{
         qualityComboBox.getItems().addAll(message("imagePage.format.quality1"), message("imagePage.format.quality2"), message("imagePage.format.quality3"));
         qualityComboBox.getSelectionModel().select(0);
     }
-
 
     @FXML
     void onConvertImageFormatAction(ActionEvent event) throws IOException {

@@ -11,8 +11,9 @@ import com.leewyatt.fxtools.ui.alert.InformationAlert;
 import com.leewyatt.fxtools.ui.paintpicker.IntegerTextField;
 import com.leewyatt.fxtools.utils.AlphanumComparator;
 import com.leewyatt.fxtools.utils.ImageUtil;
-import com.leewyatt.fxtools.utils.ToolSettingsUtil;
 import com.leewyatt.fxtools.utils.OSUtil;
+import com.leewyatt.fxtools.utils.ToolSettingsUtil;
+import com.leewyatt.rxcontrols.pane.RXCarouselPane;
 import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -57,6 +58,9 @@ public class ImageTaskController {
 
     @FXML
     protected MaskerPane maskerPane;
+
+    @FXML
+    private RXCarouselPane carouselPane;
 
     protected IntegerTextField colNumField;
 
@@ -151,14 +155,17 @@ public class ImageTaskController {
     protected void onDragDroppedImage(DragEvent event) {
         Dragboard db = event.getDragboard();
         boolean success = false;
+        List<File> result = null;
         if (db.hasFiles()) {
             List<File> files = event.getDragboard().getFiles();
-            files = files.stream().filter(this::isImageCompliantFormat).collect(Collectors.toList());
-            startLoadImageService(files);
+            result = files.stream().filter(this::isImageCompliantFormat).collect(Collectors.toList());
             success = true;
         }
         event.setDropCompleted(success);
         event.consume();
+        if (result != null) {
+            startLoadImageService(result);
+        }
     }
 
     /**

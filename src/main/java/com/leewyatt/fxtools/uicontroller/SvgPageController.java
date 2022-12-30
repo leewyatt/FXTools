@@ -167,6 +167,8 @@ public class SvgPageController {
         svgRegion.setStyle(DEFAULT_BLACK_GROUND);
         svgRegion.setShape(svgPath);
         svgPreviewPane.getChildren().add(svgRegion);
+        svgPreviewPane.setOnDragDropped(this::onDragDroppedSvg);
+        svgPreviewPane.setOnDragOver(this::onDragOverSvg);
         svgPreviewPane.setOnScroll(event -> {
             if (!verifiedPath()) {
                 return;
@@ -184,17 +186,16 @@ public class SvgPageController {
         regionContextMenu = createRegionContextMenu();
         svgPreviewPane.setOnMousePressed(event -> {
             if (event.getButton() == MouseButton.PRIMARY) {
+                if (regionContextMenu.isShowing()) {
+                    regionContextMenu.hide();
+                }
                 if (event.isControlDown() && lastFilePath != null) {
                     openAndSelectedFile(lastFilePath);
-                    event.consume();
-                    return;
                 }
-                openSvgFile();
-                event.consume();
-            }
-            if (event.getButton() == MouseButton.SECONDARY) {
+            } else if (event.getButton() == MouseButton.SECONDARY) {
                 regionContextMenu.show(svgPreviewPane, event.getScreenX(), event.getScreenY());
             }
+            event.consume();
         });
     }
 
@@ -208,18 +209,16 @@ public class SvgPageController {
         webViewContextMenu = createWebViewContextMenu();
         imagePreviewPane.setOnMousePressed(event -> {
             if (event.getButton() == MouseButton.PRIMARY) {
+                if (webViewContextMenu.isShowing()) {
+                    webViewContextMenu.hide();
+                }
                 if (event.isControlDown() && lastFilePath != null) {
                     openAndSelectedFile(lastFilePath);
-                    event.consume();
-                    return;
                 }
-                openSvgFile();
-                event.consume();
-            }
-            if (event.getButton() == MouseButton.SECONDARY) {
+            } else if (event.getButton() == MouseButton.SECONDARY) {
                 webViewContextMenu.show(imagePreviewPane, event.getScreenX(), event.getScreenY());
             }
-
+            event.consume();
         });
     }
 
@@ -334,18 +333,22 @@ public class SvgPageController {
     private void onDragDroppedSvg(DragEvent event) {
         Dragboard db = event.getDragboard();
         boolean success = false;
+        File svgFile = null;
         if (db.hasFiles()) {
             List<File> files = event.getDragboard().getFiles();
             for (File file : files) {
                 if (isSvgFile(file)) {
-                    setXMLData(file);
+                    svgFile = file;
+                    success = true;
                     break;
                 }
             }
-            success = true;
         }
         event.setDropCompleted(success);
         event.consume();
+        if (svgFile != null) {
+            setXMLData(svgFile);
+        }
     }
 
     void onDragOverSvg(DragEvent event) {
@@ -398,18 +401,15 @@ public class SvgPageController {
         svgRegion.setMaxSize(newWidth * rate, newHeight * rate);
         reSelectedCodeCombobox();
     }
-
     private void widthChanged() {
         Bounds bounds = svgPath.getLayoutBounds();
-        double regionWidth = svgRegion.getWidth();
-        double regionHeight = svgRegion.getHeight();
-        double scaleX = bounds.getWidth() / regionWidth;
-        double scaleY = bounds.getHeight() / regionHeight;
+        double width = bounds.getWidth();
+        double height = bounds.getHeight();
         double newWidth = widthFiled.getValue();
-        double scale = newWidth / scaleX;
-        double newHeight = scaleY * scale;
+        double scale = newWidth / width;
+        double newHeight= height * scale;
         heightField.setText(newHeight + "");
-        double rate = NumberUtil.computeScaleRate(scaleX, scaleY, 128);
+        double rate = NumberUtil.computeScaleRate(width, height, 128);
         svgRegion.setMaxSize(newWidth * rate, newHeight * rate);
         reSelectedCodeCombobox();
     }

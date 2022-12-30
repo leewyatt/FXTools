@@ -149,6 +149,12 @@ public class MainPaneController {
             }
             carousel.setSelectedIndex(menuGroup.getToggles().indexOf(nv));
         });
+        if (OSUtil.getOS() != OSUtil.OS.WINDOWS) {
+            snapshotBtn.setManaged(false);
+            colorPickerBtn.setManaged(false);
+            snapshotBtn.setVisible(false);
+            colorPickerBtn.setVisible(false);
+        }
     }
 
     @FXML
@@ -226,8 +232,6 @@ public class MainPaneController {
             contentPane.setClip(null);
             toggleBtn.setRotate(0);
             toggleBtn.setDisable(false);
-            carousel.getSubScene().getRoot().applyCss();
-            carousel.getSubScene().getRoot().requestLayout();
         });
         tl.play();
 
