@@ -1,6 +1,6 @@
 ## For: [English](README.md) | 中文 用户.
 
-## FXTools
+#### FXTools
 
 一款使用JavaFX开发的工具软件,具有图片处理工具,颜色工具,字体预览工具,Svg工具,等...
 
@@ -15,10 +15,11 @@ Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
 项目使用java17进行开发,但是在试图兼容java8(除开截图相关API). 所以并没有使用太多语法上的高级特性.<br />
 现在使用的JDK是 **Liberica 17** . <br />
 
-### FXTools_Doc_中文
 
 <span id="tools-doc" ></span>
 使用JavaFX开发的实用小工具，适用于PC端和移动端，主要有如下功能:
+
+#### 软件截图
 
 <span id="screenshots" ></span>
 ![](readme_imgs/yl_1.png)
@@ -143,11 +144,16 @@ Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
 
   **感谢您的支持!**
 
-| **Name** | **Website** | **Message** | **Amount** |
-|----------|-------------|-------------|------------|
-|CierConnor|             | 真不错       | 200 CNY    |
+#### 打赏列表
+
+<span id="donors"></span>
+ 
+| **Name**   | **Website** | **Message** | **Amount** |
+|------------|-------------|-------------|------------|
+| CierConnor |             | 真不错       | 200 CNY    |
 | gio        |           |             | 8 CNY      |
-| 守望者      |           |             | 6.66 CNY   |
-| 随风Kiki   |             | 喝杯可乐        | 3 CNY      |
+| 守望者        |           |             | 6.66 CNY   |
+| Andy97     |           |             | 6.66 CNY   |
+| 随风Kiki     |             | 喝杯可乐        | 3 CNY      |
 | (匿名)       |             | 6666        | 0.01 CNY   |
 

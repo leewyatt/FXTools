@@ -20,12 +20,12 @@ Youtube Video Introduction: https://youtu.be/lDj1Wa_2IfM
 - [Tips](#tips)
 - [Thanks](#thanks)
 - [Donate](#donate)
+- [Donors](#donors)
 
 I wrote an IDEA plug-in named Java FXTools before, but the API of IDEA will change, and I don’t have the time and energy to maintain it all the time, so I made this stand-alone version;Rewrite the code, re-layout, and add new functions;<br />
 The project uses java17 for development, but is trying to be compatible with java8 (except for screenshot-related APIs).
 So it doesn't use too many advanced syntax features.  <br />
 The JDK used is **Liberica 17** now. <br />
-### FXTools_Doc
 
 <span id="tools-doc" ></span>
 A practical tool developed using Java FX, software development for PC or mobile, the main functions are as follows:
@@ -161,10 +161,14 @@ You can contribute and support this project by doing any of the following:
   The name, website and total donation amount you provide will be added to the [donor list] <br />
 **Thank you for your support!** 
 
+#### Donors
+<span id="donors"></span>
+
 | **Name**   | **Website** | **Message** | **Amount** |
 |------------|-------------|-------------|------------|
 | CierConnor |             | 真不错         | 200 CNY    |
 | gio        |           |             | 8 CNY      |
 | 守望者        |           |             | 6.66 CNY   |
+| Andy97     |           |             | 6.66 CNY   |
 | 随风Kiki     |             | 喝杯可乐        | 3 CNY      |
 | (匿名)       |             | 6666        | 0.01 CNY   |
