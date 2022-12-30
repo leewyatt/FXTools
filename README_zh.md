@@ -9,7 +9,7 @@
 - [在**Gitee**上下载](https://gitee.com/leewyatt/FXTools/releases)
 - [在**Github**上下载](https://github.com/leewyatt/FXTools/releases)
 
-Youtube视频介绍: https://youtu.be/lDj1Wa_2IfM
+操作与使用预览: https://www.bilibili.com/video/BV173411D7AU
 
 我之前写过[Java FXTools]的IDEA插件，但是IDEA的API会变，我没时间和精力一直维护，也为了方便Netbeans和Eclipse的朋友使用,所以做了这个单机版;重写代码，重新布局，增加新功能；<br>
 项目使用java17进行开发,但是在试图兼容java8(除开截图相关API). 所以并没有使用太多语法上的高级特性.<br />
