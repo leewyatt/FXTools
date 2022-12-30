@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 
-<RXCarouselPane fx:id="carouselPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" styleClass="tool-pane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.ColorPageController">
+<RXCarouselPane fx:id="carouselPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="263.0" styleClass="tool-pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.leewyatt.fxtools.uicontroller.ColorPageController">
    <top>
       <VBox prefHeight="80.0" prefWidth="261.0" BorderPane.alignment="CENTER">
          <children>
@@ -36,7 +36,7 @@
             </HBox>
             <HBox id="control-btn-box" alignment="CENTER" prefHeight="38.0" prefWidth="261.0" spacing="1.0" styleClass="copy-box">
                <children>
-                  <Button mnemonicParsing="false" onAction="#pickerColorAction">
+                  <Button fx:id="pickerBtn" mnemonicParsing="false" onAction="#pickerColorAction">
                      <graphic>
                         <Region prefHeight="200.0" prefWidth="200.0" />
                      </graphic>

@@ -33,6 +33,7 @@ package com.leewyatt.fxtools.ui.paintpicker;
 
 import com.leewyatt.fxtools.ui.paintpicker.colorpicker.ColorPicker;
 import com.leewyatt.fxtools.ui.stages.ScreenColorPickerStage;
+import com.leewyatt.fxtools.utils.OSUtil;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.ReadOnlyBooleanProperty;
 import javafx.geometry.Insets;
@@ -83,6 +84,11 @@ public class PaintPicker extends Pane {
         button.setOnAction(event -> {
             new ScreenColorPickerStage().showStage();
         });
+        //如果不是windows操作系统,那么不显示
+        if (OSUtil.getOS() != OSUtil.OS.WINDOWS) {
+            button.setVisible(false);
+            button.setManaged(false);
+        }
         root_vbox = new VBox(hBox);
         //*<VBox fx:id="root_vbox" alignment="CENTER" minHeight="-1.0" prefHeight="-1.0" prefWidth="-1.0" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oracle.javafx.scenebuilder.kit.util.control.paintpicker.PaintPickerController">
         root_vbox.setAlignment(Pos.CENTER);

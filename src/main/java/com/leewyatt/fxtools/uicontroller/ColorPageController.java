@@ -17,6 +17,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.input.MouseEvent;
@@ -48,6 +49,8 @@ public class ColorPageController {
     private ComboBox<String> colorCombobox;
     @FXML
     private Rectangle previewRect;
+    @FXML
+    private Button pickerBtn;
     private AnchorPane colorHorPage;
 
     private ScrollPane lineGradientPage;
@@ -86,7 +89,11 @@ public class ColorPageController {
 
     @FXML
     void initialize() {
-
+        if (OSUtil.getOS() != OSUtil.OS.WINDOWS) {
+            pickerBtn.setVisible(false);
+            pickerBtn.setManaged(false);
+            previewRect.setWidth(62);
+        }
         ColorHorCanvas colorHorCanvas = new ColorHorCanvas();
         colorHorPage = new AnchorPane(colorHorCanvas);
         LineGradientCanvas lineGradientCanvas = new LineGradientCanvas();

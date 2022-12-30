@@ -117,18 +117,19 @@ public class OSUtil {
             } else {
                 cmd = "explorer /select," + filePath;
             }
-        } else if (currentOS ==OS.MAC) {
-            cmd = "xdg-open " + filePath;
-        } else if (currentOS == OS.LINUX) {
-            cmd = "open -R " + filePath;
+            try {
+                Runtime.getRuntime().exec(cmd);
+            } catch (IOException exception) {
+                Logger logger = Logger.getLogger("com.leewyatt.fxtools.utils.OSUtil");
+                logger.severe("IOException: openAndSelectedFile failed.\t"+exception);
+                exception.printStackTrace();
+            }
+        } else if (currentOS ==OS.MAC || currentOS == OS.LINUX) {
+            //cmd = "open " + filePath;  mac
+            //cmd = "open -R " + filePath; linux
+            showDoc(file.toURI().toString());
         }
-        try {
-            Runtime.getRuntime().exec(cmd);
-        } catch (IOException exception) {
-            Logger logger = Logger.getLogger("com.leewyatt.fxtools.utils.OSUtil");
-            logger.severe("IOException: openAndSelectedFile failed.\t"+exception);
-            exception.printStackTrace();
-        }
+
     }
 
     public static void openAndSelectedFile(File file) {
