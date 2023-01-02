@@ -167,6 +167,7 @@ You can contribute and support this project by doing any of the following:
 | **Name**   | **Website** | **Message** | **Amount** |
 |------------|-------------|-------------|------------|
 | CierConnor |             | 真不错         | 200 CNY    |
+| 忆清风      |             | 很实用，加油！     | 188.88 CNY |
 | gio        |           |             | 8 CNY      |
 | 守望者        |           |             | 6.66 CNY   |
 | Andy97     |           |             | 6.66 CNY   |
