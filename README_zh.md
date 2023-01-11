@@ -153,6 +153,7 @@
 | 色彩通旗舰店  | [天猫旗舰店](https://secaitong.tmall.com/shop/view_shop.htm?spm=a230r.1.14.10.65396cf7wJJng) | 色卡选购! 打造中国色彩标准为您提供色彩解决方案 | 288.00 CNY |
 | CierConnor |                                                                                         | 真不错                      | 200 CNY    |
 | 忆清风      |                                                                                         | 很实用，加油！                  | 188.88 CNY |
+| Mnefo      |             |                          | 50 CNY     |
 | gio        |                                                                                         |                          | 8 CNY      |
 | 守望者        |                                                                                         |                          | 6.66 CNY   |
 | Andy97     |                                                                                         |                          | 6.66 CNY   |
