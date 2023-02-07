@@ -5,9 +5,15 @@
 一款使用JavaFX开发的工具软件,具有图片处理工具,颜色工具,字体预览工具,Svg工具,等...
 
 **Download**
+- Download From **Github**
+  [[Windows]](https://github.com/leewyatt/FXTools/releases)
+  [[MacOS]](https://github.com/leewyatt/FXTools/releases)
+  [[Linux]](https://github.com/leewyatt/FXTools/releases)
 
-- [在**Gitee**上下载](https://gitee.com/leewyatt/FXTools/releases)
-- [在**Github**上下载](https://github.com/leewyatt/FXTools/releases)
+- Download From **Gitee**
+  [[Windows]](https://gitee.com/leewyatt/FXTools/releases)
+  [[MacOS]](https://gitee.com/leewyatt/FXTools/releases)
+  [[Linux]](https://gitee.com/leewyatt/FXTools/releases)
 
 操作与使用预览: https://www.bilibili.com/video/BV173411D7AU
 
