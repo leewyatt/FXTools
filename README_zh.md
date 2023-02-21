@@ -162,6 +162,7 @@
 | Mnefo      |             |                          | 50 CNY     |
 | 诚信         |             |                          | 30 CNY     |
 | *白         |             |                          | 10 CNY     |
+| ik         |             | 支持                       | 10 CNY     |
 | gio        |                                                                                         |                          | 8 CNY      |
 | 守望者        |                                                                                         |                          | 6.66 CNY   |
 | Andy97     |                                                                                         |                          | 6.66 CNY   |
