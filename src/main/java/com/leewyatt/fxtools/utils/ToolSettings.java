@@ -32,6 +32,8 @@ public class ToolSettings {
 
     public static final boolean DEFAULT_UPDATE_NOTIFY = true;
 
+    public static final boolean DEFAULT_SKIP_BOOT_ANIMATION = false;
+
     /**
      * 默认皮肤
      */
@@ -97,6 +99,13 @@ public class ToolSettings {
     private boolean alwaysTop;
 
     private boolean updateNotify;
+
+    /**
+     * 是否跳过启动动画
+     * true 跳过
+     * false 不跳过
+     */
+    private boolean skipBootAnimation;
 
     public ToolSettings() {
 
@@ -208,5 +217,13 @@ public class ToolSettings {
 
     public void setUpdateNotify(boolean updateNotify) {
         this.updateNotify = updateNotify;
+    }
+
+    public boolean isSkipBootAnimation() {
+        return skipBootAnimation;
+    }
+
+    public void setSkipBootAnimation(boolean skipBootAnimation) {
+        this.skipBootAnimation = skipBootAnimation;
     }
 }

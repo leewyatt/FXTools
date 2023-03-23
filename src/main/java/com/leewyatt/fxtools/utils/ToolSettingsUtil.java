@@ -46,6 +46,7 @@ public class ToolSettingsUtil {
                 settings.setAutoSwitch(Boolean.parseBoolean(props.getProperty("autoSwitch", defaultSettings.isAutoSwitch() + "")));
                 settings.setAlwaysTop(Boolean.parseBoolean(props.getProperty("alwaysTop", defaultSettings.isAlwaysTop() + "")));
                 settings.setUpdateNotify(Boolean.parseBoolean(props.getProperty("updateNotify", defaultSettings.isUpdateNotify() + "")));
+                settings.setSkipBootAnimation(Boolean.parseBoolean(props.getProperty("skipBootAnimation", defaultSettings.isSkipBootAnimation() + "")));
                 reader.close();
             }
         } catch (IOException e) {
@@ -70,6 +71,7 @@ public class ToolSettingsUtil {
         defaultSettings.setAutoSwitch(ToolSettings.DEFAULT_AUTO_SWITCH);
         defaultSettings.setAlwaysTop(ToolSettings.DEFAULT_ALWAYS_TOP);
         defaultSettings.setUpdateNotify(ToolSettings.DEFAULT_UPDATE_NOTIFY);
+        defaultSettings.setSkipBootAnimation(ToolSettings.DEFAULT_SKIP_BOOT_ANIMATION);
     }
 
     public static ToolSettingsUtil getInstance() {
@@ -94,6 +96,7 @@ public class ToolSettingsUtil {
         settings.setAutoSwitch(newSettings.isAutoSwitch());
         settings.setAlwaysTop(newSettings.isAlwaysTop());
         settings.setUpdateNotify(newSettings.isUpdateNotify());
+        settings.setSkipBootAnimation(newSettings.isSkipBootAnimation());
         saveSettings();
     }
 
@@ -112,6 +115,7 @@ public class ToolSettingsUtil {
         props.setProperty("autoSwitch", settings.isAutoSwitch() + "");
         props.setProperty("alwaysTop", settings.isAlwaysTop() + "");
         props.setProperty("updateNotify",settings.isUpdateNotify()+"");
+        props.setProperty("skipBootAnimation",settings.isSkipBootAnimation()+"");
         try {
             FileWriter writer = new FileWriter(propertiesFile);
             props.store(writer, "Change settings");
@@ -313,5 +317,17 @@ public class ToolSettingsUtil {
         settings.setUpdateNotify(notify);
         saveSettings();
     }
+    /*
+     * ***************
+     * 启动时是否跳过动画
+     * ***************
+     */
+    public boolean getSKipBootAnimation() {
+        return  settings.isSkipBootAnimation();
+    }
 
+    public void saveSkipBootAnimation(boolean skipBootAnimation) {
+        settings.setSkipBootAnimation(skipBootAnimation);;
+        saveSettings();
+    }
 }
