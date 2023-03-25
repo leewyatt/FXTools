@@ -183,5 +183,6 @@ You can contribute and support this project by doing any of the following:
 | gio        |           |                         | 8 CNY      |
 | 守望者        |           |                         | 6.66 CNY   |
 | Andy97     |           |                         | 6.66 CNY   |
+| 走遍全球6G     |           |伟大的项目                         | 5 CNY      |
 | 随风Kiki     |             | 喝杯可乐                    | 3 CNY      |
 | (匿名)       |             | 6666                    | 0.01 CNY   |
