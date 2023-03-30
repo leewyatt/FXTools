@@ -177,6 +177,7 @@ You can contribute and support this project by doing any of the following:
 | CierConnor |             | 真不错                     | 200 CNY    |
 | 忆清风        |             | 很实用，加油！                 | 188.88 CNY |
 | Mnefo      |             |                         | 50 CNY     |
+| 未央宫      |             |                         | 35 CNY     |
 | 诚信         |             |                         | 30 CNY     |
 | *白         |             |                         | 10 CNY     |
 | ik         |             | 支持                      | 10 CNY     |
