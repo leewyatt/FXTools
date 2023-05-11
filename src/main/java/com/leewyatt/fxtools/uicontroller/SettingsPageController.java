@@ -54,6 +54,9 @@ public class SettingsPageController {
     @FXML
     private CheckBox updateNotifyCheckBox;
 
+    @FXML
+    private CheckBox skipBootAnimationCheckbox;
+
     public SettingsPageController() {
         EventBusUtil.getDefault().register(this);
     }
@@ -96,6 +99,7 @@ public class SettingsPageController {
                 threadField.setText(i+"");
             }
         });
+        skipBootAnimationCheckbox.selectedProperty().addListener((ob, ov, nv) -> util.saveSkipBootAnimation(nv));
     }
 
     private void showSettingsOnUI() {
@@ -110,6 +114,7 @@ public class SettingsPageController {
         showPreviewImageCheckbox.setSelected(util.getGeneratePreviewImg());
         parseImageSizeCheckbox.setSelected(util.getParseImageSize());
         threadField.setText(util.getThreadNum() + "");
+        skipBootAnimationCheckbox.setSelected(util.getSKipBootAnimation());
     }
 
 }
