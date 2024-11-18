@@ -181,10 +181,12 @@ You can contribute and support this project by doing any of the following:
 | 诚信         |             |                          | 30 CNY     |
 | *白         |             |                          | 10 CNY     |
 | ik         |             | 支持                       | 10 CNY     |
+| 不歪猫        |             | FXTools做的很不错             | 10 CNY     |
 | gio        |           |                          | 8 CNY      |
 | 守望者        |           |                          | 6.66 CNY   |
 | Andy97     |           |                          | 6.66 CNY   |
 | 走遍全球6G     |           | 伟大的项目                    | 5 CNY      |
 | 很笨的小猫     |           | 大佬牛                      | 5 CNY      |
 | 随风Kiki     |             | 喝杯可乐                     | 3 CNY      |
+| 笑风云        |             |                          | 1 CNY      |
 | (匿名)       |             | 6666                     | 0.01 CNY   |
