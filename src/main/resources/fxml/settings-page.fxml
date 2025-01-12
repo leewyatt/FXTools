@@ -38,6 +38,7 @@
                      </styleClass>
                   </Button>
                   <CheckBox fx:id="updateNotifyCheckBox" mnemonicParsing="false" selected="true" text="%updateNotify" />
+                  <CheckBox fx:id="skipBootAnimationCheckbox" mnemonicParsing="false" selected="true" text="%skipBootAnimation" />
                </children>
                <padding>
                   <Insets left="20.0" />
